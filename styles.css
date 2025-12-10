@@ -599,6 +599,20 @@ body {
     animation: rotateIcon 3s linear infinite;
 }
 
+.move-icon {
+    display: inline-block;
+    animation: moveHorizontal 3s ease-in-out infinite;
+}
+
+@keyframes moveHorizontal {
+    0%, 100% {
+        transform: translateX(-10px);
+    }
+    50% {
+        transform: translateX(10px);
+    }
+}
+
 .arrow-move {
     animation: arrowMove 1s ease-in-out infinite;
 }
@@ -2655,17 +2669,15 @@ body.loaded {
     position: relative;
     height: 250px;
     overflow: hidden;
+    background: var(--gray-100);
 }
 
 .portfolio-placeholder {
     width: 100%;
     height: 100%;
-    background: linear-gradient(135deg, var(--primary), var(--secondary));
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 3rem;
-    color: var(--white);
 }
 
 .portfolio-overlay {
@@ -2680,6 +2692,7 @@ body.loaded {
     justify-content: center;
     opacity: 0;
     transition: opacity var(--transition-base);
+    z-index: 2;
 }
 
 .portfolio-item:hover .portfolio-overlay {
