@@ -1311,8 +1311,8 @@ body {
 }
 
 .pub-image {
-    width: 130px;
-    height: 130px;
+    width: 160px;
+    height: 160px;
     border-radius: var(--radius-md);
     overflow: hidden;
     flex-shrink: 0;
