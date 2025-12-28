@@ -13,15 +13,15 @@ const websiteContent = {
     // To add a new publication, copy one block and change the values
     publications: [
         // Example:
-         {
-            year: "2025",
-           title: "Your Publication Title Here",
-            journal: "Journal Name",
-            date: "December 15, 2024",
-           topics: ["Machine Learning", "Agriculture"],
-                link: "https://link-to-paper.com",
-           pdfLink: "https://link-to-pdf.com"
-        },
+        //  {
+        //     year: "2025",
+        //    title: "Your Publication Title Here",
+        //     journal: "Journal Name",
+        //     date: "December 15, 2024",
+        //    topics: ["Machine Learning", "Agriculture"],
+        //         link: "https://link-to-paper.com",
+        //    pdfLink: "https://link-to-pdf.com"
+        // },
         // Copy the block above to add more publications
     ],
 
