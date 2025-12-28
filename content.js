@@ -19,7 +19,7 @@ const websiteContent = {
             topics: ["Smart Greenhouses", "Climate Control"],
             link: "#",
             pdfLink: "#",
-            image: "A&M.png"
+            image: "https://via.placeholder.com/400x400/667eea/ffffff?text=Publication+1"
         },
         {
             year: "2023",
@@ -39,7 +39,7 @@ const websiteContent = {
             topics: ["Dehumidification", "IoT Systems"],
             link: "#",
             pdfLink: "#",
-            image: "A&M.png"
+            image: "/Users/sriramthota/Downloads/Zafar website/A&M.png"
         },
         {
             year: "2022",
@@ -49,7 +49,7 @@ const websiteContent = {
             topics: ["Agricultural Robotics", "Optimization"],
             link: "#",
             pdfLink: "#",
-            image: "A&M.png"
+            image: "/Users/sriramthota/Downloads/Zafar website/A&M.png"
         },
         {
             year: "2022",
@@ -538,7 +538,7 @@ function loadContent() {
         if (pubList) {
             const firstPub = pubList.querySelector('.publication-item');
             websiteContent.publications.forEach(pub => {
-                const pubHTML = `<div class="publication-item animate-slide-left" data-year="${pub.year}">${pub.image ? `<div class="pub-image"><img src="${pub.image}" alt="${pub.title}" onerror="this.parentElement.remove()"></div>` : ''}<div class="pub-year-badge">${pub.year}</div><div class="pub-content"><h3 class="pub-title">${pub.title}</h3><div class="pub-journal">${pub.journal} • ${pub.date}</div><div class="pub-tags">${pub.topics.map(topic => `<span class="tag">${topic}</span>`).join('')}</div></div><div class="pub-actions">${pub.link ? `<a href="${pub.link}" class="pub-link" title="View Online"><i class="fas fa-link"></i></a>` : ''}${pub.pdfLink ? `<a href="${pub.pdfLink}" class="pub-link" title="Download PDF"><i class="fas fa-download"></i></a>` : ''}</div></div>`;
+                const pubHTML = `<div class="publication-item animate-slide-left" data-year="${pub.year}"><div class="pub-year-badge">${pub.year}</div><div class="pub-content"><h3 class="pub-title">${pub.title}</h3><div class="pub-journal">${pub.journal} • ${pub.date}</div><div class="pub-tags">${pub.topics.map(topic => `<span class="tag">${topic}</span>`).join('')}</div></div>${pub.image ? `<div class="pub-image-wrapper"><div class="pub-image"><img src="${pub.image}" alt="${pub.title}" onerror="this.parentElement.parentElement.remove()"></div><div class="pub-actions">${pub.link ? `<a href="${pub.link}" class="pub-link" title="View Online"><i class="fas fa-link"></i></a>` : ''}${pub.pdfLink ? `<a href="${pub.pdfLink}" class="pub-link" title="Download PDF"><i class="fas fa-download"></i></a>` : ''}</div></div>` : ''}</div>`;
                 if (firstPub) { firstPub.insertAdjacentHTML('beforebegin', pubHTML); } else { pubList.insertAdjacentHTML('beforeend', pubHTML); }
             });
         }
