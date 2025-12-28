@@ -1311,7 +1311,7 @@ body {
 }
 
 .pub-image {
-    width: 150px;
+    width: 220px;
     height: 150px;
     border-radius: var(--radius-md);
     overflow: hidden;
