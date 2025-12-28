@@ -19,7 +19,7 @@ const websiteContent = {
             topics: ["Smart Greenhouses", "Climate Control"],
             link: "#",
             pdfLink: "#",
-            image: "https://via.placeholder.com/400x400/667eea/ffffff?text=Publication+1"
+            image: "A&M.png"
         },
         {
             year: "2023",
