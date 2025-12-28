@@ -15,7 +15,7 @@ const websiteContent = {
             year: "2025",
             title: "Detecting Escherichia coli Contamination on Plant Leaf Surfaces Using UV-C Fluorescence Imaging and Deep Learning",
             journal: "Plants",
-            date: "July 31, 2023",
+            date: "October 31, 2025",
             topics: ["E. Coli", "Food safety", "Fluorescence imaging", "Deep learning","YOLO11", "Eigen-CAM"],
             link: "https://doi.org/10.3390/plants14213352",
             pdfLink: "#",
