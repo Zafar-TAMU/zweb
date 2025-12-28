@@ -39,7 +39,7 @@ const websiteContent = {
             topics: ["Dehumidification", "IoT Systems"],
             link: "#",
             pdfLink: "#",
-            image: "/Users/sriramthota/Downloads/Zafar website/A&M.png"
+            image: "A&M.png"
         },
         {
             year: "2022",
@@ -49,7 +49,7 @@ const websiteContent = {
             topics: ["Agricultural Robotics", "Optimization"],
             link: "#",
             pdfLink: "#",
-            image: "/Users/sriramthota/Downloads/Zafar website/A&M.png"
+            image: "A&M.png"
         },
         {
             year: "2022",
