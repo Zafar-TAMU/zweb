@@ -12,14 +12,14 @@ const websiteContent = {
     // ========================================
     publications: [
         {
-            year: "2023",
-            title: "Comparison of heating modules for suspension-type multipoint temperature variability management in smart greenhouses",
-            journal: "Elsevier",
+            year: "2025",
+            title: "Detecting Escherichia coli Contamination on Plant Leaf Surfaces Using UV-C Fluorescence Imaging and Deep Learning",
+            journal: "Plants",
             date: "July 31, 2023",
-            topics: ["Smart Greenhouses", "Climate Control"],
-            link: "#",
+            topics: ["E. Coli", "Food safety", "Fluorescence imaging", "Deep learning","YOLO11", "Eigen-CAM"],
+            link: "https://doi.org/10.3390/plants14213352",
             pdfLink: "#",
-            image: "https://via.placeholder.com/400x400/667eea/ffffff?text=Publication+1"
+            image: "Pub_l.jpg"
         },
         {
             year: "2023",
