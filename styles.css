@@ -2247,6 +2247,15 @@ section {
         gap: var(--space-lg);
     }
     
+    .main-card,
+    .experience-card,
+    .skills-card,
+    .expertise-card,
+    .trainings-card,
+    .impact-card {
+        grid-column: 1 / -1;
+    }
+    
     .impact-stats {
         grid-template-columns: repeat(3, 1fr);
         gap: var(--space-sm);
