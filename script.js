@@ -533,29 +533,27 @@ function initializeHexagonModal() {
     const hexagons = document.querySelectorAll('.hexagon');
     const modal = document.getElementById('imageModal');
     const modalImg = document.getElementById('modalImage');
-    const closeBtn = document.querySelector('.modal-close');
+    const closeBtn = document.getElementById('closeImageModal');
     
     hexagons.forEach(hex => {
         hex.addEventListener('click', () => {
             const imageSrc = hex.getAttribute('data-image');
-            modal.classList.add('active');
             modalImg.src = imageSrc;
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden';
         });
     });
     
-    closeBtn?.addEventListener('click', () => {
+    function closeModal() {
         modal.classList.remove('active');
-    });
+        document.body.style.overflow = '';
+    }
+    
+    closeBtn?.addEventListener('click', closeModal);
     
     modal?.addEventListener('click', (e) => {
         if (e.target === modal) {
-            modal.classList.remove('active');
-        }
-    });
-    
-    document.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape' && modal.classList.contains('active')) {
-            modal.classList.remove('active');
+            closeModal();
         }
     });
 }
@@ -618,9 +616,6 @@ function loadConfigData() {
                                         <p class="university-name">${edu.university} • ${edu.years}</p>
                                     </div>
                                 </div>
-                                <div class="education-badge">
-                                    <span class="education-label">${edu.badge}</span>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -646,9 +641,6 @@ function loadConfigData() {
                                         <h4>${exp.position}</h4>
                                         <p class="university-name">${exp.organization} • ${exp.years}</p>
                                     </div>
-                                </div>
-                                <div class="education-badge">
-                                    <span class="education-label">${exp.badge}</span>
                                 </div>
                             </div>
                         </div>
@@ -914,7 +906,7 @@ if (closeCvModal) {
     closeCvModal.addEventListener('click', () => {
         cvModal.classList.remove('active');
         cvFrame.src = '';
-        document.body.style.overflow = 'auto';
+        document.body.style.overflow = '';
     });
 }
 
@@ -923,7 +915,7 @@ if (cvModal) {
         if (e.target === cvModal) {
             cvModal.classList.remove('active');
             cvFrame.src = '';
-            document.body.style.overflow = 'auto';
+            document.body.style.overflow = '';
         }
     });
 }
@@ -1009,22 +1001,16 @@ function initializeGalleryModal() {
         });
     });
     
-    closeGalleryModal?.addEventListener('click', () => {
+    function closeGallery() {
         galleryModal.classList.remove('active');
-        document.body.style.overflow = 'auto';
-    });
+        document.body.style.overflow = '';
+    }
+    
+    closeGalleryModal?.addEventListener('click', closeGallery);
     
     galleryModal?.addEventListener('click', (e) => {
         if (e.target === galleryModal) {
-            galleryModal.classList.remove('active');
-            document.body.style.overflow = 'auto';
-        }
-    });
-    
-    document.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape' && galleryModal.classList.contains('active')) {
-            galleryModal.classList.remove('active');
-            document.body.style.overflow = 'auto';
+            closeGallery();
         }
     });
 }
@@ -1056,6 +1042,35 @@ document.addEventListener('DOMContentLoaded', () => {
     initializeHexagonModal();
     initializeGalleryModal();
     initializeBoardTabs();
+    initializeOutreachTabs();
+    
+    // Global ESC key handler for all modals
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+            const imageModal = document.getElementById('imageModal');
+            const galleryModal = document.getElementById('galleryModal');
+            const cvModal = document.getElementById('cvModal');
+            const outreachModal = document.getElementById('outreachModal');
+            
+            if (imageModal?.classList.contains('active')) {
+                imageModal.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+            if (galleryModal?.classList.contains('active')) {
+                galleryModal.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+            if (cvModal?.classList.contains('active')) {
+                cvModal.classList.remove('active');
+                document.getElementById('cvFrame').src = '';
+                document.body.style.overflow = '';
+            }
+            if (outreachModal?.classList.contains('active')) {
+                outreachModal.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        }
+    });
     
     document.body.classList.add('loaded');
     updateActiveNavLink();
@@ -1090,4 +1105,138 @@ function initializeBoardTabs() {
     });
 }
 
+// Open Image Modal for Certificate Preview
+function openImageModal(imageSrc) {
+    const modal = document.getElementById('imageModal');
+    const modalImg = document.getElementById('modalImage');
+    
+    if (modal && modalImg) {
+        modalImg.src = imageSrc;
+        modal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+}
 
+// Function to open LinkedIn tab from navigation
+function openLinkedInTab(event) {
+    event.preventDefault();
+    const boardSection = document.getElementById('board');
+    if (boardSection) {
+        boardSection.scrollIntoView({ behavior: 'smooth' });
+        setTimeout(() => {
+            const linkedinTab = document.querySelector('[data-tab="linkedin"]');
+            if (linkedinTab) {
+                linkedinTab.click();
+            }
+        }, 500);
+    }
+}
+
+
+// Outreach Tabs with Counter Animation
+function initializeOutreachTabs() {
+    const statBoxes = document.querySelectorAll('.outreach-stat-box');
+    const modal = document.getElementById('outreachModal');
+    const modalTitle = document.getElementById('outreachModalTitle');
+    const modalBody = document.getElementById('outreachModalBody');
+    const closeBtn = document.getElementById('closeOutreachModal');
+    
+    let hasAnimated = false;
+    
+    // Animate counters
+    function animateCounter(element, target) {
+        let current = 0;
+        const increment = target / 30;
+        const timer = setInterval(() => {
+            current += increment;
+            if (current >= target) {
+                element.textContent = target;
+                clearInterval(timer);
+            } else {
+                element.textContent = Math.ceil(current);
+            }
+        }, 30);
+    }
+    
+    // Observe when section comes into view
+    const outreachSection = document.querySelector('.conferences');
+    if (outreachSection) {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting && !hasAnimated) {
+                    hasAnimated = true;
+                    statBoxes.forEach(box => {
+                        const counter = box.querySelector('.stat-number');
+                        const target = parseInt(counter.getAttribute('data-target'));
+                        animateCounter(counter, target);
+                    });
+                }
+            });
+        }, { threshold: 0.3 });
+        observer.observe(outreachSection);
+    }
+    
+    // Handle clicks
+    statBoxes.forEach(box => {
+        box.addEventListener('click', () => {
+            const targetTab = box.getAttribute('data-tab');
+            const label = box.querySelector('.stat-label').textContent;
+            
+            modalTitle.textContent = label;
+            modalBody.innerHTML = '';
+            
+            // Load data directly from websiteContent
+            if (typeof websiteContent !== 'undefined') {
+                if (targetTab === 'invited-talks' && websiteContent.invitedTalks) {
+                    websiteContent.invitedTalks.forEach((talk, index) => {
+                        modalBody.innerHTML += `<div class="outreach-item"><div class="outreach-number">[${index + 1}]</div><div class="outreach-item-content"><h4 class="outreach-title">${talk.title}</h4><p class="outreach-details"><strong>Event:</strong> ${talk.event}</p><p class="outreach-details"><strong>Organization:</strong> ${talk.organization}</p><p class="outreach-year">${talk.year}</p></div></div>`;
+                    });
+                } else if (targetTab === 'oral-presentations' && websiteContent.oralPresentations) {
+                    websiteContent.oralPresentations.forEach((pres, index) => {
+                        modalBody.innerHTML += `<div class="outreach-item"><div class="outreach-number">[${index + 1}]</div><div class="outreach-item-content"><p class="outreach-authors">${pres.authors}</p><h4 class="outreach-title">${pres.title}</h4><p class="outreach-details"><strong>${pres.event}</strong> • ${pres.location} • ${pres.year}</p></div></div>`;
+                    });
+                } else if (targetTab === 'upcoming-presentations' && websiteContent.upcomingPresentations) {
+                    websiteContent.upcomingPresentations.forEach((pres, index) => {
+                        modalBody.innerHTML += `<div class="outreach-item upcoming"><div class="outreach-number">[${index + 1}]</div><div class="outreach-item-content"><p class="outreach-authors">${pres.authors}</p><h4 class="outreach-title">${pres.title}</h4><p class="outreach-details"><strong>${pres.event}</strong> • ${pres.location} • ${pres.year}</p></div></div>`;
+                    });
+                } else if (targetTab === 'poster-presentations' && websiteContent.posterPresentations) {
+                    websiteContent.posterPresentations.forEach((pres, index) => {
+                        modalBody.innerHTML += `<div class="outreach-item"><div class="outreach-number">[${index + 1}]</div><div class="outreach-item-content"><p class="outreach-authors">${pres.authors}</p><h4 class="outreach-title">${pres.title}</h4><p class="outreach-details"><strong>${pres.event}</strong> • ${pres.location} • ${pres.year}</p></div></div>`;
+                    });
+                }
+            }
+            
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+            
+            const counter = box.querySelector('.stat-number');
+            const target = parseInt(counter.getAttribute('data-target'));
+            counter.textContent = '0';
+            setTimeout(() => animateCounter(counter, target), 100);
+        });
+    });
+    
+    closeBtn?.addEventListener('click', () => {
+        modal.classList.remove('active');
+        document.body.style.overflow = '';
+    });
+    
+    modal?.addEventListener('click', (e) => {
+        if (e.target === modal) {
+            modal.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+    });
+}
+
+
+// Global function to open certificate image in modal
+window.openCertificateModal = function(imageSrc) {
+    const modal = document.getElementById('imageModal');
+    const modalImg = document.getElementById('modalImage');
+    if (modal && modalImg) {
+        modalImg.src = imageSrc;
+        modal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+};

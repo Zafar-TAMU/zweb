@@ -87,16 +87,16 @@
                     </div>
                 </div>
                 <div class="hero-actions animate-bounce-in">
-                    <a href="#research" class="btn btn-primary btn-animated">
-                        <span>Explore Research</span>
-                        <i class="fas fa-arrow-right arrow-move"></i>
-                    </a>
-                    <a href="#" id="viewCvBtn" class="btn btn-outline btn-animated">
+                    <a href="#" id="viewCvBtn" class="btn btn-primary btn-animated">
                         <i class="fas fa-file-pdf"></i>
                         <span>View CV</span>
                     </a>
                     <a href="#contact" class="btn btn-outline btn-animated">
                         <span>Let's Connect</span>
+                    </a>
+                    <a href="#research" class="btn btn-outline btn-animated">
+                        <span>Explore Research</span>
+                        <i class="fas fa-arrow-right arrow-move"></i>
                     </a>
                 </div>
             </div>
@@ -128,11 +128,6 @@
                             <img src="zafar4.png?v=4" alt="Dr. Zafar Iqbal">
                         </div>
                     </div>
-                </div>
-                
-                <div class="image-modal" id="imageModal">
-                    <span class="modal-close">&times;</span>
-                    <img class="modal-content" id="modalImage">
                 </div>
                 
                 <div class="visual-card card-1 animate-float-1 hover-glow">
@@ -401,20 +396,59 @@
         </div>
     </section>
 
-    <!-- Conferences Section -->
+    <!-- Outreach Section -->
     <section class="conferences">
         <div class="container">
             <div class="section-header">
-                <div class="section-tag">Conferences</div>
-                <h2 class="section-title">Conference Presentations</h2>
-                <p class="section-subtitle">International conferences and symposiums where research has been presented</p>
+                <div class="section-tag">Outreach</div>
+                
+                <p class="section-subtitle">International conferences, invited talks, and research presentations</p>
             </div>
             
-            <div class="conferences-grid">
-                <!-- Conferences loaded from content.js -->
+            <!-- Outreach Stats Boxes -->
+            <div class="outreach-stats-grid">
+                <div class="outreach-stat-box" data-tab="invited-talks" data-count="1">
+                    <div class="stat-icon">🎤</div>
+                    <div class="stat-number" data-target="1">0</div>
+                    <div class="stat-label">Invited Talks</div>
+                </div>
+                <div class="outreach-stat-box" data-tab="oral-presentations" data-count="20">
+                    <div class="stat-icon">📊</div>
+                    <div class="stat-number" data-target="20">0</div>
+                    <div class="stat-label">Oral Presentations</div>
+                </div>
+                <div class="outreach-stat-box" data-tab="upcoming-presentations" data-count="3">
+                    <div class="stat-icon">🔜</div>
+                    <div class="stat-number" data-target="3">0</div>
+                    <div class="stat-label">Upcoming</div>
+                </div>
+                <div class="outreach-stat-box" data-tab="poster-presentations" data-count="3">
+                    <div class="stat-icon">📋</div>
+                    <div class="stat-number" data-target="3">0</div>
+                    <div class="stat-label">Poster Presentations</div>
+                </div>
+            </div>
+            
+            <!-- Hidden content for modal -->
+            <div style="display: none;">
+                <div id="invited-talks"><div class="outreach-list"></div></div>
+                <div id="oral-presentations"><div class="outreach-list"></div></div>
+                <div id="upcoming-presentations"><div class="outreach-list"></div></div>
+                <div id="poster-presentations"><div class="outreach-list"></div></div>
             </div>
         </div>
     </section>
+    
+    <!-- Outreach Modal -->
+    <div class="outreach-modal" id="outreachModal">
+        <div class="outreach-modal-content">
+            <span class="modal-close" id="closeOutreachModal">&times;</span>
+            <h2 id="outreachModalTitle"></h2>
+            <div id="outreachModalBody" class="outreach-list">
+                <!-- Content loaded dynamically -->
+            </div>
+        </div>
+    </div>
     
     <!-- Research Interests Section -->
     <section class="research-interests">
@@ -454,69 +488,7 @@
             </div>
             
             <div class="teaching-grid">
-                <div class="teaching-card">
-                    <div class="teaching-icon">
-                        <i class="fas fa-chalkboard-teacher"></i>
-                    </div>
-                    <div class="teaching-content">
-                        <h3>Graduate Student Mentoring</h3>
-                        <p class="teaching-description">
-                            Mentored 8+ graduate students in agricultural engineering and AI applications, 
-                            guiding thesis research and career development.
-                        </p>
-                        <div class="teaching-stats">
-                            <div class="stat-item">
-                                <span class="stat-num">8+</span>
-                                <span class="stat-label">Students Mentored</span>
-                            </div>
-                            <div class="stat-item">
-                                <span class="stat-num">5</span>
-                                <span class="stat-label">Thesis Supervised</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="teaching-card">
-                    <div class="teaching-icon">
-                        <i class="fas fa-laptop-code"></i>
-                    </div>
-                    <div class="teaching-content">
-                        <h3>Workshop Facilitation</h3>
-                        <p class="teaching-description">
-                            Conducted workshops on deep learning applications in agriculture, 
-                            IoT systems, and precision farming technologies.
-                        </p>
-                        <div class="teaching-topics">
-                            <span class="topic-tag">Deep Learning</span>
-                            <span class="topic-tag">IoT Systems</span>
-                            <span class="topic-tag">Precision Farming</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="teaching-card">
-                    <div class="teaching-icon">
-                        <i class="fas fa-book-open"></i>
-                    </div>
-                    <div class="teaching-content">
-                        <h3>Curriculum Development</h3>
-                        <p class="teaching-description">
-                            Contributed to curriculum design for agricultural engineering programs, 
-                            integrating modern AI and automation technologies.
-                        </p>
-                        <div class="curriculum-areas">
-                            <div class="area-item">
-                                <i class="fas fa-robot"></i>
-                                <span>Agricultural Robotics</span>
-                            </div>
-                            <div class="area-item">
-                                <i class="fas fa-brain"></i>
-                                <span>AI in Agriculture</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <!-- Teaching loaded from content.js -->
             </div>
         </div>
     </section>
@@ -734,6 +706,13 @@
         }, 500);
     }
     </script>
+    
+    <!-- Image Modal -->
+    <div class="image-modal" id="imageModal">
+        <span class="modal-close" id="closeImageModal">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+    
     <script src="content.js"></script>
     <script src="script.js?v=2024"></script>
 </body>

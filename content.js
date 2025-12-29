@@ -39,7 +39,7 @@ const websiteContent = {
             topics: ["Dehumidification", "IoT Systems"],
             link: "#",
             pdfLink: "#",
-            image: "A&M.png"
+            image: "/Users/sriramthota/Downloads/Zafar website/A&M.png"
         },
         {
             year: "2022",
@@ -49,7 +49,7 @@ const websiteContent = {
             topics: ["Agricultural Robotics", "Optimization"],
             link: "#",
             pdfLink: "#",
-            image: "A&M.png"
+            image: "/Users/sriramthota/Downloads/Zafar website/A&M.png"
         },
         {
             year: "2022",
@@ -397,81 +397,96 @@ const websiteContent = {
             fullTitle: "Doctor of Philosophy",
             institution: "Biological & Agricultural Engineering, Texas A&M University",
             year: "2024",
-            color: "purple"
+            color: "purple",
+            image: "Zafar1.png"
         },
         {
             name: "Best Paper Award",
             fullTitle: "Research Excellence Award",
             institution: "Outstanding contribution to agricultural engineering research",
             year: "",
-            color: "pink"
+            color: "pink",
+            image: "cert2.jpg"
         },
         {
             name: "Scholarship",
             fullTitle: "Peary Wilemon Scholarship",
             institution: "National Cotton Ginners Foundation",
             year: "2022-2023",
-            color: "green"
+            color: "green",
+            image: "cert3.jpg"
         },
         {
             name: "M.Sc. Degree",
             fullTitle: "Master of Science",
             institution: "Agricultural Machinery Engineering, Chungnam National University",
             year: "2019",
-            color: "blue"
+            color: "blue",
+            image: "cert4.jpg"
         },
         {
             name: "Honor Award",
             fullTitle: "Distinguished Graduate Student",
             institution: "Texas A&M University",
             year: "2023",
-            color: "orange"
+            color: "orange",
+            image: "cert5.jpg"
         },
         {
             name: "B.Sc. Degree",
             fullTitle: "Bachelor of Science",
             institution: "Agricultural Engineering, HSTU, Bangladesh",
             year: "",
-            color: "purple"
+            color: "purple",
+            image: "cert6.jpg"
         },
     ],
 
     // ========================================
-    // CONFERENCE PRESENTATIONS
+    // OUTREACH & PRESENTATIONS
     // ========================================
-    conferences: [
+    invitedTalks: [
         {
-            type: "keynote",
-            title: "National Cotton Council Beltwide Cotton Conference",
-            location: "Virtual Meeting",
-            year: "2021-2022",
-            topic: "Round Modules: Handling Logistics and Cover Damage",
-            tags: ["Cotton Industry", "AI Applications"]
-        },
-        {
-            type: "presentation",
-            title: "International Conference on Agricultural Engineering",
-            location: "South Korea",
-            year: "2019-2021",
-            topic: "Smart Greenhouse Automation Systems",
-            tags: ["IoT", "Automation"]
-        },
-        {
-            type: "workshop",
-            title: "IEEE International Conference on Robotics",
-            location: "Texas, USA",
-            year: "2022-2023",
-            topic: "Agricultural Robotics and Precision Farming",
-            tags: ["Robotics", "Precision Agriculture"]
-        },
-        {
-            type: "international",
-            title: "World Congress on Agricultural Engineering",
-            location: "Multiple Locations",
-            year: "2020-2024",
-            topic: "Deep Learning Applications in Agriculture",
-            tags: ["Machine Learning", "Smart Farming"]
-        },
+            title: "Emerging Research Trends in Smart Agricultural Machinery and Precision Technologies",
+            event: "Seminar on Innovations in Smart Agriculture: Trends in Controlled Environment Agriculture and Mechanization 2025",
+            organization: "Department of Agricultural and Industrial Engineering, Hajee Mohammad Danesh Science and Technology University, Bangladesh",
+            year: "2025"
+        }
+    ],
+    
+    oralPresentations: [
+        { title: "Hyperspectral imaging and machine learning for soybean SDS severity classification", authors: "M.Z. Iqbal, T.F. Burks, et al.", event: "Sensing for Agriculture and Food Quality and Safety XVII", location: "Orlando, FL, USA", year: "2025" },
+        { title: "Detecting E. coli concentration levels on various surfaces using UV-C fluorescence imaging and YOLO11 deep learning", authors: "T.F. Burks, S. Vaddi, M.Z. Iqbal, et al.", event: "Sensing for Agriculture and Food Quality and Safety XVII", location: "Orlando, FL, USA", year: "2025" },
+        { title: "Smart Moisture Monitoring for Round Cotton Modules: Development and Testing", authors: "M.Z. Iqbal, R.G. Hardin, J.K. Ward, et al.", event: "ASABE Annual International Meeting", location: "Anaheim, CA, USA", year: "2024" },
+        { title: "Strategic Implementation of Convolutional Neural Networks for Simplified Wrap Damage Detection in Round Cotton Modules", authors: "M.Z. Iqbal, R.G. Hardin, J.K. Ward, et al.", event: "Beltwide Cotton Conference", location: "Fort Worth, TX, USA", year: "2024" },
+        { title: "A Smart Monitoring System for Quality Cotton Production", authors: "M.Z. Iqbal, R.G. Hardin, J.K. Ward, et al.", event: "ASABE Annual International Meeting", location: "Omaha, NE, USA", year: "2023" },
+        { title: "Development of a moisture and temperature monitoring system for round cotton modules", authors: "M.Z. Iqbal, R.G. Hardin, J.K. Ward, et al.", event: "Beltwide Cotton Conference", location: "New Orleans, LA, USA", year: "2023" },
+        { title: "A CNN-based Approach to Detect Cover Damage of Round Cotton Modules", authors: "M.Z. Iqbal, R.G. Hardin", event: "Texas A&M University Student Research Week", location: "College Station, TX, USA", year: "2022" },
+        { title: "Round Modules: Handling Logistics and Cover Damage, 3rd Year", authors: "M.Z. Iqbal, R.G. Hardin, J.K. Ward, et al.", event: "ASABE Annual International Meeting", location: "Houston, TX, USA", year: "2022" },
+        { title: "Round Modules Monitoring System: A Smart Solution for Quality Cotton Production", authors: "M.Z. Iqbal, R.G. Hardin, J.K. Ward, et al.", event: "3rd Annual Paper Meet of Agricultural Engineering Division of Institution of Engineers", location: "Dhaka, Bangladesh", year: "2022" },
+        { title: "A CNN-Based Approach to Detect Cover Damage of Round Cotton Modules", authors: "M.Z. Iqbal, R.G. Hardin, J.K. Ward, et al.", event: "Beltwide Cotton Conference", location: "San Antonio, TX, USA", year: "2022" },
+        { title: "Development of an Automatic Machine-vision Guided Cover Damage Detection System for Round Cotton Modules", authors: "M.Z. Iqbal, R.G. Hardin, J.K. Ward, et al.", event: "ASABE Annual International Meeting", location: "Virtual", year: "2021" },
+        { title: "Round modules: Handling logistics and cover damage, 2nd year", authors: "M.Z. Iqbal, R.G. Hardin, J.K. Ward, et al.", event: "Beltwide Cotton Conference", location: "Virtual", year: "2021" },
+        { title: "Monitoring the operating status of an automatic harmful fly collector for smart greenhouses", authors: "M.Z. Iqbal, B.E. Jang, S.O. Chung, et al.", event: "Asian Australasian Conference on Precision Agriculture", location: "Punjab, India", year: "2019" },
+        { title: "Monitoring the operating status of an automatic harmful fly collector for smart greenhouses", authors: "M.Z. Iqbal, B.E. Jang, S.O. Chung, et al.", event: "China-South Korea Joint Academic Conference", location: "Shenyang, China", year: "2019" },
+        { title: "Humidity response and variability during operation of dehumidifier module in a closed chamber and small greenhouse", authors: "M.Z. Iqbal, Y.J. Kim, S.O. Chung, et al.", event: "Korean Society of Bio Environment Conference", location: "Jinju, South Korea", year: "2019" },
+        { title: "Vector loop analysis for a dibbling mechanism of an automatic transplanter", authors: "M.Z. Iqbal, T.G. Kang, S.O. Chung, et al.", event: "8th Joint Symposium between Chungnum National University and Shenyang Agricultural University", location: "Daejeon, South Korea", year: "2018" },
+        { title: "Dynamic stability analysis of a 2.7 kW walking type pepper transplanter", authors: "M.Z. Iqbal, Y.S. Lee, S.O. Chung, et al.", event: "International Symposium on Agricultural, Food, Environmental and Life Sciences in Asia (AFELiSA)", location: "Chuncheon, South Korea", year: "2018" },
+        { title: "Stability analysis of a two-row automatic pepper transplanter", authors: "M.Z. Iqbal, M.N. Islam, S.O. Chung, et al.", event: "11th Japan-China-Korea Graduate Student Forum", location: "Tsukuba, Japan", year: "2018" },
+        { title: "Kinematic analysis of a hopper type dibbling mechanism for a pepper transplanter", authors: "M.Z. Iqbal, M.S.N. Kabir, S.O. Chung, et al.", event: "6th IFAC Conference on Bio-Robotics (BIOROBOTICS 2018)", location: "Beijing, China", year: "2018" },
+        { title: "Working speed analysis of a gear-driven hopper type dibbling mechanism for a two-row pepper transplanter", authors: "M.Z. Iqbal, M.N. Islam, S.O. Chung, et al.", event: "9th International Symposium on Machinery and Mechatronics for Agricultural and Biosystems Engineering (ISMAB)", location: "Jeju, South Korea", year: "2018" }
+    ],
+    
+    upcomingPresentations: [
+        { title: "Integration of vision transformer and hyperspectral reflectance imaging for citrus leaf disease classification", authors: "M.Z. Iqbal, T.F. Burks, S. Obellaneni", event: "Sensing for Agriculture and Food Quality and Safety XVIII, SPIE Defense + Security", location: "National Harbor, MD, USA", year: "2026" },
+        { title: "Enhanced E. coli concentration level detection on multiple produce surfaces using CSI-D+ UV-C fluorescence imaging and custom deep learning architecture", authors: "T.F. Burks, M.Z. Iqbal, S. Vaddi", event: "Sensing for Agriculture and Food Quality and Safety XVIII, SPIE Defense + Security", location: "National Harbor, MD, USA", year: "2026" },
+        { title: "AI-based detection of E. coli concentration levels on diverse food-contact surfaces using UV-C fluorescence-based CSI-D+ Handheld and Yolov11 deep learning", authors: "T.F. Burks, M.Z. Iqbal, S. Vaddi", event: "Sensing for Agriculture and Food Quality and Safety XVIII, SPIE Defense + Security", location: "National Harbor, MD, USA", year: "2026" }
+    ],
+    
+    posterPresentations: [
+        { title: "Wrap Damage Detection: Convolutional Neural Network (CNN) Implementation for Round Cotton Modules", authors: "M.Z. Iqbal, R.G. Hardin, J.K. Ward, et al.", event: "Data-Driven Intelligent Agricultural Systems Symposium", location: "College Station, TX, USA", year: "2024" },
+        { title: "Round Cotton Modules: Cover Damage Detection Using YOLOv5 Algorithm", authors: "M.Z. Iqbal, R.G. Hardin, J.K. Ward, et al.", event: "Envisioning 2050 in the Southeast: AI-Driven Innovations in Agriculture", location: "Auburn, AL, USA", year: "2022" },
+        { title: "Kinematic analysis of transplanting mechanism for a two-row automatic pepper transplanter", authors: "M.Z. Iqbal, Y.J. Kim, S.O. Chung, et al.", event: "Spring Conference of Korean Society of Precision Agriculture", location: "Sangju, South Korea", year: "2018" }
     ],
 
     // ========================================
@@ -520,6 +535,36 @@ const websiteContent = {
             name: "International Society for Photogrammetry and Remote Sensing",
             status: "Member"
         },
+    ],
+
+    // ========================================
+    // TEACHING & MENTORING
+    // ========================================
+    teaching: [
+        {
+            icon: "fa-chalkboard-teacher",
+            title: "Graduate Student Mentoring",
+            description: "Mentored 8+ graduate students in agricultural engineering and AI applications, guiding thesis research and career development.",
+            stats: [
+                { number: "8+", label: "Students Mentored" },
+                { number: "5", label: "Thesis Supervised" }
+            ]
+        },
+        {
+            icon: "fa-laptop-code",
+            title: "Workshop Facilitation",
+            description: "Conducted workshops on deep learning applications in agriculture, IoT systems, and precision farming technologies.",
+            topics: ["Deep Learning", "IoT Systems", "Precision Farming"]
+        },
+        {
+            icon: "fa-book-open",
+            title: "Curriculum Development",
+            description: "Contributed to curriculum design for agricultural engineering programs, integrating modern AI and automation technologies.",
+            areas: [
+                { icon: "fa-robot", text: "Agricultural Robotics" },
+                { icon: "fa-brain", text: "AI in Agriculture" }
+            ]
+        }
     ]
 };
 
@@ -602,19 +647,88 @@ function loadContent() {
         const certGrid = document.querySelector('.certificates-grid');
         if (certGrid) {
             websiteContent.certificates.forEach(cert => {
-                const certHTML = `<div class="certificate-item"><div class="certificate-image"><div style="background: linear-gradient(135deg, ${colorMap[cert.color]}); height: 100%; display: flex; align-items: center; justify-content: center; flex-direction: column; color: white; padding: 2rem;"><i class="fas fa-award" style="font-size: 4rem; margin-bottom: 1rem;"></i><h3 style="text-align: center; margin: 0;">${cert.name}</h3></div></div><div class="certificate-description"><h4>${cert.fullTitle}</h4><p>${cert.institution}${cert.year ? ', ' + cert.year : ''}</p></div></div>`;
-                certGrid.insertAdjacentHTML('beforeend', certHTML);
+                const certDiv = document.createElement('div');
+                certDiv.className = 'certificate-item';
+                
+                const imageDiv = document.createElement('div');
+                imageDiv.className = 'certificate-image';
+                
+                if (cert.image) {
+                    const img = document.createElement('img');
+                    img.src = cert.image;
+                    img.alt = cert.fullTitle;
+                    img.style.cursor = 'pointer';
+                    img.style.pointerEvents = 'auto';
+                    
+                    img.onclick = function(e) {
+                        console.log('Certificate image clicked:', cert.image);
+                        e.stopPropagation();
+                        const modal = document.getElementById('imageModal');
+                        const modalImg = document.getElementById('modalImage');
+                        if (modal && modalImg) {
+                            modalImg.src = cert.image;
+                            modal.classList.add('active');
+                            document.body.style.overflow = 'hidden';
+                        }
+                    };
+                    
+                    img.onerror = function() {
+                        console.log('Image failed to load:', cert.image);
+                        imageDiv.innerHTML = `<div style="background: linear-gradient(135deg, ${colorMap[cert.color]}); height: 100%; display: flex; align-items: center; justify-content: center; flex-direction: column; color: white; padding: 2rem;"><i class="fas fa-award" style="font-size: 4rem; margin-bottom: 1rem;"></i><h3 style="text-align: center; margin: 0;">${cert.name}</h3></div>`;
+                    };
+                    
+                    imageDiv.appendChild(img);
+                } else {
+                    imageDiv.innerHTML = `<div style="background: linear-gradient(135deg, ${colorMap[cert.color]}); height: 100%; display: flex; align-items: center; justify-content: center; flex-direction: column; color: white; padding: 2rem;"><i class="fas fa-award" style="font-size: 4rem; margin-bottom: 1rem;"></i><h3 style="text-align: center; margin: 0;">${cert.name}</h3></div>`;
+                }
+                
+                const descDiv = document.createElement('div');
+                descDiv.className = 'certificate-description';
+                descDiv.innerHTML = `<h4>${cert.fullTitle}</h4><p>${cert.institution}${cert.year ? ', ' + cert.year : ''}</p>`;
+                
+                certDiv.appendChild(imageDiv);
+                certDiv.appendChild(descDiv);
+                certGrid.appendChild(certDiv);
             });
         }
     }
-    if (websiteContent.conferences && websiteContent.conferences.length > 0) {
-        const confGrid = document.querySelector('.conferences-grid');
-        if (confGrid) {
-            const firstConf = confGrid.querySelector('.conference-card');
-            const typeIcons = { keynote: 'fa-microphone', presentation: 'fa-presentation', workshop: 'fa-users', international: 'fa-globe' };
-            websiteContent.conferences.forEach(conf => {
-                const confHTML = `<div class="conference-card ${conf.type === 'keynote' ? 'keynote' : ''}"><div class="conference-type"><i class="fas ${typeIcons[conf.type] || 'fa-presentation'}"></i><span>${conf.type.charAt(0).toUpperCase() + conf.type.slice(1)}</span></div><div class="conference-content"><h3>${conf.title}</h3><p class="conference-location">📍 ${conf.location} • ${conf.year}</p><p class="conference-topic">"${conf.topic}"</p><div class="conference-tags">${conf.tags.map(tag => `<span class="conf-tag">${tag}</span>`).join('')}</div></div></div>`;
-                if (firstConf) { firstConf.insertAdjacentHTML('beforebegin', confHTML); } else { confGrid.insertAdjacentHTML('beforeend', confHTML); }
+    // Load Outreach Data
+    if (websiteContent.invitedTalks && websiteContent.invitedTalks.length > 0) {
+        const invitedList = document.querySelector('#invited-talks .outreach-list');
+        if (invitedList) {
+            websiteContent.invitedTalks.forEach((talk, index) => {
+                const talkHTML = `<div class="outreach-item"><div class="outreach-number">[${index + 1}]</div><div class="outreach-item-content"><h4 class="outreach-title">${talk.title}</h4><p class="outreach-details"><strong>Event:</strong> ${talk.event}</p><p class="outreach-details"><strong>Organization:</strong> ${talk.organization}</p><p class="outreach-year">${talk.year}</p></div></div>`;
+                invitedList.insertAdjacentHTML('beforeend', talkHTML);
+            });
+        }
+    }
+    
+    if (websiteContent.oralPresentations && websiteContent.oralPresentations.length > 0) {
+        const oralList = document.querySelector('#oral-presentations .outreach-list');
+        if (oralList) {
+            websiteContent.oralPresentations.forEach((pres, index) => {
+                const presHTML = `<div class="outreach-item"><div class="outreach-number">[${index + 1}]</div><div class="outreach-item-content"><p class="outreach-authors">${pres.authors}</p><h4 class="outreach-title">${pres.title}</h4><p class="outreach-details"><strong>${pres.event}</strong> • ${pres.location} • ${pres.year}</p></div></div>`;
+                oralList.insertAdjacentHTML('beforeend', presHTML);
+            });
+        }
+    }
+    
+    if (websiteContent.upcomingPresentations && websiteContent.upcomingPresentations.length > 0) {
+        const upcomingList = document.querySelector('#upcoming-presentations .outreach-list');
+        if (upcomingList) {
+            websiteContent.upcomingPresentations.forEach((pres, index) => {
+                const presHTML = `<div class="outreach-item upcoming"><div class="outreach-number">[${index + 1}]</div><div class="outreach-item-content"><p class="outreach-authors">${pres.authors}</p><h4 class="outreach-title">${pres.title}</h4><p class="outreach-details"><strong>${pres.event}</strong> • ${pres.location} • ${pres.year}</p></div></div>`;
+                upcomingList.insertAdjacentHTML('beforeend', presHTML);
+            });
+        }
+    }
+    
+    if (websiteContent.posterPresentations && websiteContent.posterPresentations.length > 0) {
+        const posterList = document.querySelector('#poster-presentations .outreach-list');
+        if (posterList) {
+            websiteContent.posterPresentations.forEach((pres, index) => {
+                const presHTML = `<div class="outreach-item"><div class="outreach-number">[${index + 1}]</div><div class="outreach-item-content"><p class="outreach-authors">${pres.authors}</p><h4 class="outreach-title">${pres.title}</h4><p class="outreach-details"><strong>${pres.event}</strong> • ${pres.location} • ${pres.year}</p></div></div>`;
+                posterList.insertAdjacentHTML('beforeend', presHTML);
             });
         }
     }
@@ -633,6 +747,23 @@ function loadContent() {
             websiteContent.memberships.forEach(membership => {
                 const memberHTML = `<div class="membership-card"><div class="membership-logo">${membership.logo}</div><h3>${membership.name}</h3><p class="membership-status">${membership.status}</p></div>`;
                 membershipsGrid.insertAdjacentHTML('beforeend', memberHTML);
+            });
+        }
+    }
+    if (websiteContent.teaching && websiteContent.teaching.length > 0) {
+        const teachingGrid = document.querySelector('.teaching-grid');
+        if (teachingGrid) {
+            websiteContent.teaching.forEach(teach => {
+                let contentHTML = '';
+                if (teach.stats) {
+                    contentHTML = `<div class="teaching-stats">${teach.stats.map(stat => `<div class="stat-item"><span class="stat-num">${stat.number}</span><span class="stat-label">${stat.label}</span></div>`).join('')}</div>`;
+                } else if (teach.topics) {
+                    contentHTML = `<div class="teaching-topics">${teach.topics.map(topic => `<span class="topic-tag">${topic}</span>`).join('')}</div>`;
+                } else if (teach.areas) {
+                    contentHTML = `<div class="curriculum-areas">${teach.areas.map(area => `<div class="area-item"><i class="fas ${area.icon}"></i><span>${area.text}</span></div>`).join('')}</div>`;
+                }
+                const teachHTML = `<div class="teaching-card"><div class="teaching-icon"><i class="fas ${teach.icon}"></i></div><div class="teaching-content"><h3>${teach.title}</h3><p class="teaching-description">${teach.description}</p>${contentHTML}</div></div>`;
+                teachingGrid.insertAdjacentHTML('beforeend', teachHTML);
             });
         }
     }
