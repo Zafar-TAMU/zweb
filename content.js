@@ -398,7 +398,7 @@ const websiteContent = {
             institution: "Biological & Agricultural Engineering, Texas A&M University",
             year: "2024",
             color: "purple",
-            image: "zafar1.png"
+            image: "Zafar1.png"
         },
         {
             name: "Best Paper Award",
