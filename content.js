@@ -174,7 +174,8 @@ const websiteContent = {
             years: "2024-Present",
             category: "crop",
             icon: "fa-microscope",
-            color: "purple"
+            color: "purple",
+            image: "zafar1.png"
         },
         {
             title: "Autonomous Robotic Platform for CEA",
@@ -183,7 +184,8 @@ const websiteContent = {
             years: "2024-Present",
             category: "crop",
             icon: "fa-robot",
-            color: "green"
+            color: "green",
+            image: "project2.jpg"
         },
         {
             title: "Cotton Module Handling Logistics",
@@ -192,7 +194,8 @@ const websiteContent = {
             years: "2020-2024",
             category: "soil",
             icon: "fa-leaf",
-            color: "pink"
+            color: "pink",
+            image: "project3.jpg"
         },
         {
             title: "High-Tech Upland Farming Machinery",
@@ -201,7 +204,8 @@ const websiteContent = {
             years: "2017-2019",
             category: "climate",
             icon: "fa-tractor",
-            color: "blue"
+            color: "blue",
+            image: "project4.jpg"
         },
         {
             title: "Smart Greenhouse ICT Equipment",
@@ -210,7 +214,8 @@ const websiteContent = {
             years: "2017-2019",
             category: "climate",
             icon: "fa-warehouse",
-            color: "orange"
+            color: "orange",
+            image: "project5.jpg"
         },
         {
             title: "IoT-Based Smart Farm Monitoring",
@@ -219,7 +224,8 @@ const websiteContent = {
             years: "2017-2019",
             category: "climate",
             icon: "fa-chart-line",
-            color: "blue"
+            color: "blue",
+            image: "project6.jpg"
         },
         {
             title: "Smart Evaporative Cooling System",
@@ -228,7 +234,8 @@ const websiteContent = {
             years: "2015-2017",
             category: "crop",
             icon: "fa-temperature-low",
-            color: "purple"
+            color: "purple",
+            image: "project7.jpg"
         },
         {
             title: "Farm Safety Risk Assessment",
@@ -237,7 +244,8 @@ const websiteContent = {
             years: "2016-2017",
             category: "soil",
             icon: "fa-exclamation-triangle",
-            color: "pink"
+            color: "pink",
+            image: "project8.jpg"
         },
     ],
 
@@ -542,6 +550,15 @@ const websiteContent = {
     // ========================================
     teaching: [
         {
+            icon: "fa-book-open",
+            title: "Curriculum Development",
+            description: "Contributed to curriculum design for agricultural engineering programs, integrating modern AI and automation technologies.",
+            areas: [
+                { icon: "fa-robot", text: "Agricultural Robotics" },
+                { icon: "fa-brain", text: "AI in Agriculture" }
+            ]
+        },
+        {
             icon: "fa-chalkboard-teacher",
             title: "Graduate Student Mentoring",
             description: "Mentored 8+ graduate students in agricultural engineering and AI applications, guiding thesis research and career development.",
@@ -564,7 +581,8 @@ const websiteContent = {
                 { icon: "fa-robot", text: "Agricultural Robotics" },
                 { icon: "fa-brain", text: "AI in Agriculture" }
             ]
-        }
+        },
+        
     ]
 };
 
@@ -592,11 +610,20 @@ function loadContent() {
         const projGrid = document.querySelector('.portfolio-grid');
         if (projGrid) {
             websiteContent.projects.forEach(proj => {
-                const projHTML = `<div class="portfolio-item" data-category="${proj.category}">
+                const projDiv = document.createElement('div');
+                projDiv.className = 'portfolio-item';
+                projDiv.setAttribute('data-category', proj.category);
+                
+                let imageHTML = '';
+                if (proj.image) {
+                    imageHTML = `<div class="portfolio-image"><img src="${proj.image}" alt="${proj.title}"></div>`;
+                } else {
+                    imageHTML = `<div class="portfolio-icon" style="background: linear-gradient(135deg, ${colorMap[proj.color]});"><i class="fas ${proj.icon}"></i></div>`;
+                }
+                
+                projDiv.innerHTML = `
                     <div class="portfolio-card">
-                        <div class="portfolio-icon" style="background: linear-gradient(135deg, ${colorMap[proj.color]});">
-                            <i class="fas ${proj.icon}"></i>
-                        </div>
+                        ${imageHTML}
                         <div class="portfolio-info">
                             <h3 class="portfolio-title">${proj.title}</h3>
                             <p class="portfolio-description">${proj.description}</p>
@@ -606,8 +633,8 @@ function loadContent() {
                             </div>
                         </div>
                     </div>
-                </div>`;
-                projGrid.insertAdjacentHTML('beforeend', projHTML);
+                `;
+                projGrid.appendChild(projDiv);
             });
         }
     }
