@@ -2626,78 +2626,63 @@ body.loaded {
 .portfolio-item:hover {
     transform: translateY(-8px);
     box-shadow: var(--shadow-xl);
+    border-color: var(--primary);
 }
 
-.portfolio-image {
-    position: relative;
-    height: 250px;
-    overflow: hidden;
-    background: var(--gray-100);
-}
-
-.portfolio-placeholder {
-    width: 100%;
+.portfolio-card {
+    display: flex;
+    flex-direction: column;
     height: 100%;
+}
+
+.portfolio-icon {
+    height: 120px;
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
-    z-index: 1;
+    font-size: 3rem;
+    color: white;
 }
 
-.portfolio-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.9);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    transition: opacity var(--transition-base);
-    z-index: 10;
-}
-
-.portfolio-item:hover .portfolio-overlay {
-    opacity: 1;
-}
-
-.portfolio-content {
-    text-align: center;
-    color: var(--white);
+.portfolio-info {
     padding: var(--space-xl);
+    flex: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 .portfolio-title {
     font-size: 1.25rem;
     font-weight: 600;
     margin-bottom: var(--space-sm);
+    color: var(--gray-900);
 }
 
 .portfolio-description {
-    margin-bottom: var(--space-lg);
-    opacity: 0.9;
+    margin-bottom: var(--space-md);
+    color: var(--gray-600);
     line-height: 1.6;
+    flex: 1;
 }
 
-.portfolio-links {
+.portfolio-meta {
     display: flex;
-    gap: var(--space-md);
-    justify-content: center;
+    flex-direction: column;
+    gap: var(--space-xs);
+    font-size: 0.875rem;
+    color: var(--gray-500);
+    padding-top: var(--space-md);
+    border-top: 1px solid var(--gray-200);
 }
 
-.portfolio-link {
-    width: 44px;
-    height: 44px;
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--white);
-    text-decoration: none;
+.portfolio-funding {
+    font-weight: 600;
+    color: var(--primary);
+}
+
+.portfolio-years {
+    font-family: var(--font-mono);
+}
     transition: all var(--transition-base);
     backdrop-filter: blur(10px);
 }

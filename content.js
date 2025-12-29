@@ -398,7 +398,7 @@ const websiteContent = {
             institution: "Biological & Agricultural Engineering, Texas A&M University",
             year: "2024",
             color: "purple",
-            image: "Zafar1.png"
+            image: "zafar1.png"
         },
         {
             name: "Best Paper Award",
@@ -592,7 +592,21 @@ function loadContent() {
         const projGrid = document.querySelector('.portfolio-grid');
         if (projGrid) {
             websiteContent.projects.forEach(proj => {
-                const projHTML = `<div class="portfolio-item" data-category="${proj.category}"><div class="portfolio-image"><div class="portfolio-placeholder" style="background: linear-gradient(135deg, ${colorMap[proj.color]});"><i class="fas ${proj.icon}" style="font-size: 4rem; color: white;"></i></div><div class="portfolio-overlay"><div class="portfolio-content"><h3 class="portfolio-title">${proj.title}</h3><p class="portfolio-description">${proj.description}${proj.funding ? ' • ' + proj.funding : ''} • ${proj.years}</p><div class="portfolio-links"><a href="#" class="portfolio-link"><i class="fas fa-file-pdf"></i></a><a href="#" class="portfolio-link"><i class="fas fa-external-link-alt"></i></a></div></div></div></div></div>`;
+                const projHTML = `<div class="portfolio-item" data-category="${proj.category}">
+                    <div class="portfolio-card">
+                        <div class="portfolio-icon" style="background: linear-gradient(135deg, ${colorMap[proj.color]});">
+                            <i class="fas ${proj.icon}"></i>
+                        </div>
+                        <div class="portfolio-info">
+                            <h3 class="portfolio-title">${proj.title}</h3>
+                            <p class="portfolio-description">${proj.description}</p>
+                            <div class="portfolio-meta">
+                                <span class="portfolio-funding">${proj.funding}</span>
+                                <span class="portfolio-years">${proj.years}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>`;
                 projGrid.insertAdjacentHTML('beforeend', projHTML);
             });
         }
