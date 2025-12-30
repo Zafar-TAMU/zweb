@@ -29,7 +29,7 @@ const websiteContent = {
             topics: ["Round Cotton Module", "Plastic Contamination", "YOLO", "CNN Optimization", "RT-DETR"],
             link: "https://doi.org/10.1016/j.compag.2025.111023",
             pdfLink: "#",
-            image: "pub2.png"
+            image: "Pub2.png"
         },
         {
             year: "2023",
