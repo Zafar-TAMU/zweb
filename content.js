@@ -170,7 +170,7 @@ const websiteContent = {
         {
             title: "Embedded AI for Food Safety & Plant Health",
             description: "Compact optical sensing systems for food safety and plant health applications",
-            funding: "USDA ARS",
+            funding: "Funded by USDA ARS",
             years: "2024-Present",
             category: "crop",
             icon: "fa-microscope",
@@ -180,7 +180,7 @@ const websiteContent = {
         {
             title: "Autonomous Robotic Platform for CEA",
             description: "Electric powered 2-wheel drive articulated platform for controlled environment agriculture",
-            funding: "USDA ARS",
+            funding: "Funded by USDA ARS",
             years: "2024-Present",
             category: "crop",
             icon: "fa-robot",
@@ -190,7 +190,7 @@ const websiteContent = {
         {
             title: "Cotton Module Handling Logistics",
             description: "Optimization and cover damage reduction for cotton module handling",
-            funding: "Cotton Incorporated",
+            funding: "Funded by Cotton Incorporated",
             years: "2020-2024",
             category: "soil",
             icon: "fa-leaf",
@@ -200,7 +200,7 @@ const websiteContent = {
         {
             title: "High-Tech Upland Farming Machinery",
             description: "Development of advanced machinery to improve mechanization on upland-field farming",
-            funding: "MAFRA, South Korea",
+            funding: "Funded by MAFRA, South Korea",
             years: "2017-2019",
             category: "climate",
             icon: "fa-tractor",
@@ -210,7 +210,7 @@ const websiteContent = {
         {
             title: "Smart Greenhouse ICT Equipment",
             description: "User comfort improvement technologies for smart greenhouse ICT equipment",
-            funding: "Rural Development Administration, South Korea",
+            funding: "Funded by RDA, South Korea",
             years: "2017-2019",
             category: "climate",
             icon: "fa-warehouse",
@@ -220,7 +220,7 @@ const websiteContent = {
         {
             title: "IoT-Based Smart Farm Monitoring",
             description: "Remote monitoring sensor and control interface for agricultural and livestock production",
-            funding: "MAFRA, South Korea",
+            funding: "Funded by MAFRA, South Korea",
             years: "2017-2019",
             category: "climate",
             icon: "fa-chart-line",
@@ -230,7 +230,7 @@ const websiteContent = {
         {
             title: "Smart Evaporative Cooling System",
             description: "Low-cost smart evaporative cooling system for storing fresh tomatoes",
-            funding: "HSTU Research Fund, Bangladesh",
+            funding: "Funded by HSTU Research Fund, Bangladesh",
             years: "2015-2017",
             category: "crop",
             icon: "fa-temperature-low",
@@ -240,7 +240,7 @@ const websiteContent = {
         {
             title: "Farm Safety Risk Assessment",
             description: "Investigation of characteristics and risk factors associated with fatal farm and agricultural injuries in Bangladesh",
-            funding: "UGC Bangladesh",
+            funding: "Funded by UGC, Bangladesh",
             years: "2016-2017",
             category: "soil",
             icon: "fa-exclamation-triangle",
@@ -307,9 +307,9 @@ const websiteContent = {
     // SKILLS
     // ========================================
     skills: {
-        "Programming": ["Python", "MATLAB", "R", "C++"],
-        "AI/ML Frameworks": ["TensorFlow", "PyTorch", "Keras", "OpenCV"],
-        "Tools & Software": ["ArcGIS", "ENVI", "Git", "Docker"],
+        "Programming": ["Python","R", "C++", "MATLAB", "LabView"],
+        "AI/ML Frameworks": ["TensorFlow","OpenCV", "PyTorch", "Keras"],
+        "Tools & Software": ["ArcGIS", "Vercel", "SolidWorks", "Catia","RecurDyn"],
     },
 
     // ========================================
@@ -317,7 +317,7 @@ const websiteContent = {
     // ========================================
     linkedinPosts: [
         {
-            name: "Dr. Zafar Iqbal",
+            name: "Zafar Iqbal",
             position: "Postdoctoral Associate @ University of Florida",
             time: "1 month ago",
             content: "Happy to share our new work just published! In this study, \"Detecting Escherichia coli Contamination on Plant Leaf Surfaces Using UV-C Fluorescence Imaging and Deep Learning,\" we demonstrated how combining fluorescence imaging and AI enables rapid and accurate detection of E. coli on leafy produce.",
@@ -326,7 +326,7 @@ const websiteContent = {
             avatar: "Zafar1.png"
         },
         {
-            name: "Dr. Zafar Iqbal",
+            name: "Zafar Iqbal",
             position: "Postdoctoral Associate @ University of Florida",
             time: "2 months ago",
             content: "Happy to share another new publication: \"A Robust Framework Combining Hyperspectral Imaging and Machine Learning for Assessing Sudden Death Syndrome (SDS) Severity in Soybean Foliage\". We fused hyperspectral imaging with machine learning to detect SDS and classify intra-leaf pixels based on severity levels.",
@@ -335,7 +335,7 @@ const websiteContent = {
             avatar: "Zafar1.png"
         },
         {
-            name: "Dr. Zafar Iqbal",
+            name: "Zafar Iqbal",
             position: "Postdoctoral Associate @ University of Florida",
             time: "2 months ago",
             content: "Excited to share our newly published study in Computers and Electronics in Agriculture (COMPAG) on AI-driven detection of cotton module cover damage. We trained and evaluated two-stage, one-stage, and transformer-based CNN models to identify cotton modules with damaged plastic covers during handling.",
@@ -344,7 +344,7 @@ const websiteContent = {
             avatar: "Zafar1.png"
         },
         {
-            name: "Dr. Zafar Iqbal",
+            name: "Zafar Iqbal",
             position: "Postdoctoral Associate @ University of Florida",
             time: "3 months ago",
             content: "🌱📡 Excited to Share! I am honored to serve as a Guest Editor for a special issue of Sensors titled: \"Spectroscopy and Sensing Technologies for Smart Agriculture.\" This issue will highlight innovative sensing and spectroscopy approaches that enhance agricultural productivity, sustainability, and resilience.",
@@ -353,7 +353,7 @@ const websiteContent = {
             avatar: "Zafar1.png"
         },
         {
-            name: "Dr. Zafar Iqbal",
+            name: "Zafar Iqbal",
             position: "Postdoctoral Associate @ University of Florida",
             time: "1 year ago",
             content: "Absolutely thrilled to announce that I have successfully completed my PhD defense! This journey has been a significant milestone in my academic and professional career. A heartfelt thanks to my advisor Dr. Bobby Hardin, committee members, colleagues, friends, and family for their unwavering support.",
@@ -362,7 +362,7 @@ const websiteContent = {
             avatar: "Zafar1.png"
         },
         {
-            name: "Dr. Zafar Iqbal",
+            name: "Zafar Iqbal",
             position: "Postdoctoral Associate @ University of Florida",
             time: "2 years ago",
             content: "I am grateful to the National Cotton Ginners - Peary Wilemon Scholarship Foundation for acknowledging my work for the second time. It brings me great joy to share this news.",
