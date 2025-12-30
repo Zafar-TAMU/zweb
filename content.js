@@ -22,14 +22,14 @@ const websiteContent = {
             image: "Pub_l.jpg"
         },
         {
-            year: "2023",
-            title: "Comparison of heating modules for suspension-type multipoint temperature variability management in smart greenhouses",
-            journal: "Elsevier",
-            date: "July 31, 2023",
-            topics: ["Smart Greenhouses", "Climate Control"],
-            link: "#",
+            year: "2025",
+            title: "Cover Damage Detection in Round Cotton Modules using Convolutional Neural Networks (CNNs)",
+            journal: "Computers and Electronics in Agriculture",
+            date: "September 25, 2025",
+            topics: ["Round Cotton Module", "Plastic Contamination", "YOLO", "CNN Optimization", "RT-DETR"],
+            link: "https://doi.org/10.1016/j.compag.2025.111023",
             pdfLink: "#",
-            image: "pub1.jpg"
+            image: "pub2.png"
         },
         {
             year: "2023",
