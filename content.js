@@ -175,7 +175,7 @@ const websiteContent = {
             category: "crop",
             icon: "fa-microscope",
             color: "purple",
-            image: "zafar1.png"
+            image: "Project-1.png"
         },
         {
             title: "Autonomous Robotic Platform for CEA",
