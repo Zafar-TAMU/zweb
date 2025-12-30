@@ -307,9 +307,10 @@ const websiteContent = {
     // SKILLS
     // ========================================
     skills: {
-        "Programming": ["Python","R", "C++", "MATLAB", "LabView"],
+        "Programming": ["Python","C++", "R", "MATLAB", "LabView"],
         "AI/ML Frameworks": ["TensorFlow","OpenCV", "PyTorch", "Keras"],
-        "Tools & Software": ["ArcGIS", "Vercel", "SolidWorks", "Catia","RecurDyn"],
+        "Tools & Software": ["ArcGIS","SolidWorks","Catia","Ansys","RecurDyn","Vercel","ThingSpeak", "Proteus","KISSsoft","Shurfer", "GS+"],
+        "Other": ["Image Processing","Signal Processing","Micro Controller","Wireless Sensor Network","RFID","GNSS"],
     },
 
     // ========================================
