@@ -674,7 +674,7 @@ function loadContent() {
         const eduTimeline = document.querySelector('.education-timeline');
         if (eduTimeline) {
             websiteContent.education.forEach(edu => {
-                const eduHTML = `<div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-content"><div class="education-header"><div class="education-title-row"><img src="${edu.logo}" alt="${edu.university}" class="university-logo"><div class="education-text"><h4>${edu.degree}</h4><p class="university-name">${edu.university} • ${edu.years}</p></div></div><div class="education-badge"><span class="education-label">${edu.badge}</span></div></div></div></div>`;
+                const eduHTML = `<div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-content"><div class="education-header"><div class="education-title-row"><img src="${edu.logo}" alt="${edu.university}" class="university-logo"><div class="education-text"><h4>${edu.degree}</h4><p class="university-name">${edu.university} • ${edu.years}</p></div></div></div></div></div>`;
                 eduTimeline.insertAdjacentHTML('beforeend', eduHTML);
             });
         }
@@ -683,7 +683,7 @@ function loadContent() {
         const expTimeline = document.querySelector('.experience-timeline');
         if (expTimeline) {
             websiteContent.experience.forEach(exp => {
-                const expHTML = `<div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-content"><div class="education-header"><div class="education-title-row"><img src="${exp.logo}" alt="${exp.company}" class="university-logo"><div class="education-text"><h4>${exp.title}</h4><p class="university-name">${exp.company} • ${exp.years}</p></div></div><div class="education-badge"><span class="education-label">${exp.badge}</span></div></div></div></div>`;
+                const expHTML = `<div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-content"><div class="education-header"><div class="education-title-row"><img src="${exp.logo}" alt="${exp.company}" class="university-logo"><div class="education-text"><h4>${exp.title}</h4><p class="university-name">${exp.company} • ${exp.years}</p></div></div></div></div></div>`;
                 expTimeline.insertAdjacentHTML('beforeend', expHTML);
             });
         }
