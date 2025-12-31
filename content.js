@@ -185,7 +185,7 @@ const websiteContent = {
             category: "crop",
             icon: "fa-robot",
             color: "green",
-            image: "Project-2.jpg"
+            image: "Project-2.png"
         },
         {
             title: "Cotton Module Handling Logistics",
@@ -195,7 +195,7 @@ const websiteContent = {
             category: "soil",
             icon: "fa-leaf",
             color: "pink",
-            image: "project3.jpg"
+            image: "Project-3.jpg"
         },
         {
             title: "High-Tech Upland Farming Machinery",
@@ -205,7 +205,7 @@ const websiteContent = {
             category: "climate",
             icon: "fa-tractor",
             color: "blue",
-            image: "project4.jpg"
+            image: "Project-4.jpg"
         },
         {
             title: "Smart Greenhouse ICT Equipment",
@@ -215,7 +215,7 @@ const websiteContent = {
             category: "climate",
             icon: "fa-warehouse",
             color: "orange",
-            image: "project5.jpg"
+            image: "Project-5.jpg"
         },
         {
             title: "IoT-Based Smart Farm Monitoring",
@@ -225,7 +225,7 @@ const websiteContent = {
             category: "climate",
             icon: "fa-chart-line",
             color: "blue",
-            image: "project6.jpg"
+            image: "Project-6.jpg"
         },
         {
             title: "Smart Evaporative Cooling System",
@@ -235,7 +235,7 @@ const websiteContent = {
             category: "crop",
             icon: "fa-temperature-low",
             color: "purple",
-            image: "project7.jpg"
+            image: "Project-7.jpg"
         },
         {
             title: "Farm Safety Risk Assessment",
@@ -245,7 +245,7 @@ const websiteContent = {
             category: "soil",
             icon: "fa-exclamation-triangle",
             color: "pink",
-            image: "project8.jpg"
+            image: "Project-8.jpg"
         },
     ],
 
