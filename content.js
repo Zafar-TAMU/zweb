@@ -185,7 +185,7 @@ const websiteContent = {
             category: "crop",
             icon: "fa-robot",
             color: "green",
-            image: "project2.jpg"
+            image: "Project-2.jpg"
         },
         {
             title: "Cotton Module Handling Logistics",
