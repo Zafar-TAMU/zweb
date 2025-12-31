@@ -39,7 +39,7 @@ const websiteContent = {
             topics: ["Dehumidification", "IoT Systems"],
             link: "https://doi.org/10.3390/horticulturae11040421",
             pdfLink: "#",
-            image: "/Users/sriramthota/Downloads/Zafar website/A&M.png"
+            image: "Pub3.png"
         },
         {
             year: "2023",
@@ -122,42 +122,62 @@ const websiteContent = {
             image: "pub10.jpg"
         },
         {
-            year: "2020",
-            title: "Kinematic analysis of a clamp-type picking device for an automatic pepper transplanter",
-            journal: "MDPI",
+            year: "2021",
+            title: "Working speed analysis of the gear-driven dibbling mechanism of a 2.6 kW walking-type automatic pepper transplanter",
+            journal: "Machines",
             date: "December 24, 2020",
             topics: ["Kinematics", "Automation"],
-            link: "#",
+            link: "https://doi.org/10.3390/machines9010006",
             pdfLink: "#",
             image: "pub11.jpg"
         },
         {
             year: "2020",
-            title: "Performance evaluation of a suspension-type dehumidifier with a heating module for smart greenhouses",
-            journal: "Springer",
+            title: "Kinematic analysis of a clamp-type picking device for an automatic pepper transplanter",
+            journal: "Agriculture",
             date: "September 24, 2020",
             topics: ["Smart Agriculture", "Climate Control"],
-            link: "#",
+            link: "https://doi.org/10.3390/agriculture10120627",
             pdfLink: "#",
             image: "pub12.jpg"
         },
         {
-            year: "2019",
-            title: "Monitoring the Operating Status of an Automatic Harmful Fly Collector for Smart Greenhouses",
-            journal: "Springer",
+            year: "2020",
+            title: "Analysis of overturning and vibration during field operation of a tractor-mounted 4-row radish collector toward ensuring user safety",
+            journal: "Machines",
             date: "December 5, 2019",
             topics: ["IoT Monitoring", "Pest Control"],
-            link: "#",
+            link: "https://doi.org/10.3390/machines8040077",
             pdfLink: "#",
             image: "pub13.jpg"
         },
         {
-            year: "2019",
-            title: "Performance Evaluation of Trenchless Subsurface Drainage Piping Machine",
-            journal: "Springer",
+            year: "2020",
+            title: "Performance Evaluation of a Suspension-Type Dehumidifier with a Heating Module for Smart Greenhouses",
+            journal: "Journal of Biosystems Engineering",
             date: "November 28, 2019",
             topics: ["Agricultural Machinery", "Drainage Systems"],
-            link: "#",
+            link: "https://doi.org/10.1007/s42853-020-00055-w",
+            pdfLink: "#",
+            image: "pub14.jpg"
+        },
+                {
+            year: "2019",
+            title: "Monitoring the Operating Status of an Automatic Harmful Fly Collector for Smart Greenhouses",
+            journal: "Journal of Biosystems Engineering",
+            date: "November 28, 2019",
+            topics: ["Agricultural Machinery", "Drainage Systems"],
+            link: "https://doi.org/10.1007/s42853-019-00036-8",
+            pdfLink: "#",
+            image: "pub14.jpg"
+        },
+                {
+            year: "2019",
+            title: "Performance Evaluation of Trenchless Subsurface Drainage Piping Machine",
+            journal: "Journal of Biosystems Engineering",
+            date: "November 28, 2019",
+            topics: ["Agricultural Machinery", "Drainage Systems"],
+            link: "https://doi.org/10.1007/s42853-019-00032-y",
             pdfLink: "#",
             image: "pub14.jpg"
         },
