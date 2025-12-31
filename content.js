@@ -205,7 +205,7 @@ const websiteContent = {
             category: "climate",
             icon: "fa-tractor",
             color: "blue",
-            image: "Project-4.jpg"
+            image: "Project-4.png"
         },
         {
             title: "Smart Greenhouse ICT Equipment",
@@ -215,7 +215,7 @@ const websiteContent = {
             category: "climate",
             icon: "fa-warehouse",
             color: "orange",
-            image: "Project-5.jpg"
+            image: "Project-5.png"
         },
         {
             title: "IoT-Based Smart Farm Monitoring",
