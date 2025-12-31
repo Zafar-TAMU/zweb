@@ -245,7 +245,7 @@ const websiteContent = {
             category: "soil",
             icon: "fa-exclamation-triangle",
             color: "pink",
-            image: "Project-8.jpg"
+            image: "Project-8.png"
         },
     ],
 
