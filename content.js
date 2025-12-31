@@ -304,6 +304,7 @@ const websiteContent = {
             title: "Postdoctoral Associate",
             company: "University of Florida",
             years: "2024-Present",
+            badge: "Current",
             logo: "UF.png"
         },
         {
