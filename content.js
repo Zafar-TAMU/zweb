@@ -29,7 +29,7 @@ const websiteContent = {
             topics: ["Smart Greenhouses", "Climate Control"],
             link: "#",
             pdfLink: "#",
-            image: "Zafar1.png"
+            image: "pub1.jpg"
         },
         {
             year: "2023",
