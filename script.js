@@ -355,6 +355,20 @@ function initializeScrollAnimations() {
         el.style.animationPlayState = 'paused';
         animationObserver.observe(el);
     });
+    
+    // Add observer for publications section counters
+    const pubSection = document.querySelector('.publications-full');
+    if (pubSection) {
+        const pubObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateCounters();
+                    pubObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.3 });
+        pubObserver.observe(pubSection);
+    }
 }
 
 // Particle Animation Enhancement
@@ -878,6 +892,11 @@ function loadConfigData() {
         }
     }
     
+    // Generate Services Section
+    if (config.services) {
+        // Services will be initialized separately after DOM is ready
+    }
+    
     // Update colors
     if (config.colors) {
         document.documentElement.style.setProperty('--primary', config.colors.primary);
@@ -1043,6 +1062,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initializeGalleryModal();
     initializeBoardTabs();
     initializeOutreachTabs();
+    initializeServicesModal();
     
     // Global ESC key handler for all modals
     document.addEventListener('keydown', (e) => {
@@ -1240,3 +1260,61 @@ window.openCertificateModal = function(imageSrc) {
         document.body.style.overflow = 'hidden';
     }
 };
+
+// Initialize Services Modal
+function initializeServicesModal() {
+    if (typeof websiteContent === 'undefined' || !websiteContent.services) return;
+    
+    const serviceCards = document.querySelectorAll('.service-card');
+    const modal = document.getElementById('servicesModal');
+    const modalTitle = document.getElementById('servicesModalTitle');
+    const modalBody = document.getElementById('servicesModalBody');
+    const closeBtn = document.getElementById('closeServicesModal');
+    
+    serviceCards.forEach(card => {
+        card.addEventListener('click', () => {
+            const serviceType = card.getAttribute('data-service');
+            modalBody.innerHTML = '';
+            
+            if (serviceType === 'guestEditor') {
+                modalTitle.textContent = 'Guest Editor';
+                websiteContent.services.guestEditor.forEach((item, index) => {
+                    modalBody.innerHTML += `<div class="outreach-item"><div class="outreach-number">[${index + 1}]</div><div class="outreach-item-content"><h4 class="outreach-title">${item.journal}</h4><p class="outreach-year">${item.years}</p></div></div>`;
+                });
+            } else if (serviceType === 'peerReviewer') {
+                modalTitle.textContent = 'Peer Reviewer';
+                modalBody.innerHTML = `<p style="margin-bottom: 1.5rem; color: var(--gray-700); line-height: 1.6;">${websiteContent.services.peerReviewer.description}</p><div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">${websiteContent.services.peerReviewer.journals.map(journal => `<span class="tech-tag">${journal}</span>`).join('')}</div>`;
+            } else if (serviceType === 'panelist') {
+                modalTitle.textContent = 'Panelist';
+                websiteContent.services.panelist.forEach((item, index) => {
+                    modalBody.innerHTML += `<div class="outreach-item"><div class="outreach-number">[${index + 1}]</div><div class="outreach-item-content"><h4 class="outreach-title">${item.event}</h4><p class="outreach-details">${item.organization}</p><p class="outreach-year">${item.year}</p></div></div>`;
+                });
+            } else if (serviceType === 'leadership') {
+                modalTitle.textContent = 'Leadership Roles';
+                websiteContent.services.leadership.forEach((item, index) => {
+                    modalBody.innerHTML += `<div class="outreach-item"><div class="outreach-number">[${index + 1}]</div><div class="outreach-item-content"><h4 class="outreach-title">${item.role}</h4><p class="outreach-details">${item.organization}</p><p class="outreach-year">${item.years}</p></div></div>`;
+                });
+            } else if (serviceType === 'communityService') {
+                modalTitle.textContent = 'Community Service';
+                websiteContent.services.communityService.forEach((item, index) => {
+                    modalBody.innerHTML += `<div class="outreach-item"><div class="outreach-number">[${index + 1}]</div><div class="outreach-item-content"><h4 class="outreach-title">${item.activity}</h4><p class="outreach-details">${item.description}</p><p class="outreach-year">${item.years}</p></div></div>`;
+                });
+            }
+            
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        });
+    });
+    
+    closeBtn?.addEventListener('click', () => {
+        modal.classList.remove('active');
+        document.body.style.overflow = '';
+    });
+    
+    modal?.addEventListener('click', (e) => {
+        if (e.target === modal) {
+            modal.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+    });
+}

@@ -567,6 +567,38 @@ const websiteContent = {
     ],
 
     // ========================================
+    // SERVICES
+    // ========================================
+    services: {
+        guestEditor: [
+            { journal: "Sensors: Spectroscopy and Sensing Technologies for Smart Agriculture", years: "2024 - 2025" },
+            { journal: "AgriEngineering: Sensor-based technologies and machine learning in precision agriculture", years: "2024 - 2025" }
+        ],
+        peerReviewer: {
+            journals: ["ASABE", "COMPAG", "Real-Time Image Processing", "Smart Agriculture", "Sensors", "Sustainability", "Scientific Reports", "Applied Sciences", "Agronomy", "Water, Air, & Soil Pollution"],
+            count: 21,
+            description: "Reviewed 21 different journal articles related to the use of engineering in agriculture. The topics included agricultural machine design and optimization, the application of artificial intelligence, machine vision, robotics, convolutional neural networks, and automation and control."
+        },
+        panelist: [
+            { event: "Poster Symposium", organization: "University of Florida", year: "2025" },
+            { event: "Capstone Project Competition", organization: "Texas A&M University", year: "2024" },
+            { event: "Capstone Project Competition", organization: "Texas A&M University", year: "2023" },
+            { event: "Student Research Week (SRW)", organization: "Texas A&M University", year: "2023" },
+            { event: "3MT presentation", organization: "Texas A&M University", year: "2023" },
+            { event: "ASABE conference", organization: "Houston, TX", year: "2022" }
+        ],
+        leadership: [
+            { role: "Senator", organization: "Graduate & Professional Student Government, Texas A&M University", years: "2021-2022" },
+            { role: "Secretary", organization: "BAEN Graduate Student Association, Texas A&M University", years: "2021-2022" },
+            { role: "Organizing Secretary", organization: "Bangladesh Student Association, Texas A&M University", years: "2020-2022" },
+            { role: "General Secretary", organization: "Engineering Students' Association, HSTU, Bangladesh", years: "2015-2017" }
+        ],
+        communityService: [
+            { activity: "Volunteer at UF Organic Community Garden", description: "Maintained shared spaces, compost, walkways, and community beds to support sustainable campus agriculture", years: "2025 - Present" }
+        ]
+    },
+
+    // ========================================
     // TEACHING & MENTORING
     // ========================================
     teaching: [
@@ -663,7 +695,7 @@ function loadContent() {
         const eduTimeline = document.querySelector('.education-timeline');
         if (eduTimeline) {
             websiteContent.education.forEach(edu => {
-                const eduHTML = `<div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-content"><div class="education-header"><div class="education-title-row"><img src="${edu.logo}" alt="${edu.university}" class="university-logo"><div class="education-text"><h4>${edu.degree}</h4><p class="university-name">${edu.university} • ${edu.years}</p></div></div><div class="education-badge"><span class="education-label">${edu.badge}</span></div></div></div></div>`;
+                const eduHTML = `<div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-content"><div class="education-header"><div class="education-title-row"><img src="${edu.logo}" alt="${edu.university}" class="university-logo"><div class="education-text"><h4>${edu.degree}</h4><p class="university-name">${edu.university} • ${edu.years}</p></div></div></div></div></div>`;
                 eduTimeline.insertAdjacentHTML('beforeend', eduHTML);
             });
         }
@@ -672,7 +704,7 @@ function loadContent() {
         const expTimeline = document.querySelector('.experience-timeline');
         if (expTimeline) {
             websiteContent.experience.forEach(exp => {
-                const expHTML = `<div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-content"><div class="education-header"><div class="education-title-row"><img src="${exp.logo}" alt="${exp.company}" class="university-logo"><div class="education-text"><h4>${exp.title}</h4><p class="university-name">${exp.company} • ${exp.years}</p></div></div><div class="education-badge"><span class="education-label">${exp.badge}</span></div></div></div></div>`;
+                const expHTML = `<div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-content"><div class="education-header"><div class="education-title-row"><img src="${exp.logo}" alt="${exp.company}" class="university-logo"><div class="education-text"><h4>${exp.title}</h4><p class="university-name">${exp.company} • ${exp.years}</p></div></div></div></div></div>`;
                 expTimeline.insertAdjacentHTML('beforeend', expHTML);
             });
         }

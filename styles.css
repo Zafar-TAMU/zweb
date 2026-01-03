@@ -2738,6 +2738,9 @@ body.loaded {
     transition: all var(--transition-base);
     position: relative;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
 }
 
 .service-card::before {
@@ -2804,6 +2807,26 @@ body.loaded {
     left: 0;
     color: var(--primary);
     font-weight: bold;
+}
+
+.service-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+    text-align: left;
+}
+
+.service-item {
+    padding: var(--space-md);
+    background: var(--gray-50);
+    border-radius: var(--radius-lg);
+    border-left: 3px solid var(--primary);
+    transition: all var(--transition-base);
+}
+
+.service-item:hover {
+    background: var(--gray-100);
+    transform: translateX(4px);
 }
 
 /* Publications Section */

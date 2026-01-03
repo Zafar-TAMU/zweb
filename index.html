@@ -473,20 +473,6 @@
         </div>
     </section>
 
-    <!-- Professional Memberships Section -->
-    <section class="memberships">
-        <div class="container">
-            <div class="section-header">
-                <div class="section-tag">🌐 Professional Network</div>
-                <h2 class="section-title">Memberships & Affiliations</h2>
-                <p class="section-subtitle">Active participation in leading professional organizations</p>
-            </div>
-            <div class="memberships-grid">
-                <!-- Memberships loaded from content.js -->
-            </div>
-        </div>
-    </section>
-
     <!-- Teaching & Mentoring Section -->
     <section class="teaching">
         <div class="container">
@@ -501,6 +487,84 @@
             </div>
         </div>
     </section>
+
+    <!-- Professional Memberships Section -->
+    <section class="memberships">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-tag">🌐 Professional Network</div>
+                <h2 class="section-title">Memberships & Affiliations</h2>
+                <p class="section-subtitle">Active participation in leading professional organizations</p>
+            </div>
+            <div class="memberships-grid">
+                <!-- Memberships loaded from content.js -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-tag">🤝 Professional Services</div>
+                <h2 class="section-title">Academic & Community Services</h2>
+                <p class="section-subtitle">Contributing to the scientific community through editorial, review, and leadership roles</p>
+            </div>
+            
+            <div class="services-grid">
+                <!-- Guest Editor -->
+                <div class="service-card" data-service="guestEditor">
+                    <div class="service-icon">📝</div>
+                    <h3>Guest Editor</h3>
+                    <p style="color: var(--gray-600); margin: 1rem 0;">Editorial roles for academic journals</p>
+                    <button class="btn btn-outline" style="width: 100%; margin-top: auto;">View Details</button>
+                </div>
+                
+                <!-- Peer Reviewer -->
+                <div class="service-card" data-service="peerReviewer">
+                    <div class="service-icon">🔍</div>
+                    <h3>Peer Reviewer</h3>
+                    <p style="color: var(--gray-600); margin: 1rem 0;">21 articles reviewed across 10+ journals</p>
+                    <button class="btn btn-outline" style="width: 100%; margin-top: auto;">View Details</button>
+                </div>
+                
+                <!-- Panelist -->
+                <div class="service-card" data-service="panelist">
+                    <div class="service-icon">👥</div>
+                    <h3>Panelist</h3>
+                    <p style="color: var(--gray-600); margin: 1rem 0;">Judge and evaluator at academic events</p>
+                    <button class="btn btn-outline" style="width: 100%; margin-top: auto;">View Details</button>
+                </div>
+                
+                <!-- Leadership -->
+                <div class="service-card" data-service="leadership">
+                    <div class="service-icon">🎯</div>
+                    <h3>Leadership Roles</h3>
+                    <p style="color: var(--gray-600); margin: 1rem 0;">Student government and association positions</p>
+                    <button class="btn btn-outline" style="width: 100%; margin-top: auto;">View Details</button>
+                </div>
+                
+                <!-- Community Service -->
+                <div class="service-card" data-service="communityService">
+                    <div class="service-icon">🌱</div>
+                    <h3>Community Service</h3>
+                    <p style="color: var(--gray-600); margin: 1rem 0;">Volunteer work supporting sustainability</p>
+                    <button class="btn btn-outline" style="width: 100%; margin-top: auto;">View Details</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Modal -->
+    <div class="outreach-modal" id="servicesModal">
+        <div class="outreach-modal-content">
+            <span class="modal-close" id="closeServicesModal">&times;</span>
+            <h2 id="servicesModalTitle"></h2>
+            <div id="servicesModalBody" class="outreach-list">
+                <!-- Content loaded dynamically -->
+            </div>
+        </div>
+    </div>
 
     <!-- Board Section -->
     <section id="board" class="board">
