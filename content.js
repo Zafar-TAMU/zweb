@@ -21,6 +21,7 @@ const websiteContent = {
             pdfLink: "#",
             image: "Pub_l.jpg"
         },
+        
         {
             year: "2025",
             title: "Cover Damage Detection in Round Cotton Modules using Convolutional Neural Networks (CNNs)",
@@ -31,155 +32,167 @@ const websiteContent = {
             pdfLink: "#",
             image: "Pub2.png"
         },
+        
+        {
+            year: "2025",
+            title: "A Robust Framework Combining Hyperspectral Imaging and Machine Learning for Assessing Sudden Death Syndrome (SDS) Severity in Soybean Foliage",
+            journal: "Journal of Biosystems Engineering",
+            date: "October 1, 2025",
+            topics: ["Disease detection", "Hyperspectral Imaging", "SDS", "Soybean", "Supervised Classification", "Unsupervised Classification", "YOLO11"],
+            link: "https://doi.org/10.1007/s42853-025-00278-9",
+            pdfLink: "#",
+            image: "Pub_3.jpg"
+        },
+        
         {
             year: "2025",
             title: "Spatial and Temporal Variability of Environmental Variables in Chinese Solar Greenhouses in the Summer Season",
             journal: "Horticulture",
-            date: "March 15, 2025",
-            topics: ["Dehumidification", "IoT Systems"],
+            date: "April 15, 2025",
+            topics: ["Solar Greenhouse", "Environment Management", "Microclimate", "Precision Agriculture", "Variability Analysis"],
             link: "https://doi.org/10.3390/horticulturae11040421",
             pdfLink: "#",
-            image: "Pub3.png"
+            image: "Pub_4.png"
         },
         {
             year: "2023",
             title: "Comparison of heating modules for suspension-type multipoint temperature variability management in smart greenhouses",
             journal: "Smart Agricultural Technology",
-            date: "May 22, 2022",
-            topics: ["Agricultural Robotics", "Optimization"],
+            date: "July 31, 2023",
+            topics: ["Greenhouse", "Heating Module", "Smart Agriculture", "Temperature Management", "Wireless Sensor Network"],
             link: "https://doi.org/10.1016/j.atech.2023.100296",
             pdfLink: "#",
-            image: "/Users/sriramthota/Downloads/Zafar website/A&M.png"
+            image: "Pub_5.png"
         },
         {
             year: "2023",
             title: "Spatial, Temporal, and Vertical Variability of Ambient Environmental Conditions in Chinese Solar Greenhouses during Winter",
             journal: "Applied Sciences",
-            date: "February 17, 2023",
-            topics: ["Mechanical Analysis", "Agricultural Machinery"],
+            date: "August 30, 2023",
+            topics: ["Smart Agriculture", "Chinese Solar Greenhouse", "Environmental Conditions", "Wireless Sensor Network", "Microclimate Characteristics", "Variability"],
             link: "https://doi.org/10.3390/app13179835",
             pdfLink: "#",
-            image: "pub4.jpg"
+            image: "Pub_6.jpg"
         },
         {
             year: "2023",
             title: "Evaluation of a 0.7 kW Suspension-Type Dehumidifier Module in a Closed Chamber and in a Small Greenhouse",
             journal: "Sustainability",
-            date: "January 6, 2022",
-            topics: ["Deep Learning", "Computer Vision"],
+            date: "March 15, 2023",
+            topics: ["Controlled Environment Agriculture", "Dehumidification", "Humidity Variability", "Suspension-type Dehumidifier", "Wireless Sensor Network"],
             link: "https://doi.org/10.3390/su15065236",
             pdfLink: "#",
-            image: "pub5.jpg"
+            image: "Pub_7.jpg"
         },
         {
             year: "2022",
             title: "Theoretical transmission analysis to optimize Gearbox for a 2.6 kW automatic pepper transplanter",
             journal: "Journal of Agricultural Engineering",
-            date: "November 18, 2022",
-            topics: ["Plant Growth", "Automation"],
+            date: "November 3, 2022",
+            topics: ["Agricultural Machinery", "Gearbox", "Pepper Transplanter", "Power Transmission", "Spur Gear"],
             link: "https://doi.org/10.4081/jae.2022.1254",
             pdfLink: "#",
-            image: "pub6.jpg"
+            image: "Pub_8.jpg"
         },
         {
             year: "2022",
             title: "Theoretical Overturning Analysis of a 2.6-kW Two-Row Walking-Type Automatic Pepper Transplanter",
             journal: "Journal of Biosystems Engineering",
-            date: "May 22, 2021",
-            topics: ["Kinematics", "Agricultural Machinery"],
+            date: "February 17, 2022",
+            topics: ["Field machinery", "Overturning Analysis", "Pepper",  "Stability", "Transplanter"],
             link: "https://doi.org/10.1007/s42853-022-00129-x",
             pdfLink: "#",
-            image: "pub7.jpg"
+            image: "Pub_9.jpg"
         },
         {
             year: "2021",
             title: "Evaluation of pepper seedling growth according to the growing period and tray for automatic transplanting",
             journal: "Korean Journal of Agricultural Science",
-            date: "January 22, 2021",
-            topics: ["Speed Analysis", "Precision Agriculture"],
+            date: "December 1, 2021",
+            topics: ["Growing Period", "Pepper", "Seedling Growth", "Seedling Tray"],
             link: "https://doi.org/10.7744/kjoas.20210080",
             pdfLink: "#",
-            image: "pub8.jpg"
+            image: "Pub_10.jpg"
         },
         {
             year: "2021",
             title: "Kinematic analysis of a hopper-type dibbling mechanism for a 2.6 kW two-row pepper transplanter",
             journal: "Journal of Mechanical Science and Technology",
-            date: "January 7, 2021",
-            topics: ["Stress Analysis", "Mechanical Engineering"],
+            date: "May 22, 2021",
+            topics: ["Agricultural Machinery", "Dibbling Mechanism", "Kinematic Analysis", "Pepper", "Transplanter"],
             link: "https://doi.org/10.1007/s12206-021-0531-2",
             pdfLink: "#",
-            image: "pub9.jpg"
+            image: "Pub_11.jpg"
         },
         {
             year: "2021",
             title: "Stress and fatigue analysis of picking device gears for a 2.6 kW automatic pepper transplanter",
             journal: "Applied Sciences",
-            date: "January 7, 2021",
-            topics: ["Logistics", "Cotton Industry"],
+            date: "March 3, 2021",
+            topics: ["Agricultural Machinery", "Pepper Transplanting", "Seedling Picking Mechanism", "Structural Analysis",  "Gear Mechanism", "Stress and Fatigue"],
             link: "https://doi.org/10.3390/app11052241",
             pdfLink: "#",
-            image: "pub10.jpg"
+            image: "Pub_12.jpg"
         },
         {
             year: "2021",
             title: "Working speed analysis of the gear-driven dibbling mechanism of a 2.6 kW walking-type automatic pepper transplanter",
             journal: "Machines",
-            date: "December 24, 2020",
-            topics: ["Kinematics", "Automation"],
+            date: "January 11, 2021",
+            topics: ["Field Machinery", "Transplanter", "Pepper", "Dibbling Mechanism", "Working Speed Analysis"],
             link: "https://doi.org/10.3390/machines9010006",
             pdfLink: "#",
-            image: "pub11.jpg"
+            image: "Pub_13.jpg"
         },
         {
             year: "2020",
             title: "Kinematic analysis of a clamp-type picking device for an automatic pepper transplanter",
             journal: "Agriculture",
-            date: "September 24, 2020",
-            topics: ["Smart Agriculture", "Climate Control"],
+            date: "December 12, 2020",
+            topics: ["Agricultural Machinery", "Pepper", "Transplanter", "Picking Device", "Kinematic Analysis"],
             link: "https://doi.org/10.3390/agriculture10120627",
             pdfLink: "#",
-            image: "pub12.jpg"
+            image: "Pub_14.jpg"
         },
         {
             year: "2020",
             title: "Analysis of overturning and vibration during field operation of a tractor-mounted 4-row radish collector toward ensuring user safety",
             journal: "Machines",
-            date: "December 5, 2019",
-            topics: ["IoT Monitoring", "Pest Control"],
+            date: "November 19, 2020",
+            topics: ["Radish", "Collector", "Lateral Stability", "Vibration", "User Safety"],
             link: "https://doi.org/10.3390/machines8040077",
             pdfLink: "#",
-            image: "pub13.jpg"
+            image: "Pub_15.jpg"
         },
         {
             year: "2020",
             title: "Performance Evaluation of a Suspension-Type Dehumidifier with a Heating Module for Smart Greenhouses",
             journal: "Journal of Biosystems Engineering",
-            date: "November 28, 2019",
-            topics: ["Agricultural Machinery", "Drainage Systems"],
+            date: "July 07, 2020",
+            topics: ["Smart agriculture", "Greenhouse", "Dehumidifier", "Heater", "Remote management"],
             link: "https://doi.org/10.1007/s42853-020-00055-w",
             pdfLink: "#",
-            image: "pub14.jpg"
+            image: "Pub_16.jpg"
         },
-                {
+        {
             year: "2019",
             title: "Monitoring the Operating Status of an Automatic Harmful Fly Collector for Smart Greenhouses",
             journal: "Journal of Biosystems Engineering",
-            date: "November 28, 2019",
-            topics: ["Agricultural Machinery", "Drainage Systems"],
+            date: "December 05, 2019",
+            topics: ["Protected Crop Production", "Smart Greenhouse", "Harmful Flies", "Remote Monitoring", "Operating Status"],
             link: "https://doi.org/10.1007/s42853-019-00036-8",
             pdfLink: "#",
-            image: "pub14.jpg"
+            image: "Pub_17.jpg"
         },
-                {
+        {
             year: "2019",
             title: "Performance Evaluation of Trenchless Subsurface Drainage Piping Machine",
             journal: "Journal of Biosystems Engineering",
             date: "November 28, 2019",
-            topics: ["Agricultural Machinery", "Drainage Systems"],
+            topics: ["Irrigation", "Subsurface Drainage", "Trenchless Piping Machine", "Depth Uniformity", "Pulling Force"],
             link: "https://doi.org/10.1007/s42853-019-00032-y",
             pdfLink: "#",
-            image: "pub14.jpg"
+            image: "Pub_18.jpg"
         },
     ],
 
