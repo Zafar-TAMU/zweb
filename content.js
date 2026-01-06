@@ -245,7 +245,7 @@ const websiteContent = {
             category: "climate",
             icon: "fa-chart-line",
             color: "blue",
-            image: "Project-6.jpg"
+            image: "Project-6.png"
         },
         {
             title: "Smart Evaporative Cooling System",
