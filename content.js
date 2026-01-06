@@ -343,7 +343,7 @@ const websiteContent = {
         "Programming": ["Python","C++", "R", "MATLAB", "LabView"],
         "AI/ML Frameworks": ["TensorFlow","OpenCV", "PyTorch", "Keras"],
         "Tools & Software": ["ArcGIS","SolidWorks","Catia","Ansys","RecurDyn","Vercel","ThingSpeak", "Proteus","KISSsoft","Shurfer", "GS+"],
-        "Other": ["Image Processing","Signal Processing","Micro Controller","WSN","AGIoT", "RFID","GNSS"],
+        "Other": ["Image Processing","Signal Processing","Micro Controller","WSN","AG-IoT", "RFID","GNSS"],
     },
 
     // ========================================
