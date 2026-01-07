@@ -52,7 +52,7 @@ const websiteContent = {
             topics: ["Solar Greenhouse", "Environment Management", "Microclimate", "Precision Agriculture", "Variability Analysis"],
             link: "https://doi.org/10.3390/horticulturae11040421",
             pdfLink: "#",
-            image: "Pub_4.png"
+            image: "Pub_4.jpg"
         },
         {
             year: "2023",
@@ -62,7 +62,7 @@ const websiteContent = {
             topics: ["Greenhouse", "Heating Module", "Smart Agriculture", "Temperature Management", "Wireless Sensor Network"],
             link: "https://doi.org/10.1016/j.atech.2023.100296",
             pdfLink: "#",
-            image: "Pub_5.png"
+            image: "Pub_5.jpg"
         },
         {
             year: "2023",
