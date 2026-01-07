@@ -268,7 +268,7 @@ const websiteContent = {
             category: "crop",
             icon: "fa-temperature-low",
             color: "purple",
-            image: "Project-7.jpg"
+            image: "Project-7.png"
         },
         {
             title: "Farm Safety Risk Assessment",
