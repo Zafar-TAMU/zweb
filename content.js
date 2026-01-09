@@ -420,13 +420,13 @@ const websiteContent = {
             name: "Best Paper Award",
             institution: "Agricultural Engineering Conference",
             year: "",
-            emoji: "📜"
+           
         },
         {
             name: "Research Excellence Award",
             institution: "Multiple Scholarships",
             year: "",
-            emoji: "💰"
+            
         },
     ],
 
