@@ -321,7 +321,7 @@ const websiteContent = {
             logo: "UF.png"
         },
         {
-            title: "Graduate Research Assistant",
+            title: "Graduate Assistant (Research + Teaching)",
             company: "Texas A&M University",
             years: "2020-2024",
             badge: "PhD",
@@ -413,20 +413,66 @@ const websiteContent = {
         {
             name: "Distinguished Graduate Student Award",
             institution: "Texas A&M University",
+            year: "2025",
+            emoji: ""
+        },
+        {
+            name: "Travel Award",
+            institution: "Texas A&M University",
+            year: "2022, 2023, 2024",
+            emoji: ""
+        },
+        {
+            name: "Dr. Brock Faulkner ’04 Memorial Scholarship",
+            institution: "Texas A&M University",
             year: "2023",
-            emoji: "🥇"
+            emoji: ""
+        },
+
+        {
+            name: "Peary Wilemon Scholarship",
+            institution: "National Cotton Ginners Association",
+            year: "2021, 2023",
+            emoji: ""
+        },
+
+        {
+            name: "Graduate Scholarship",
+            institution: "Texas A&M University",
+            year: "2021, 2022, 2023",
+            emoji: ""
         },
         {
-            name: "Best Paper Award",
-            institution: "Agricultural Engineering Conference",
-            year: "",
-           
+            name: "Best Presenter (3rd)",
+            institution: "TAMU Student Research Week",
+            year: "2022",
+            emoji: ""
+        },
+
+        {
+            name: "Best Presenter (1st)",
+            institution: "Belt Wide Cotton Conferences",
+            year: "2022",
+            emoji: ""
+        },
+        
+        {
+            name: "Best Presenter (3rd)",
+            institution: "China-South Korea Joint Academic Conference",
+            year: "2019",
+            emoji: ""
         },
         {
-            name: "Research Excellence Award",
-            institution: "Multiple Scholarships",
-            year: "",
-            
+            name: "Best Presenter (Silver)",
+            institution: "Japan China Korea Graduate Student Forum",
+            year: "2018",
+            emoji: ""
+        },
+        {
+            name: "Best Poster Presenter",
+            institution: "Spring conference on precision agriculture",
+            year: "2018",
+            emoji: ""
         },
     ],
 
@@ -440,15 +486,33 @@ const websiteContent = {
             institution: "Biological & Agricultural Engineering, Texas A&M University",
             year: "2024",
             color: "purple",
-            image: "zafar1.png"
+            image: "phd.jpg"
         },
         {
-            name: "Best Paper Award",
+            name: "M.Sc. Degree",
+            fullTitle: "Master of Science",
+            institution: "Agricultural Machinery Engineering, Chungnam National University",
+            year: "2019",
+            color: "blue",
+            image: "msc.jpg"
+        },
+
+        {
+            name: "B.Sc. Degree",
+            fullTitle: "Bachelor of Science",
+            institution: "Agricultural Engineering, Hajee Mohammad Danesh Science & Technology University",
+            year: "2017",
+            color: "purple",
+            image: "bsc.jpg"
+        },
+        
+        {
+            name: "Best Presentation Award",
             fullTitle: "Research Excellence Award",
-            institution: "Outstanding contribution to agricultural engineering research",
-            year: "",
+            institution: "Student Research Week, Texas A&M University",
+            year: "2022",
             color: "pink",
-            image: "cert2.jpg"
+            image: "srw.jpg"
         },
         {
             name: "Scholarship",
@@ -458,14 +522,7 @@ const websiteContent = {
             color: "green",
             image: "cert3.jpg"
         },
-        {
-            name: "M.Sc. Degree",
-            fullTitle: "Master of Science",
-            institution: "Agricultural Machinery Engineering, Chungnam National University",
-            year: "2019",
-            color: "blue",
-            image: "cert4.jpg"
-        },
+
         {
             name: "Honor Award",
             fullTitle: "Distinguished Graduate Student",
@@ -474,14 +531,7 @@ const websiteContent = {
             color: "orange",
             image: "cert5.jpg"
         },
-        {
-            name: "B.Sc. Degree",
-            fullTitle: "Bachelor of Science",
-            institution: "Agricultural Engineering, HSTU, Bangladesh",
-            year: "",
-            color: "purple",
-            image: "cert6.jpg"
-        },
+
     ],
 
     // ========================================
