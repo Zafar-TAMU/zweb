@@ -1506,27 +1506,29 @@ section {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: var(--space-sm);
-    align-items: stretch;
 }
 
 .about-card,
 .skills-card,
 .impact-card,
-.experience-card {
+.experience-card,
+.expertise-card,
+.trainings-card {
     background: var(--white);
     border: 1px solid var(--gray-200);
     border-radius: var(--radius-2xl);
     padding: var(--space-xl);
     box-shadow: var(--shadow-sm);
     transition: all var(--transition-base);
-    height: 100%;
     overflow: visible;
 }
 
 .about-card:hover,
 .skills-card:hover,
 .impact-card:hover,
-.experience-card:hover {
+.experience-card:hover,
+.expertise-card:hover,
+.trainings-card:hover {
     transform: translateY(-4px);
     box-shadow: var(--shadow-lg);
 }
@@ -1778,22 +1780,6 @@ section {
     font-size: 0.8rem;
     color: var(--gray-600);
     word-wrap: break-word;
-}
-
-/* Expertise Card */
-.expertise-card {
-    background: var(--white);
-    border: 1px solid var(--gray-200);
-    border-radius: var(--radius-2xl);
-    padding: var(--space-xl);
-    box-shadow: var(--shadow-sm);
-    transition: all var(--transition-base);
-    height: 100%;
-}
-
-.expertise-card:hover {
-    transform: translateY(-4px);
-    box-shadow: var(--shadow-lg);
 }
 
 .expertise-list {
@@ -2063,22 +2049,25 @@ section {
     grid-column: 3 / 5;
 }
 
-.skills-card {
-    grid-column: 1 / 2;
-}
-
-.expertise-card {
-    grid-column: 2 / 3;
-}
-
-.trainings-card {
-    grid-column: 3 / 4;
-}
-
+.skills-card,
+.expertise-card,
+.trainings-card,
 .impact-card {
-    grid-column: 4 / 5;
+    grid-column: auto;
+    height: 550px;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
+}
+
+.tech-skills,
+.expertise-list,
+.trainings-list,
+.awards-list {
+    flex: 1;
+    overflow-y: auto;
+    overflow-x: hidden;
+    min-height: 0;
 }
 
 @media (max-width: 1024px) {
@@ -4103,22 +4092,6 @@ body.loaded {
 .certificate-description p {
     color: var(--gray-600);
     line-height: 1.6;
-}
-
-/* Trainings Card */
-.trainings-card {
-    background: var(--white);
-    border: 1px solid var(--gray-200);
-    border-radius: var(--radius-2xl);
-    padding: var(--space-xl);
-    box-shadow: var(--shadow-sm);
-    transition: all var(--transition-base);
-    height: 100%;
-}
-
-.trainings-card:hover {
-    transform: translateY(-4px);
-    box-shadow: var(--shadow-lg);
 }
 
 .trainings-list {
