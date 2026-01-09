@@ -508,7 +508,7 @@ const websiteContent = {
         
         {
             name: "Best Presentation Award",
-            fullTitle: "Research Excellence Award",
+            fullTitle: "Best Presentation Award",
             institution: "Student Research Week, Texas A&M University",
             year: "2022",
             color: "pink",
@@ -517,19 +517,19 @@ const websiteContent = {
         {
             name: "Scholarship",
             fullTitle: "Peary Wilemon Scholarship",
-            institution: "National Cotton Ginners Foundation",
+            institution: "National Cotton Ginners Association",
             year: "2022-2023",
             color: "green",
-            image: "cert3.jpg"
+            image: "pw1.jpg"
         },
 
         {
-            name: "Honor Award",
-            fullTitle: "Distinguished Graduate Student",
-            institution: "Texas A&M University",
-            year: "2023",
+            name: "Scholarship",
+            fullTitle: "Peary Wilemon Scholarship",
+            institution: "National Cotton Ginners Association",
+            year: "2020-2021",
             color: "orange",
-            image: "cert5.jpg"
+            image: "pw2.jpg"
         },
 
     ],
