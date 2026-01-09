@@ -1520,6 +1520,7 @@ section {
     box-shadow: var(--shadow-sm);
     transition: all var(--transition-base);
     height: 100%;
+    overflow: visible;
 }
 
 .about-card:hover,
@@ -1714,9 +1715,10 @@ section {
     flex-direction: column;
     gap: var(--space-xs);
     width: 100%;
-    max-height: 400px;
+    flex: 1;
     overflow-y: auto;
-    padding-right: var(--space-xs);
+    overflow-x: hidden;
+    min-height: 0;
 }
 
 .awards-list::-webkit-scrollbar {
@@ -2075,6 +2077,8 @@ section {
 
 .impact-card {
     grid-column: 4 / 5;
+    display: flex;
+    flex-direction: column;
 }
 
 @media (max-width: 1024px) {
