@@ -2043,10 +2043,16 @@ section {
 /* Responsive Design */
 .main-card {
     grid-column: 1 / 3;
+    min-height: 400px;
+    max-height: 600px;
+    overflow-y: auto;
 }
 
 .experience-card {
     grid-column: 3 / 5;
+    min-height: 400px;
+    max-height: 600px;
+    overflow-y: auto;
 }
 
 .skills-card,
@@ -2054,7 +2060,7 @@ section {
 .trainings-card,
 .impact-card {
     grid-column: auto;
-    height: 550px;
+    height: 1000px;
     display: flex;
     flex-direction: column;
     overflow: hidden;
@@ -3403,9 +3409,13 @@ body.loaded {
     padding: var(--space-3xl) 0;
 }
 
+.teaching .container {
+    max-width: 1400px;
+}
+
 .teaching-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
     gap: var(--space-xl);
 }
 
