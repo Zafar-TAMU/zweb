@@ -592,8 +592,8 @@ const websiteContent = {
             description: "Data-driven farming solutions using AI and sensor technologies for optimized crop management"
         },
         {
-            icon: "👁",
-            title: "Computer Vision",
+            icon: "🧠",
+            title: "AI & Machine Vision",
             description: "Advanced imaging techniques for crop disease detection and quality assessment"
         },
         {
@@ -613,15 +613,9 @@ const websiteContent = {
         },
         {
             icon: "📚",
-            title: "Big data analytics",
+            title: "Big Data Analytics",
             description: "Analysis of large and diverse agricultural datasets to optimize productivity, sustainability, and resource use"
         },
-        {
-            icon: "🧠",
-            title: "Machine Learning",
-            description: "Deep learning models for predictive analytics in agricultural systems"
-        },
-      
     ],
 
     // ========================================
