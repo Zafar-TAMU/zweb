@@ -603,7 +603,7 @@ const websiteContent = {
         },
         {
             icon: "📡",
-            title: "IoT & Sensor Networks",
+            title: "IoT & Remote Sensing",
             description: "Smart monitoring systems for real-time agricultural data collection and analysis"
         },
         {
