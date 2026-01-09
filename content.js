@@ -1,5 +1,5 @@
 // ========================================
-// WEBSITE CONTENT CONFIGURATION
+// WEBSITE CONTENT CONFIGURATION v2.0
 // ========================================
 // Edit this file to add/update/change ALL content on your website
 // Just change the text between quotes "like this"
@@ -644,8 +644,8 @@ const websiteContent = {
     // ========================================
     services: {
         guestEditor: [
-            { journal: "Sensors: Spectroscopy and Sensing Technologies for Smart Agriculture", years: "2024 - 2025" },
-            { journal: "AgriEngineering: Sensor-based technologies and machine learning in precision agriculture", years: "2024 - 2025" }
+            { journal: "Sensors: Spectroscopy and Sensing Technologies for Smart Agriculture", years: "2024 - 2025", link: "https://www.mdpi.com/journal/sensors/special_issues/spectroscopy_sensing_smart_agriculture" },
+            { journal: "AgriEngineering: Sensor-based technologies and machine learning in precision agriculture", years: "2024 - 2025", link: "https://www.mdpi.com/journal/agriengineering/special_issues/sensor_based_technologies_machine_learning" }
         ],
         peerReviewer: {
             journals: ["ASABE", "COMPAG", "Real-Time Image Processing", "Smart Agriculture", "Sensors", "Sustainability", "Scientific Reports", "Applied Sciences", "Agronomy", "Water, Air, & Soil Pollution"],
@@ -691,6 +691,13 @@ const websiteContent = {
             stats: [
                 { number: "8+", label: "Students Mentored" },
                 { number: "5", label: "Thesis Supervised" }
+            ],
+            students: [
+                { name: "Student Name 1", degree: "Ph.D.", topic: "AI in Precision Agriculture", year: "2023-Present" },
+                { name: "Student Name 2", degree: "M.Sc.", topic: "Computer Vision for Crop Disease Detection", year: "2022-2024" },
+                { name: "Student Name 3", degree: "Ph.D.", topic: "IoT Systems for Smart Farming", year: "2021-Present" },
+                { name: "Student Name 4", degree: "M.Sc.", topic: "Machine Learning for Yield Prediction", year: "2022-2023" },
+                { name: "Student Name 5", degree: "Ph.D.", topic: "Hyperspectral Imaging Applications", year: "2020-2024" }
             ]
         },
         {
@@ -698,17 +705,7 @@ const websiteContent = {
             title: "Workshop Facilitation",
             description: "Conducted workshops on deep learning applications in agriculture, IoT systems, and precision farming technologies.",
             topics: ["Deep Learning", "IoT Systems", "Precision Farming"]
-        },
-        {
-            icon: "fa-book-open",
-            title: "Curriculum Development",
-            description: "Contributed to curriculum design for agricultural engineering programs, integrating modern AI and automation technologies.",
-            areas: [
-                { icon: "fa-robot", text: "Agricultural Robotics" },
-                { icon: "fa-brain", text: "AI in Agriculture" }
-            ]
-        },
-        
+        }
     ]
 };
 
@@ -920,16 +917,10 @@ function loadContent() {
     if (websiteContent.teaching && websiteContent.teaching.length > 0) {
         const teachingGrid = document.querySelector('.teaching-grid');
         if (teachingGrid) {
+            const dataMap = { 'Curriculum Development': 'curriculum', 'Graduate Student Mentoring': 'mentoring', 'Workshop Facilitation': 'workshops' };
             websiteContent.teaching.forEach(teach => {
-                let contentHTML = '';
-                if (teach.stats) {
-                    contentHTML = `<div class="teaching-stats">${teach.stats.map(stat => `<div class="stat-item"><span class="stat-num">${stat.number}</span><span class="stat-label">${stat.label}</span></div>`).join('')}</div>`;
-                } else if (teach.topics) {
-                    contentHTML = `<div class="teaching-topics">${teach.topics.map(topic => `<span class="topic-tag">${topic}</span>`).join('')}</div>`;
-                } else if (teach.areas) {
-                    contentHTML = `<div class="curriculum-areas">${teach.areas.map(area => `<div class="area-item"><i class="fas ${area.icon}"></i><span>${area.text}</span></div>`).join('')}</div>`;
-                }
-                const teachHTML = `<div class="teaching-card"><div class="teaching-icon"><i class="fas ${teach.icon}"></i></div><div class="teaching-content"><h3>${teach.title}</h3><p class="teaching-description">${teach.description}</p>${contentHTML}</div></div>`;
+                const dataAttr = dataMap[teach.title] || teach.title.toLowerCase().replace(/\s+/g, '-');
+                const teachHTML = `<div class="teaching-card" data-teaching="${dataAttr}"><div class="teaching-icon"><i class="fas ${teach.icon}"></i></div><h3>${teach.title}</h3><p style="color: var(--gray-600); margin: 1rem 0;">${teach.description.split('.')[0]}.</p><button class="btn btn-outline teaching-btn" style="width: 100%; margin-top: auto;">View Details</button></div>`;
                 teachingGrid.insertAdjacentHTML('beforeend', teachHTML);
             });
         }
