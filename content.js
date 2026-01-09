@@ -573,7 +573,7 @@ const websiteContent = {
         { title: "Integration of vision transformer and hyperspectral reflectance imaging for citrus leaf disease classification", authors: "M.Z. Iqbal, T.F. Burks, S. Obellaneni", event: "Sensing for Agriculture and Food Quality and Safety XVIII, SPIE Defense + Security", location: "National Harbor, MD, USA", year: "2026" },
         { title: "Enhanced E. coli concentration level detection on multiple produce surfaces using CSI-D+ UV-C fluorescence imaging and custom deep learning architecture", authors: "T.F. Burks, M.Z. Iqbal, S. Vaddi", event: "Sensing for Agriculture and Food Quality and Safety XVIII, SPIE Defense + Security", location: "National Harbor, MD, USA", year: "2026" },
         { title: "AI-based detection of E. coli concentration levels on diverse food-contact surfaces using UV-C fluorescence-based CSI-D+ Handheld and Yolov11 deep learning", authors: "T.F. Burks, M.Z. Iqbal, S. Vaddi", event: "Sensing for Agriculture and Food Quality and Safety XVIII, SPIE Defense + Security", location: "National Harbor, MD, USA", year: "2026" },
-         { title: "Vision Transformer-Based Fusion of Hyperspectral Reflectance and Fluorescence Imaging for Citrus Leaf Disease Classification", authors: "M.Z. Iqbal, T.F. Burks, S. Obellaneni", event: "ASABE Annual International Meeting", location: "Indianapolis, IN, USA", year: "2026" }
+        { title: "Vision Transformer-Based Fusion of Hyperspectral Reflectance and Fluorescence Imaging for Citrus Leaf Disease Classification", authors: "M.Z. Iqbal, T.F. Burks, S. Obellaneni", event: "ASABE Annual International Meeting", location: "Indianapolis, IN, USA", year: "2026" }
     ],
     
     posterPresentations: [
@@ -625,17 +625,17 @@ const websiteContent = {
         {
             logo: "ASABE",
             name: "American Society of Agricultural and Biological Engineers",
-            status: "Active Member"
+            status: "2018-Present"
         },
         {
-            logo: "IEEE",
-            name: "Institute of Electrical and Electronics Engineers",
-            status: "Active Member"
+            logo: "SPIE",
+            name: "Society of Photo-Optical Instrumentation Engineers",
+            status: "2024-Present"
         },
         {
-            logo: "ISPRS",
-            name: "International Society for Photogrammetry and Remote Sensing",
-            status: "Member"
+            logo: "PCRG",
+            name: "Precision Cotton Research Group",
+            status: "2020-2024"
         },
     ],
 
