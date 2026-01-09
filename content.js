@@ -228,7 +228,7 @@ const websiteContent = {
             category: "soil",
             icon: "fa-leaf",
             color: "pink",
-            image: "Project-3.JPG"
+            image: "Project-3.png"
         },
         {
             title: "High-Tech Upland Farming Machinery",
