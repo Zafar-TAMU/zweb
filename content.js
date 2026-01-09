@@ -572,7 +572,8 @@ const websiteContent = {
     upcomingPresentations: [
         { title: "Integration of vision transformer and hyperspectral reflectance imaging for citrus leaf disease classification", authors: "M.Z. Iqbal, T.F. Burks, S. Obellaneni", event: "Sensing for Agriculture and Food Quality and Safety XVIII, SPIE Defense + Security", location: "National Harbor, MD, USA", year: "2026" },
         { title: "Enhanced E. coli concentration level detection on multiple produce surfaces using CSI-D+ UV-C fluorescence imaging and custom deep learning architecture", authors: "T.F. Burks, M.Z. Iqbal, S. Vaddi", event: "Sensing for Agriculture and Food Quality and Safety XVIII, SPIE Defense + Security", location: "National Harbor, MD, USA", year: "2026" },
-        { title: "AI-based detection of E. coli concentration levels on diverse food-contact surfaces using UV-C fluorescence-based CSI-D+ Handheld and Yolov11 deep learning", authors: "T.F. Burks, M.Z. Iqbal, S. Vaddi", event: "Sensing for Agriculture and Food Quality and Safety XVIII, SPIE Defense + Security", location: "National Harbor, MD, USA", year: "2026" }
+        { title: "AI-based detection of E. coli concentration levels on diverse food-contact surfaces using UV-C fluorescence-based CSI-D+ Handheld and Yolov11 deep learning", authors: "T.F. Burks, M.Z. Iqbal, S. Vaddi", event: "Sensing for Agriculture and Food Quality and Safety XVIII, SPIE Defense + Security", location: "National Harbor, MD, USA", year: "2026" },
+         { title: "Vision Transformer-Based Fusion of Hyperspectral Reflectance and Fluorescence Imaging for Citrus Leaf Disease Classification", authors: "M.Z. Iqbal, T.F. Burks, S. Obellaneni", event: "ASABE Annual International Meeting", location: "Indianapolis, IN, USA", year: "2026" }
     ],
     
     posterPresentations: [
@@ -587,18 +588,33 @@ const websiteContent = {
     researchInterests: [
         {
             icon: "🌾",
-            title: "Precision Agriculture",
+            title: "Smart Agriculture",
             description: "Data-driven farming solutions using AI and sensor technologies for optimized crop management"
         },
         {
-            icon: "👁️",
+            icon: "👁",
             title: "Computer Vision",
             description: "Advanced imaging techniques for crop disease detection and quality assessment"
+        },
+        {
+            icon: "🤖",
+            title: "Robotics & Automation",
+            description: "Automated and robotic solutions to enhance efficiency, accuracy, and sustainability in agricultural production"
         },
         {
             icon: "📡",
             title: "IoT & Sensor Networks",
             description: "Smart monitoring systems for real-time agricultural data collection and analysis"
+        },
+        {
+            icon: "🦾",
+            title: "Advanced Ag Machines",
+            description: "Advanced machine design customized for crop-specific needs to improve field efficiency and performance"
+        },
+        {
+            icon: "📚",
+            title: "Big data analytics",
+            description: "Analysis of large and diverse agricultural datasets to optimize productivity, sustainability, and resource use"
         },
         {
             icon: "🧠",
