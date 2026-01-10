@@ -939,7 +939,7 @@ function loadContent() {
     if (websiteContent.teaching && websiteContent.teaching.length > 0) {
         const teachingGrid = document.querySelector('.teaching-grid');
         if (teachingGrid) {
-            const dataMap = { 'Curriculum Development': 'curriculum', 'Graduate Student Mentoring': 'mentoring', 'Workshop Facilitation': 'workshops' };
+            const dataMap = { 'Instructed Courses':'Courses','Curriculum Development': 'curriculum', 'Graduate Student Mentoring': 'mentoring', 'Workshop Facilitation': 'workshops' };
             websiteContent.teaching.forEach(teach => {
                 const dataAttr = dataMap[teach.title] || teach.title.toLowerCase().replace(/\s+/g, '-');
                 const teachHTML = `<div class="teaching-card" data-teaching="${dataAttr}"><div class="teaching-icon"><i class="fas ${teach.icon}"></i></div><h3>${teach.title}</h3><p style="color: var(--gray-600); margin: 1rem 0;">${teach.description.split('.')[0]}.</p><button class="btn btn-outline teaching-btn" style="width: 100%; margin-top: auto;">View Details</button></div>`;
