@@ -690,11 +690,11 @@ const websiteContent = {
             title: "Instructed Courses",
             description: "Contributed to teaching smart agriculture, robotics, automation, and sensor-based systems, providing hands-on lab and field training.",
             areas: [
-            { icon: "fa-robot", text: "Applied Methods in SmartAg Systems" },
-            { icon: "fa-microchip", text: "Instrumentation in Agricultural Engineering Research" },
-            { icon: "fa-robot", text: "Applied Control for Automation and Robotics" },
-            { icon: "fa-microscope", text: "Measurement and Control of Biological Systems and Agricultural Processes" },
-            { icon: "fa-tint", text: "Reuse Water Quality Research" }
+                { icon: "fa-robot", text: "Applied Methods in SmartAg Systems" },
+                { icon: "fa-microchip", text: "Instrumentation in Agricultural Engineering Research" },
+                { icon: "fa-robot", text: "Applied Control for Automation and Robotics" },
+                { icon: "fa-microscope", text: "Measurement and Control of Biological Systems and Agricultural Processes" },
+                { icon: "fa-tint", text: "Reuse Water Quality Research" }
             ]
         },
         {
@@ -702,8 +702,8 @@ const websiteContent = {
             title: "Curriculum Development",
             description: "Developed course materials for agricultural engineering programs, integrating AI and automation technologies.",
             topics: [
-            { icon: "fa-microchip", text: "Instrumentation in Agricultural Engineering Research" },
-            { icon: "fa-microscope", text: "Measurement and Control of Biological Systems and Agricultural Processes" }
+                { icon: "fa-microchip", text: "Instrumentation in Agricultural Engineering Research" },
+                { icon: "fa-microscope", text: "Measurement and Control of Biological Systems and Agricultural Processes" }
             ]
         },
         {
@@ -939,7 +939,7 @@ function loadContent() {
     if (websiteContent.teaching && websiteContent.teaching.length > 0) {
         const teachingGrid = document.querySelector('.teaching-grid');
         if (teachingGrid) {
-            const dataMap = { 'Instructed Courses':'Courses','Curriculum Development': 'curriculum', 'Graduate Student Mentoring': 'mentoring', 'Workshop Facilitation': 'workshops' };
+            const dataMap = { 'Instructed Courses': 'instructed-courses', 'Curriculum Development': 'curriculum', 'Student Mentoring': 'mentoring', 'Workshop Facilitation': 'workshops' };
             websiteContent.teaching.forEach(teach => {
                 const dataAttr = dataMap[teach.title] || teach.title.toLowerCase().replace(/\s+/g, '-');
                 const teachHTML = `<div class="teaching-card" data-teaching="${dataAttr}"><div class="teaching-icon"><i class="fas ${teach.icon}"></i></div><h3>${teach.title}</h3><p style="color: var(--gray-600); margin: 1rem 0;">${teach.description.split('.')[0]}.</p><button class="btn btn-outline teaching-btn" style="width: 100%; margin-top: auto;">View Details</button></div>`;

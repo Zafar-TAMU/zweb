@@ -1323,27 +1323,59 @@ function initializeServicesModal() {
 
 // Teaching Modal Functionality
 function initializeTeachingModal() {
-    const teachingCards = document.querySelectorAll('.teaching-card');
     const modal = document.getElementById('teachingModal');
     const modalTitle = document.getElementById('teachingModalTitle');
     const modalBody = document.getElementById('teachingModalBody');
     const closeBtn = document.getElementById('closeTeachingModal');
     
+    if (!modal || !modalTitle || !modalBody) return;
+    
     const teachingData = {
+        'instructed-courses': {
+            title: "Instructed Courses",
+            content: `
+                <div style="color: var(--gray-700); line-height: 1.8;">
+                    <p style="margin-bottom: 1rem;">Contributed to teaching smart agriculture, robotics, automation, and sensor-based systems, providing hands-on lab and field training.</p>
+                    <h4 style="color: var(--gray-900); margin: 1.5rem 0 1rem 0; font-size: 1.1rem;">Courses:</h4>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="padding: 0.5rem 0; display: flex; align-items: center; gap: 0.5rem;">
+                            <i class="fas fa-robot" style="color: var(--primary);"></i>
+                            <span>Applied Methods in SmartAg Systems</span>
+                        </li>
+                        <li style="padding: 0.5rem 0; display: flex; align-items: center; gap: 0.5rem;">
+                            <i class="fas fa-microchip" style="color: var(--primary);"></i>
+                            <span>Instrumentation in Agricultural Engineering Research</span>
+                        </li>
+                        <li style="padding: 0.5rem 0; display: flex; align-items: center; gap: 0.5rem;">
+                            <i class="fas fa-robot" style="color: var(--primary);"></i>
+                            <span>Applied Control for Automation and Robotics</span>
+                        </li>
+                        <li style="padding: 0.5rem 0; display: flex; align-items: center; gap: 0.5rem;">
+                            <i class="fas fa-microscope" style="color: var(--primary);"></i>
+                            <span>Measurement and Control of Biological Systems and Agricultural Processes</span>
+                        </li>
+                        <li style="padding: 0.5rem 0; display: flex; align-items: center; gap: 0.5rem;">
+                            <i class="fas fa-tint" style="color: var(--primary);"></i>
+                            <span>Reuse Water Quality Research</span>
+                        </li>
+                    </ul>
+                </div>
+            `
+        },
         curriculum: {
             title: "Curriculum Development",
             content: `
                 <div style="color: var(--gray-700); line-height: 1.8;">
-                    <p style="margin-bottom: 1rem;">Contributed to curriculum design for agricultural engineering programs, integrating modern AI and automation technologies.</p>
-                    <h4 style="color: var(--gray-900); margin: 1.5rem 0 1rem 0; font-size: 1.1rem;">Key Areas:</h4>
+                    <p style="margin-bottom: 1rem;">Developed course materials for agricultural engineering programs, integrating AI and automation technologies.</p>
+                    <h4 style="color: var(--gray-900); margin: 1.5rem 0 1rem 0; font-size: 1.1rem;">Topics:</h4>
                     <ul style="list-style: none; padding: 0;">
                         <li style="padding: 0.5rem 0; display: flex; align-items: center; gap: 0.5rem;">
-                            <i class="fas fa-robot" style="color: var(--primary);"></i>
-                            <span>Agricultural Robotics</span>
+                            <i class="fas fa-microchip" style="color: var(--primary);"></i>
+                            <span>Instrumentation in Agricultural Engineering Research</span>
                         </li>
                         <li style="padding: 0.5rem 0; display: flex; align-items: center; gap: 0.5rem;">
-                            <i class="fas fa-brain" style="color: var(--primary);"></i>
-                            <span>AI in Agriculture</span>
+                            <i class="fas fa-microscope" style="color: var(--primary);"></i>
+                            <span>Measurement and Control of Biological Systems and Agricultural Processes</span>
                         </li>
                     </ul>
                 </div>
@@ -1373,18 +1405,18 @@ function initializeTeachingModal() {
             `
         },
         mentoring: {
-            title: "Graduate Student Mentoring",
+            title: "Student Mentoring",
             content: `
                 <div style="color: var(--gray-700); line-height: 1.8;">
-                    <p style="margin-bottom: 1rem;">Mentored 8+ graduate students in agricultural engineering and AI applications, guiding thesis research and career development.</p>
+                    <p style="margin-bottom: 1rem;">Mentored 14+ students in agricultural engineering and AI applications, guiding thesis research and career development.</p>
                     <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem; margin: 2rem 0;">
                         <div style="text-align: center; padding: 1.5rem; background: var(--gray-50); border-radius: 12px;">
                             <div style="font-size: 2.5rem; font-weight: 700; color: var(--primary); font-family: var(--font-mono);">8+</div>
-                            <div style="font-size: 0.875rem; color: var(--gray-600); text-transform: uppercase; letter-spacing: 0.05em;">Students Mentored</div>
+                            <div style="font-size: 0.875rem; color: var(--gray-600); text-transform: uppercase; letter-spacing: 0.05em;">Grad Students Mentored</div>
                         </div>
                         <div style="text-align: center; padding: 1.5rem; background: var(--gray-50); border-radius: 12px;">
-                            <div style="font-size: 2.5rem; font-weight: 700; color: var(--primary); font-family: var(--font-mono);">5</div>
-                            <div style="font-size: 0.875rem; color: var(--gray-600); text-transform: uppercase; letter-spacing: 0.05em;">Thesis Supervised</div>
+                            <div style="font-size: 2.5rem; font-weight: 700; color: var(--primary); font-family: var(--font-mono);">2+</div>
+                            <div style="font-size: 0.875rem; color: var(--gray-600); text-transform: uppercase; letter-spacing: 0.05em;">Undergrad Projects Supervised</div>
                         </div>
                     </div>
                     <h4 style="color: var(--gray-900); margin: 1.5rem 0 1rem 0; font-size: 1.1rem;">Students:</h4>
@@ -1396,45 +1428,49 @@ function initializeTeachingModal() {
             title: "Workshop Facilitation",
             content: `
                 <div style="color: var(--gray-700); line-height: 1.8;">
-                    <p style="margin-bottom: 1rem;">Conducted workshops on deep learning applications in agriculture, IoT systems, and precision farming technologies.</p>
+                    <p style="margin-bottom: 1rem;">Conducted workshops on multibody dynamics simulation using RecurDyn.</p>
                     <h4 style="color: var(--gray-900); margin: 1.5rem 0 1rem 0; font-size: 1.1rem;">Topics Covered:</h4>
                     <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
-                        <span style="background: var(--primary); color: white; padding: 6px 16px; border-radius: 20px; font-size: 0.875rem;">Deep Learning</span>
-                        <span style="background: var(--primary); color: white; padding: 6px 16px; border-radius: 20px; font-size: 0.875rem;">IoT Systems</span>
-                        <span style="background: var(--primary); color: white; padding: 6px 16px; border-radius: 20px; font-size: 0.875rem;">Precision Farming</span>
+                        <span style="background: var(--primary); color: white; padding: 6px 16px; border-radius: 20px; font-size: 0.875rem;">Vehicle Safety</span>
+                        <span style="background: var(--primary); color: white; padding: 6px 16px; border-radius: 20px; font-size: 0.875rem;">Overturning Simulation</span>
+                        <span style="background: var(--primary); color: white; padding: 6px 16px; border-radius: 20px; font-size: 0.875rem;">Multibody Dynamics</span>
                     </div>
                 </div>
             `
         }
     };
     
-    teachingCards.forEach(card => {
-        const btn = card.querySelector('.teaching-btn');
-        btn?.addEventListener('click', () => {
-            const type = card.getAttribute('data-teaching');
-            const data = teachingData[type];
+    // Use event delegation for dynamically added cards
+    document.addEventListener('click', (e) => {
+        const btn = e.target.closest('.teaching-btn');
+        if (!btn) return;
+        
+        const card = btn.closest('.teaching-card');
+        if (!card) return;
+        
+        const type = card.getAttribute('data-teaching');
+        const data = teachingData[type];
+        
+        if (data) {
+            modalTitle.textContent = data.title;
+            modalBody.innerHTML = data.content;
             
-            if (data) {
-                modalTitle.textContent = data.title;
-                modalBody.innerHTML = data.content;
-                
-                // Add student details if mentoring section
-                if (type === 'mentoring' && typeof websiteContent !== 'undefined') {
-                    const mentoringData = websiteContent.teaching.find(t => t.title === 'Graduate Student Mentoring');
-                    if (mentoringData && mentoringData.students) {
-                        const studentsList = modalBody.querySelector('#studentsList');
-                        if (studentsList) {
-                            mentoringData.students.forEach((student, index) => {
-                                studentsList.innerHTML += `<div class="outreach-item"><div class="outreach-number">[${index + 1}]</div><div class="outreach-item-content"><h4 class="outreach-title">${student.name}</h4><p class="outreach-details"><strong>${student.degree}</strong> • ${student.topic}</p><p class="outreach-year">${student.year}</p></div></div>`;
-                            });
-                        }
+            // Add student details if mentoring section
+            if (type === 'mentoring' && typeof websiteContent !== 'undefined') {
+                const mentoringData = websiteContent.teaching.find(t => t.title === 'Student Mentoring');
+                if (mentoringData && mentoringData.students) {
+                    const studentsList = modalBody.querySelector('#studentsList');
+                    if (studentsList) {
+                        mentoringData.students.forEach((student, index) => {
+                            studentsList.innerHTML += `<div class="outreach-item"><div class="outreach-number">[${index + 1}]</div><div class="outreach-item-content"><h4 class="outreach-title">${student.name}</h4><p class="outreach-details"><strong>${student.degree}</strong> • ${student.topic}</p><p class="outreach-year">${student.year}</p></div></div>`;
+                        });
                     }
                 }
-                
-                modal.classList.add('active');
-                document.body.style.overflow = 'hidden';
             }
-        });
+            
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
     });
     
     closeBtn?.addEventListener('click', () => {
