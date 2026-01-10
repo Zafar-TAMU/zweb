@@ -686,31 +686,33 @@ const websiteContent = {
     // ========================================
     teaching: [
         {
-            icon: "fa-book-open",
-            title: "Curriculum Development",
-            description: "Contributed to curriculum design for agricultural engineering programs, integrating modern AI and automation technologies.",
+            icon: "fa-chalkboard-user",
+            title: "Instructed Courses",
+            description: "Contributed to teaching smart agriculture, robotics, automation, and sensor-based systems, providing hands-on lab and field training.",
             areas: [
-                { icon: "fa-robot", text: "Agricultural Robotics" },
-                { icon: "fa-brain", text: "AI in Agriculture" }
+            { icon: "fa-robot", text: "Applied Methods in SmartAg Systems" },
+            { icon: "fa-microchip", text: "Instrumentation in Agricultural Engineering Research" },
+            { icon: "fa-robot", text: "Applied Control for Automation and Robotics" },
+            { icon: "fa-microscope", text: "Measurement and Control of Biological Systems and Agricultural Processes" },
+            { icon: "fa-tint", text: "Reuse Water Quality Research" }
             ]
         },
         {
-            icon: "fa-chalkboard-user",
-            title: "Guest Lectures",
-            description: "Delivered guest lectures on precision agriculture, computer vision, and AI applications in agricultural systems.",
+            icon: "fa-book-open",
+            title: "Curriculum Development",
+            description: "Developed course materials for agricultural engineering programs, integrating AI and automation technologies.",
             topics: [
-                { icon: "fa-seedling", text: "Precision Agriculture" },
-                { icon: "fa-eye", text: "Computer Vision" },
-                { icon: "fa-microchip", text: "AI Applications" }
+            { icon: "fa-microchip", text: "Instrumentation in Agricultural Engineering Research" },
+            { icon: "fa-microscope", text: "Measurement and Control of Biological Systems and Agricultural Processes" }
             ]
         },
         {
             icon: "fa-chalkboard-teacher",
-            title: "Graduate Student Mentoring",
-            description: "Mentored 8+ graduate students in agricultural engineering and AI applications, guiding thesis research and career development.",
+            title: "Student Mentoring",
+            description: "Mentored 14+ students in agricultural engineering and AI applications, guiding thesis research and career development.",
             stats: [
-                { number: "8+", label: "Students Mentored" },
-                { number: "5", label: "Thesis Supervised" }
+                { number: "8+", label: "Grad Students Mentored" },
+                { number: "2+", label: "Undergrad Projects Supervised" }
             ],
             students: [
                 { name: "Student Name 1", degree: "Ph.D.", topic: "AI in Precision Agriculture", year: "2023-Present" },
@@ -723,8 +725,8 @@ const websiteContent = {
         {
             icon: "fa-laptop-code",
             title: "Workshop Facilitation",
-            description: "Conducted workshops on deep learning applications in agriculture, IoT systems, and precision farming technologies.",
-            topics: ["Deep Learning", "IoT Systems", "Precision Farming"]
+            description: "Conducted workshops on multibody dynamics simulation using RecurDyn.",
+            topics: ["Vehicle Safety", "Overturning Simulation", "Multibody Dynamics"]
         }
     ]
 };
