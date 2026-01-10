@@ -1532,7 +1532,7 @@ section {
     box-shadow: var(--shadow-sm);
     transition: all var(--transition-base);
     overflow: hidden;
-    height: 990px;
+    height: 400px;
     display: flex;
     flex-direction: column;
 }
@@ -2149,12 +2149,11 @@ section {
 
 @media (max-width: 1024px) {
     .conferences-grid {
-        
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     }
     
     .teaching-grid {
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -2378,6 +2377,20 @@ section {
 
     .expertise-emoji {
         font-size: 1.25rem;
+    }
+
+    .about-card,
+    .skills-card,
+    .expertise-card,
+    .trainings-card,
+    .experience-card,
+    .impact-card {
+        height: auto !important;
+        overflow: visible !important;
+    }
+
+    .teaching-grid {
+        grid-template-columns: 1fr !important;
     }
 }
 
