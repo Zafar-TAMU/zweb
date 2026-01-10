@@ -1510,10 +1510,9 @@ section {
 
 .about-card,
 .skills-card,
-.impact-card,
-.experience-card,
 .expertise-card,
-.trainings-card {
+.trainings-card,
+.experience-card {
     background: var(--white);
     border: 1px solid var(--gray-200);
     border-radius: var(--radius-2xl);
@@ -1521,14 +1520,29 @@ section {
     box-shadow: var(--shadow-sm);
     transition: all var(--transition-base);
     overflow: visible;
+    display: flex;
+    flex-direction: column;
+}
+
+.impact-card {
+    background: var(--white);
+    border: 1px solid var(--gray-200);
+    border-radius: var(--radius-2xl);
+    padding: var(--space-xl);
+    box-shadow: var(--shadow-sm);
+    transition: all var(--transition-base);
+    overflow: hidden;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
 }
 
 .about-card:hover,
 .skills-card:hover,
-.impact-card:hover,
-.experience-card:hover,
 .expertise-card:hover,
-.trainings-card:hover {
+.trainings-card:hover,
+.impact-card:hover,
+.experience-card:hover {
     transform: translateY(-4px);
     box-shadow: var(--shadow-lg);
 }
@@ -1556,10 +1570,14 @@ section {
     margin-bottom: var(--space-lg);
 }
 
-.education-timeline {
+.education-timeline,
+.experience-timeline {
     display: flex;
     flex-direction: column;
     gap: var(--space-sm);
+    flex: 1;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 .timeline-item {
@@ -1786,6 +1804,7 @@ section {
     display: flex;
     flex-direction: column;
     gap: var(--space-xs);
+    width: 100%;
 }
 
 .expertise-item {
@@ -1797,6 +1816,8 @@ section {
     border-radius: var(--radius-lg);
     transition: all var(--transition-base);
     cursor: pointer;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .expertise-item:hover {
@@ -2060,20 +2081,23 @@ section {
 .trainings-card,
 .impact-card {
     grid-column: auto;
-    height: 1000px;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
 }
 
 .tech-skills,
 .expertise-list,
-.trainings-list,
+.trainings-list {
+    flex: 1;
+    min-height: 0;
+    width: 100%;
+    overflow: visible;
+}
+
 .awards-list {
     flex: 1;
+    min-height: 0;
+    width: 100%;
     overflow-y: auto;
     overflow-x: hidden;
-    min-height: 0;
 }
 
 @media (max-width: 1024px) {
@@ -2344,6 +2368,15 @@ section {
 
     .pub-actions {
         justify-content: flex-start;
+    }
+
+    .expertise-item {
+        flex-wrap: wrap;
+        padding: var(--space-sm);
+    }
+
+    .expertise-emoji {
+        font-size: 1.25rem;
     }
 }
 

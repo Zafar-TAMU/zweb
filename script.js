@@ -1349,6 +1349,29 @@ function initializeTeachingModal() {
                 </div>
             `
         },
+        'guest-lectures': {
+            title: "Guest Lectures",
+            content: `
+                <div style="color: var(--gray-700); line-height: 1.8;">
+                    <p style="margin-bottom: 1rem;">Delivered guest lectures on precision agriculture, computer vision, and AI applications in agricultural systems.</p>
+                    <h4 style="color: var(--gray-900); margin: 1.5rem 0 1rem 0; font-size: 1.1rem;">Topics:</h4>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="padding: 0.5rem 0; display: flex; align-items: center; gap: 0.5rem;">
+                            <i class="fas fa-seedling" style="color: var(--primary);"></i>
+                            <span>Precision Agriculture</span>
+                        </li>
+                        <li style="padding: 0.5rem 0; display: flex; align-items: center; gap: 0.5rem;">
+                            <i class="fas fa-eye" style="color: var(--primary);"></i>
+                            <span>Computer Vision</span>
+                        </li>
+                        <li style="padding: 0.5rem 0; display: flex; align-items: center; gap: 0.5rem;">
+                            <i class="fas fa-microchip" style="color: var(--primary);"></i>
+                            <span>AI Applications</span>
+                        </li>
+                    </ul>
+                </div>
+            `
+        },
         mentoring: {
             title: "Graduate Student Mentoring",
             content: `
