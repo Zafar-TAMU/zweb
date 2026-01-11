@@ -67,6 +67,8 @@
 html {
     scroll-behavior: smooth;
     font-size: 16px;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
 }
 
 body {
@@ -77,12 +79,17 @@ body {
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    min-width: 320px;
+    width: 100%;
+    position: relative;
 }
 
 .container {
-    max-width: 1200px;
+    max-width: min(1200px, 95vw);
     margin: 0 auto;
-    padding: 0 var(--space-lg);
+    padding: 0 clamp(1rem, 3vw, 2rem);
+    width: 100%;
+    box-sizing: border-box;
 }
 
 /* Navigation */
@@ -108,11 +115,11 @@ body {
 .nav-container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 var(--space-lg);
+    padding: 0 clamp(1rem, 3vw, 2rem);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 80px;
+    height: 70px;
 }
 
 .nav-logo {
@@ -131,7 +138,9 @@ body {
 .nav-menu {
     display: flex;
     list-style: none;
-    gap: var(--space-xl);
+    gap: clamp(0.5rem, 2vw, 3rem);
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .nav-link {
@@ -139,11 +148,12 @@ body {
     text-decoration: none;
     color: var(--gray-700);
     font-weight: 600;
-    font-size: 0.95rem;
-    padding: 8px 16px;
+    font-size: clamp(0.75rem, 1.5vw, 0.95rem);
+    padding: clamp(4px, 1vw, 8px) clamp(8px, 1.5vw, 12px);
     border-radius: 12px;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     overflow: hidden;
+    white-space: nowrap;
 }
 
 .nav-link::before {
@@ -271,11 +281,17 @@ body {
 .hero-container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 var(--space-lg);
+    padding: 0 clamp(1rem, 3vw, 2rem);
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: var(--space-3xl);
+    gap: clamp(2rem, 5vw, 4rem);
     align-items: center;
+}
+
+@media (max-width: 900px) {
+    .hero-container {
+        grid-template-columns: 1fr;
+    }
 }
 
 .hero-badge {
@@ -298,7 +314,7 @@ body {
 }
 
 .hero-title {
-    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-size: clamp(2rem, 5vw, 4rem);
     font-weight: 700;
     line-height: 1.1;
     margin-bottom: var(--space-lg);
@@ -413,6 +429,8 @@ body {
     gap: 15px;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    max-width: 100%;
 }
 
 .visual-card {
@@ -1483,7 +1501,7 @@ section {
 }
 
 .section-title {
-    font-size: clamp(2rem, 4vw, 3rem);
+    font-size: clamp(1.5rem, 4vw, 3rem);
     font-weight: 700;
     margin-bottom: var(--space-md);
     color: var(--gray-900);
@@ -1504,8 +1522,8 @@ section {
 
 .about-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: var(--space-sm);
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+    gap: clamp(1rem, 2vw, 1.5rem);
 }
 
 .about-card,
@@ -1532,7 +1550,7 @@ section {
     box-shadow: var(--shadow-sm);
     transition: all var(--transition-base);
     overflow: hidden;
-    height: 990px;
+    height: 400px;
     display: flex;
     flex-direction: column;
 }
@@ -1914,8 +1932,8 @@ section {
 
 .interests-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: var(--space-xl);
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr));
+    gap: clamp(1.5rem, 3vw, 3rem);
 }
 
 .interest-card {
@@ -1978,8 +1996,8 @@ section {
 
 .memberships-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: var(--space-xl);
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+    gap: clamp(1.5rem, 3vw, 3rem);
 }
 
 .membership-card {
@@ -2121,9 +2139,7 @@ section {
     .languages-card {
         grid-column: 1 / -1;
     }
-}
 
-@media (max-width: 1024px) {
     .contact-content {
         grid-template-columns: 1fr !important;
         display: grid !important;
@@ -2145,9 +2161,7 @@ section {
     .portfolio-grid {
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     }
-}
 
-@media (max-width: 1024px) {
     .conferences-grid {
         grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     }
@@ -2155,7 +2169,20 @@ section {
     .teaching-grid {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .hero-container {
+        gap: var(--space-2xl);
+    }
+
+    .hero-visual {
+        max-width: 600px;
+        margin: 0 auto;
+    }
 }
+
+
+
+
 
 /* Page Transition Effects */
 .page-transition {
@@ -2187,23 +2214,20 @@ section {
 }
 
 @media (max-width: 768px) {
-    .container {
-        padding: 0 var(--space-md);
-    }
-
     .nav-menu {
         position: fixed;
-        top: 80px;
+        top: 70px;
         left: -100%;
         width: 100%;
-        height: calc(100vh - 80px);
+        height: calc(100vh - 70px);
         background: var(--white);
         flex-direction: column;
         justify-content: start;
         align-items: center;
-        padding-top: var(--space-xl);
-        transition: left var(--transition-base);
+        padding-top: 2rem;
+        transition: left 0.3s ease;
         box-shadow: var(--shadow-lg);
+        z-index: 999;
     }
 
     .nav-menu.active {
@@ -2216,35 +2240,33 @@ section {
 
     .hero {
         min-height: auto;
-        padding: 100px 0 var(--space-3xl) 0;
+        padding: 90px 0 2rem 0;
     }
 
     .hero-container {
         grid-template-columns: 1fr;
-        gap: var(--space-xl);
         text-align: center;
     }
 
     .hero-visual {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 12px;
-        width: 100%;
-        transform: none !important;
+        gap: 0.75rem;
     }
 
     .hexagon-grid {
         grid-column: 1 / -1;
-        display: flex;
-        gap: 8px;
-        justify-content: center;
-        flex-wrap: wrap;
-        margin-bottom: 15px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.75rem;
+        justify-items: center;
+        max-width: 300px;
+        margin: 0 auto 0.5rem;
     }
 
     .hexagon {
-        width: 70px;
-        height: 80px;
+        width: 80px;
+        height: 92px;
         margin: 0 !important;
     }
 
@@ -2254,43 +2276,22 @@ section {
 
     .visual-card {
         width: 100%;
-        height: 110px;
-        margin: 0 !important;
-        padding: var(--space-md) !important;
-    }
-
-    .visual-card .card-icon {
-        font-size: 2rem;
-        margin-bottom: 0.5rem;
-    }
-
-    .visual-card .card-title {
-        font-size: 0.8rem;
-        line-height: 1.2;
-    }
-
-    .hero-stats {
-        justify-content: center;
-        flex-wrap: wrap;
+        max-width: 160px;
+        height: 100px;
     }
 
     .hero-actions {
-        justify-content: center;
         flex-direction: column;
-        align-items: center;
     }
 
     .btn {
         width: 100%;
-        max-width: 280px;
-        justify-content: center;
     }
-    
+
     .about-grid {
         grid-template-columns: 1fr;
-        gap: var(--space-lg);
     }
-    
+
     .main-card,
     .experience-card,
     .skills-card,
@@ -2299,229 +2300,34 @@ section {
     .impact-card {
         grid-column: 1 / -1;
     }
-    
-    .impact-stats {
-        grid-template-columns: repeat(3, 1fr);
-        gap: var(--space-sm);
-    }
-
-    .awards-list {
-        gap: var(--space-md);
-        padding: 0;
-    }
-
-    .award-item {
-        flex-direction: row;
-        text-align: left;
-        align-items: flex-start;
-        padding: var(--space-sm);
-        margin: 0;
-    }
-
-    .award-item:hover {
-        transform: none;
-    }
-
-    .impact-card {
-        overflow-x: hidden;
-    }
-
-    .pagination-controls {
-        flex-direction: column;
-        gap: var(--space-md);
-        align-items: stretch;
-    }
-
-    .pagination-btn {
-        width: 100%;
-        justify-content: center;
-    }
-
-    .pagination-info {
-        text-align: center;
-        order: -1;
-    }
-
-    .hexagon-grid {
-        flex-wrap: wrap;
-        gap: 10px;
-    }
-
-    .hexagon {
-        width: 100px;
-        height: 115px;
-    }
-
-    .hex-2, .hex-4 {
-        margin-top: 0;
-    }
 
     .publication-item {
         grid-template-columns: 1fr;
-        gap: var(--space-md);
-        padding: var(--space-lg);
     }
 
-    .pub-year-badge {
-        width: fit-content;
-    }
-
-    .pub-actions {
-        justify-content: flex-start;
-    }
-
-    .expertise-item {
-        flex-wrap: wrap;
-        padding: var(--space-sm);
-    }
-
-    .expertise-emoji {
-        font-size: 1.25rem;
-    }
-
-    .about-card,
-    .skills-card,
-    .expertise-card,
-    .trainings-card,
-    .experience-card,
-    .impact-card {
-        height: auto !important;
-        overflow: visible !important;
-    }
-
-    .teaching-grid {
-        grid-template-columns: 1fr !important;
+    .floating-particles,
+    .floating-icons,
+    .animated-background {
+        display: none;
     }
 }
 
-@media (max-width: 480px) {
-    .container {
-        padding: 0 1rem;
+@media (min-width: 769px) and (max-width: 1024px) {
+    .hero-container {
+        grid-template-columns: 1fr;
     }
 
-    .nav-container {
-        padding: 0 1rem;
+    .about-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 
-    .hero-stats {
-        gap: var(--space-md);
-        width: 100%;
-    }
-
-    .stat {
-        flex: 1;
-    }
-
-    .stat-number {
-        font-size: 1.25rem;
-    }
-
-    .stat-label {
-        font-size: 0.7rem;
-    }
-    
-    .about-card,
-    .skills-card,
-    .impact-card,
-    .expertise-card,
-    .languages-card {
-        padding: var(--space-lg);
+    .main-card,
+    .experience-card {
         grid-column: 1 / -1;
     }
-
-    .impact-card {
-        width: 100%;
-    }
-
-    .award-content h4 {
-        font-size: 1rem;
-        line-height: 1.4;
-    }
-
-    .award-content p {
-        font-size: 0.875rem;
-        line-height: 1.5;
-    }
-
-    .education-header {
-        flex-direction: column;
-        gap: var(--space-sm);
-    }
-
-    .education-title-row {
-        width: 100%;
-    }
-
-    .education-badge {
-        align-self: flex-start;
-    }
-
-    .university-logo {
-        width: 40px;
-        height: 40px;
-    }
-
-    .hexagon {
-        width: 70px;
-        height: 80px;
-    }
-
-    .profile-main {
-        width: 100px;
-        height: 100px;
-    }
-
-    .profile-side {
-        width: 65px;
-        height: 65px;
-    }
-
-    .section-title {
-        font-size: 1.75rem;
-    }
-
-    .section-subtitle {
-        font-size: 1rem;
-    }
-
-    .impact-stats {
-        grid-template-columns: repeat(3, 1fr);
-        gap: var(--space-sm);
-    }
-
-    .impact-number {
-        font-size: 1.5rem;
-    }
-
-    .impact-label {
-        font-size: 0.7rem;
-    }
-
-    .teaching-stats {
-        flex-direction: column;
-        gap: var(--space-md);
-    }
-
-    .conferences-grid,
-    .teaching-grid,
-    .memberships-grid,
-    .interests-grid,
-    .gallery-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .gallery-placeholder {
-        height: 250px;
-    }
-
-    .posts-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .post-placeholder {
-        height: 180px;
-    }
 }
+
+
 
 /* CV Modal Viewer */
 .cv-modal {
@@ -2683,8 +2489,8 @@ body.loaded {
 
 .portfolio-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: var(--space-xl);
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
+    gap: clamp(1.5rem, 3vw, 3rem);
 }
 
 .portfolio-item {
@@ -2772,7 +2578,6 @@ body.loaded {
 
 .portfolio-years {
     font-family: var(--font-mono);
-}
     transition: all var(--transition-base);
     backdrop-filter: blur(10px);
 }
@@ -2791,8 +2596,8 @@ body.loaded {
 
 .services-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: var(--space-xl);
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
+    gap: clamp(1.5rem, 3vw, 3rem);
 }
 
 .service-card {
@@ -3141,8 +2946,8 @@ body.loaded {
 
 .conferences-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: var(--space-xl);
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+    gap: clamp(1.5rem, 3vw, 3rem);
 }
 
 .conference-card {
@@ -3228,8 +3033,8 @@ body.loaded {
 /* Outreach Stats Grid */
 .outreach-stats-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: var(--space-xl);
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 180px), 1fr));
+    gap: clamp(1.5rem, 3vw, 3rem);
     margin: var(--space-2xl) 0;
 }
 
@@ -3462,8 +3267,8 @@ body.loaded {
 
 .teaching-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: var(--space-xl);
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
+    gap: clamp(1.5rem, 3vw, 3rem);
 }
 
 .teaching-card {
@@ -3572,8 +3377,8 @@ body.loaded {
 
 .linkedin-posts-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: var(--space-xl);
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
+    gap: clamp(1.5rem, 3vw, 3rem);
     margin-bottom: var(--space-xl);
 }
 
@@ -3678,8 +3483,8 @@ body.loaded {
 
 .gallery-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: var(--space-xl);
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+    gap: clamp(1.5rem, 3vw, 3rem);
 }
 
 .gallery-item {
@@ -3897,8 +3702,8 @@ body.loaded {
 
 .contact-content {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: var(--space-2xl);
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 400px), 1fr));
+    gap: clamp(2rem, 4vw, 4rem);
     align-items: start;
 }
 
@@ -4096,8 +3901,8 @@ body.loaded {
 /* Certificates Grid */
 .certificates-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: var(--space-xl);
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+    gap: clamp(1.5rem, 3vw, 3rem);
 }
 
 .certificate-item {
@@ -4219,4 +4024,22 @@ body.loaded {
 .move-icon {
     display: inline-block;
     transform: scaleX(-1);
+}
+
+
+/* Comprehensive Responsive Design */
+@media (max-width: 480px) {
+    .hexagon {
+        width: 70px;
+        height: 80px;
+    }
+    
+    .visual-card {
+        max-width: 140px;
+        height: 90px;
+    }
+    
+    .outreach-stats-grid {
+        grid-template-columns: 1fr;
+    }
 }
