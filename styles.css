@@ -4080,15 +4080,13 @@ body.loaded {
     
     .hero-stats {
         width: 100%;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        gap: 1rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.75rem;
     }
     
     .stat {
-        flex: 1;
-        min-width: 80px;
-        max-width: 120px;
+        width: 100%;
     }
     
     .hero-actions {
@@ -4111,10 +4109,14 @@ body.loaded {
         max-width: 100%;
     }
     
+    .portfolio-grid {
+        grid-template-columns: 1fr !important;
+        gap: 1.5rem;
+    }
+    
     .interests-grid,
     .memberships-grid,
     .services-grid,
-    .portfolio-grid,
     .conferences-grid,
     .teaching-grid,
     .gallery-grid,
