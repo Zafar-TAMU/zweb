@@ -4109,11 +4109,7 @@ body.loaded {
         max-width: 100%;
     }
     
-    .portfolio-grid {
-        grid-template-columns: 1fr !important;
-        gap: 1.5rem;
-    }
-    
+    .portfolio-grid,
     .interests-grid,
     .memberships-grid,
     .services-grid,
@@ -4122,8 +4118,8 @@ body.loaded {
     .gallery-grid,
     .linkedin-posts-grid,
     .outreach-stats-grid {
-        grid-template-columns: repeat(2, 1fr) !important;
-        gap: 1rem;
+        grid-template-columns: 1fr !important;
+        gap: 1.5rem;
     }
     
     .about-grid {
