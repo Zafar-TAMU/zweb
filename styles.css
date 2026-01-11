@@ -4043,3 +4043,84 @@ body.loaded {
         grid-template-columns: 1fr;
     }
 }
+
+/* CRITICAL MOBILE FIXES - DO NOT REMOVE */
+@media (max-width: 768px) {
+    * {
+        max-width: 100vw;
+    }
+    
+    html, body {
+        overflow-x: hidden;
+        width: 100%;
+    }
+    
+    .container {
+        width: 100%;
+        max-width: 100%;
+        padding: 0 1rem;
+        box-sizing: border-box;
+    }
+    
+    .nav-container {
+        width: 100%;
+        padding: 0 1rem;
+    }
+    
+    .hero-container {
+        width: 100%;
+        padding: 0 1rem;
+    }
+    
+    .about-grid,
+    .interests-grid,
+    .memberships-grid,
+    .services-grid,
+    .portfolio-grid,
+    .conferences-grid,
+    .teaching-grid,
+    .gallery-grid,
+    .linkedin-posts-grid,
+    .certificates-grid,
+    .outreach-stats-grid {
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 1rem;
+    }
+    
+    .about-grid {
+        grid-template-columns: 1fr !important;
+    }
+    
+    .main-card,
+    .experience-card {
+        grid-column: 1 / -1;
+    }
+    
+    .hero-visual {
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    .hexagon-grid {
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .visual-card,
+    .interest-card,
+    .membership-card,
+    .service-card,
+    .portfolio-item,
+    .conference-card,
+    .teaching-card {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+}
