@@ -491,6 +491,15 @@ const websiteContent = {
     // ========================================
     certificates: [
         {
+            name: "DGSA",
+            fullTitle: "Distinguished Graduate Student Award",
+            institution: "Texas A&M University",
+            year: "2025",
+            color: "purple",
+            image: "dgsa.jpg"
+        },
+        
+        {
             name: "Ph.D. Degree",
             fullTitle: "Doctor of Philosophy",
             institution: "Biological & Agricultural Engineering, Texas A&M University",
