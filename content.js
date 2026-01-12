@@ -321,7 +321,7 @@ const websiteContent = {
             logo: "UF.png"
         },
         {
-            title: "Graduate Assistant (Research + Teaching)",
+            title: "Graduate Assistant (Research & Teaching)",
             company: "Texas A&M University",
             years: "2020-2024",
             badge: "PhD",
@@ -606,7 +606,7 @@ const websiteContent = {
     // ========================================
     researchInterests: [
         {
-            icon: "🌾",
+            icon: "🧑‍🌾",
             title: "Smart Agriculture",
             description: "Data-driven farming solutions using AI and sensor technologies for optimized crop management"
         },
@@ -634,6 +634,11 @@ const websiteContent = {
             icon: "📚",
             title: "Big Data Analytics",
             description: "Analysis of large and diverse agricultural datasets to optimize productivity, sustainability, and resource use"
+        },
+        {
+            icon: "🍃",
+            title: "Controlled Plant Production",
+            description: "Cultivation of plants under regulated environmental conditions to optimize growth, yield, quality, and resource efficiency"
         },
     ],
 
