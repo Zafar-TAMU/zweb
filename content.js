@@ -508,6 +508,14 @@ const websiteContent = {
             image: "phd.jpg"
         },
         {
+            name: "Ph.D. Degree",
+            fullTitle: "CIRTL Associate - Fellow",
+            institution: "Texas A&M University",
+            year: "2024",
+            color: "purple",
+            image: "aff_tamu.jpg"
+        },
+        {
             name: "M.Sc. Degree",
             fullTitle: "Master of Science",
             institution: "Agricultural Machinery Engineering, Chungnam National University",
