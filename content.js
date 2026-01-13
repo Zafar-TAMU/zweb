@@ -515,24 +515,23 @@ const websiteContent = {
             color: "purple",
             image: "aff_tamu.jpg"
         },
-        {
-            name: "M.Sc. Degree",
-            fullTitle: "Master of Science",
-            institution: "Agricultural Machinery Engineering, Chungnam National University",
-            year: "2019",
-            color: "blue",
-            image: "msc.jpg"
-        },
-
-        {
-            name: "B.Sc. Degree",
-            fullTitle: "Bachelor of Science",
-            institution: "Agricultural Engineering, Hajee Mohammad Danesh Science & Technology University",
-            year: "2017",
-            color: "purple",
-            image: "bsc.jpg"
-        },
         
+        {
+            name: "Ph.D. Degree",
+            fullTitle: "1st Place Student Paper",
+            institution: "Belt Wide Cotton Conference",
+            year: "2022",
+            color: "purple",
+            image: "BWCC_2022F.jpg"
+        },
+        {
+            name: "Scholarship",
+            fullTitle: "Peary Wilemon Scholarship",
+            institution: "National Cotton Ginners Association",
+            year: "2022-2023",
+            color: "green",
+            image: "pw1.jpg"
+        },
         {
             name: "Best Presentation Award",
             fullTitle: "Best Presentation Award",
@@ -545,20 +544,51 @@ const websiteContent = {
             name: "Scholarship",
             fullTitle: "Peary Wilemon Scholarship",
             institution: "National Cotton Ginners Association",
-            year: "2022-2023",
-            color: "green",
-            image: "pw1.jpg"
-        },
-
-        {
-            name: "Scholarship",
-            fullTitle: "Peary Wilemon Scholarship",
-            institution: "National Cotton Ginners Association",
             year: "2020-2021",
             color: "orange",
             image: "pw2.jpg"
         },
-
+        {
+            name: "M.Sc. Degree",
+            fullTitle: "Master of Science",
+            institution: "Agricultural Machinery Engineering, Chungnam National University",
+            year: "2019",
+            color: "blue",
+            image: "msc.jpg"
+        },
+        {
+            name: "M.Sc. Degree",
+            fullTitle: "Certificate of Intership",
+            institution: "Shenyang Agricultural University",
+            year: "2019",
+            color: "blue",
+            image: "Shenyang2019.jpg"
+        },
+        {
+            name: "M.Sc. Degree",
+            fullTitle: "Certification of Honor",
+            institution: "University of Tsukuba",
+            year: "2018",
+            color: "blue",
+            image: "JCK2018.jpg"
+        },
+        {
+            name: "M.Sc. Degree",
+            fullTitle: "Honorary Credential",
+            institution: "Shenyang Agriculture University",
+            year: "2018",
+            color: "blue",
+            image: "CSKJC2018.jpg"
+        },
+        
+        {
+            name: "B.Sc. Degree",
+            fullTitle: "Bachelor of Science",
+            institution: "Agricultural Engineering, Hajee Mohammad Danesh Science & Technology University",
+            year: "2017",
+            color: "purple",
+            image: "bsc.jpg"
+        },
     ],
 
     // ========================================
