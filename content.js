@@ -640,6 +640,11 @@ const websiteContent = {
             title: "Controlled Plant Production",
             description: "Cultivation of plants under regulated environmental conditions to optimize growth, yield, quality, and resource efficiency"
         },
+        {
+            icon: "🪴",
+            title: "Crop Modelling",
+            description: "Use of mathematical and computational models to simulate crop growth, development, and yield under varying environmental, management, and genetic conditions"
+        },
     ],
 
     // ========================================
