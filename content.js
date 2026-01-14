@@ -410,80 +410,16 @@ const websiteContent = {
     // AWARDS
     // ========================================
     awards: [
-        {
-            name: "Distinguished Graduate Student Award",
-            institution: "Texas A&M University",
-            year: "2025",
-            emoji: ""
-        },
-        {
-            name: "Travel Award",
-            institution: "Texas A&M University",
-            year: "2022, 2023, 2024",
-            emoji: ""
-        },
-        {
-            name: "Dr. Brock Faulkner ’04 Memorial Scholarship",
-            institution: "Texas A&M University",
-            year: "2023",
-            emoji: ""
-        },
-
-        {
-            name: "Peary Wilemon Scholarship",
-            institution: "National Cotton Ginners Association",
-            year: "2021, 2023",
-            emoji: ""
-        },
-
-        {
-            name: "Graduate Scholarship",
-            institution: "Texas A&M University",
-            year: "2021, 2022, 2023",
-            emoji: ""
-        },
-        {
-            name: "Best Presenter (3rd)",
-            institution: "TAMU Student Research Week",
-            year: "2022",
-            emoji: ""
-        },
-
-        {
-            name: "Best Presenter (1st)",
-            institution: "Belt Wide Cotton Conferences",
-            year: "2022",
-            emoji: ""
-        },
-        
-        {
-            name: "Best Presenter (3rd)",
-            institution: "China-South Korea Joint Academic Conference",
-            year: "2019",
-            emoji: ""
-        },
-        {
-            name: "Best Presenter (Silver)",
-            institution: "Japan China Korea Graduate Student Forum",
-            year: "2018",
-            emoji: ""
-        },
-        {
-            name: "Best Poster Presenter",
-            institution: "Spring conference on precision agriculture",
-            year: "2018",
-            emoji: ""
-        },
-        { name: "Distinguished Graduate Student Award", institution: "Texas A&M University", year: "2025", emoji: "🥇" },
-        { name: "Travel Award", institution: "Texas A&M University", year: "2022, 2023, 2024", emoji: "✈️" },
-        { name: "Dr. Brock Faulkner '04 Memorial Scholarship", institution: "Texas A&M University", year: "2023", emoji: "🎓" },
-        { name: "Peary Wilemon Scholarship", institution: "National Cotton Ginners Association", year: "2021, 2023", emoji: "💰" },
-        { name: "Graduate Scholarship", institution: "Texas A&M University", year: "2021, 2022, 2023", emoji: "📚" },
+        { name: "Distinguished Graduate Student Award", institution: "Texas A&M University", year: "2025", emoji: "🏆"},
+        { name: "Travel Award", institution: "Texas A&M University", year: "2022, 2023, 2024", emoji: "✈️"},
+        { name: "Dr. Brock Faulkner ’04 Memorial Scholarship", institution: "Texas A&M University", year: "2023", emoji: "💰" },
+        { name: "Peary Wilemon Scholarship", institution: "National Cotton Ginners Association", year: "2021, 2023", emoji: "🏆" },
+        { name: "Graduate Scholarship", institution: "Texas A&M University", year: "2021, 2022, 2023", emoji: "💰" },
         { name: "Best Presenter (3rd)", institution: "TAMU Student Research Week", year: "2022", emoji: "🥉" },
-        { name: "Best Presenter (1st)", institution: "Belt Wide Cotton Conferences", year: "2022", emoji: "🏆" },
-        { name: "Best Presenter (3rd)", institution: "China-South Korea Joint Academic Conference", year: "2019", emoji: "🥉" },
-        { name: "Best Presenter (Silver)", institution: "Japan China Korea Graduate Student Forum", year: "2018", emoji: "🥈" },
-        { name: "Best Poster Presenter", institution: "Spring conference on precision agriculture", year: "2018", emoji: "📋" }
+        { name: "Best Presenter (1st)", institution: "Beltwide Cotton Conferences", year: "2022", emoji: "🥇" },
+        { name: "Best Presenter (3rd)", institution: "China–South Korea Joint Academic Conference", year: "2019", emoji: "🥉" },
+        { name: "Best Presenter (Silver)", institution: "Japan–China–Korea Graduate Student Forum", year: "2018", emoji: "🥈" },
+        { name: "Best Poster Presenter", institution: "Spring Conference on Precision Agriculture", year: "2018", emoji: "🥇" },
     ],
 
     // ========================================
