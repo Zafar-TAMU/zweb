@@ -711,8 +711,8 @@ const websiteContent = {
     // ========================================
     services: {
         guestEditor: [
-            { journal: "Sensors: Spectroscopy and Sensing Technologies for Smart Agriculture", years: "2024 - 2025", link: "https://www.mdpi.com/journal/sensors/special_issues/spectroscopy_sensing_smart_agriculture" },
-            { journal: "AgriEngineering: Sensor-based technologies and machine learning in precision agriculture", years: "2024 - 2025", link: "https://www.mdpi.com/journal/agriengineering/special_issues/sensor_based_technologies_machine_learning" }
+            { journal: "Sensors: Spectroscopy and Sensing Technologies for Smart Agriculture", years: "2024 - 2025", link: "https://www.mdpi.com/journal/sensors/special_issues/W48M275646#" },
+            { journal: "AgriEngineering: Sensor-based technologies and machine learning in precision agriculture", years: "2024 - 2025", link: "https://www.mdpi.com/journal/agriengineering" }
         ],
         peerReviewer: {
             journals: ["ASABE", "COMPAG", "Real-Time Image Processing", "Smart Agriculture", "Sensors", "Sustainability", "Scientific Reports", "Applied Sciences", "Agronomy", "Water, Air, & Soil Pollution"],
