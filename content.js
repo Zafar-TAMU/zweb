@@ -783,7 +783,7 @@ const websiteContent = {
         {
             icon: "fa-chalkboard-user",
             title: "Instructed Courses",
-            description: "Contributed to teaching smart agriculture, robotics, automation, and sensor-based systems, providing hands-on lab and field training.",
+            description: "Taught 5 courses on smart agriculture, robotics, and automation",
             modalDescription: "Contributed to teaching smart agriculture, robotics, automation, and sensor-based systems, providing hands-on lab and field training. Engaged students through practical demonstrations and real-world applications.",
             areas: [
                 { icon: "fa-robot", text: "Applied Methods in SmartAg Systems" },
@@ -796,7 +796,7 @@ const websiteContent = {
         {
             icon: "fa-book-open",
             title: "Curriculum Development",
-            description: "Developed course materials for agricultural engineering programs, integrating AI and automation technologies.",
+            description: "Developed materials for 2 agri-engineering courses",
             modalDescription: "Developed comprehensive course materials for agricultural engineering programs, integrating cutting-edge AI and automation technologies to prepare students for modern agricultural challenges.",
             topics: [
                 { icon: "fa-microchip", text: "Instrumentation in Agricultural Engineering Research" },
@@ -806,7 +806,7 @@ const websiteContent = {
         {
             icon: "fa-chalkboard-teacher",
             title: "Student Mentoring",
-            description: "Mentored 14+ students in agricultural engineering and AI applications, guiding thesis research and career development.",
+            description: "Mentored 8 graduate and 6 undergraduate students",
             modalDescription: "Mentored 14+ students in agricultural engineering and AI applications, providing guidance on thesis research, career development, and professional growth in the field of smart agriculture.",
             stats: [
                 { number: "8+", label: "Grad Students Mentored" },
