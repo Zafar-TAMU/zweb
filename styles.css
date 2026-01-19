@@ -1551,7 +1551,7 @@ section {
     background: var(--white);
     border: 1px solid var(--gray-200);
     border-radius: var(--radius-2xl);
-    padding: var(--space-xl);
+    padding: var(--space-md);
     box-shadow: var(--shadow-sm);
     transition: all var(--transition-base);
     overflow: hidden;
@@ -1775,6 +1775,7 @@ section {
 .awards-list::-webkit-scrollbar-thumb {
     background: var(--primary);
     border-radius: var(--radius-full);
+    border-right: 5px solid var(--white);
 }
 
 .awards-list::-webkit-scrollbar-thumb:hover {
