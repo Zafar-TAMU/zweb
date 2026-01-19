@@ -675,6 +675,97 @@ const websiteContent = {
     },
 
     // ========================================
+    // GALLERY
+    // ========================================
+    gallery: [
+        {
+            category: "field",
+            title: "Field Research",
+            subtitle: "Cotton & Soybean Studies",
+            caption: "Field Research Activities",
+            description: "Conducting field research in cotton and soybean crops, collecting data for AI-driven agricultural solutions.",
+            icon: "fa-tractor",
+            color: "purple",
+            image: "", // Add image path like "field1.jpg" or leave empty for icon
+            images: [
+                { src: "Zafar1.png", caption: "Field research in soybean crops" },
+                { src: "zafar2.png", caption: "Data collection in agricultural fields" },
+                { src: "zafar-3.png", caption: "Field experiments" }
+            ]
+        },
+        {
+            category: "lab",
+            title: "Laboratory Work",
+            subtitle: "Hyperspectral Imaging",
+            caption: "Lab Experiments & Analysis",
+            description: "Advanced laboratory analysis using hyperspectral imaging technology for crop disease detection and quality assessment.",
+            icon: "fa-microscope",
+            color: "pink",
+            image: "",
+            images: [
+                { src: "Zafar1.png", caption: "Laboratory analysis" },
+                { src: "zafar4.png", caption: "Equipment testing" }
+            ]
+        },
+        {
+            category: "conference",
+            title: "Conferences",
+            subtitle: "International Presentations",
+            caption: "Conference Presentations",
+            description: "Presenting research findings at international conferences and symposiums on agricultural engineering and AI applications.",
+            icon: "fa-presentation",
+            color: "green",
+            image: "", // Add your conference image here
+            images: [
+                { src: "Zafar1.png", caption: "Conference presentation" },
+                { src: "zafar2.png", caption: "Research poster session" }
+            ]
+        },
+        {
+            category: "greenhouse",
+            title: "Smart Greenhouses",
+            subtitle: "IoT & Automation Systems",
+            caption: "Greenhouse Experiments",
+            description: "Developing and testing IoT-based monitoring and automation systems for controlled environment agriculture.",
+            icon: "fa-warehouse",
+            color: "blue",
+            image: "",
+            images: [
+                { src: "zafar-3.png", caption: "Greenhouse monitoring systems" },
+                { src: "zafar4.png", caption: "Climate control experiments" }
+            ]
+        },
+        {
+            category: "robotics",
+            title: "Agricultural Robotics",
+            subtitle: "Automated Transplanters",
+            caption: "Robotics & Automation",
+            description: "Designing and testing automated agricultural machinery including robotic transplanters and harvesting systems.",
+            icon: "fa-robot",
+            color: "orange",
+            image: "",
+            images: [
+                { src: "Zafar1.png", caption: "Agricultural robotics development" },
+                { src: "zafar2.png", caption: "Automation systems" }
+            ]
+        },
+        {
+            category: "awards",
+            title: "Awards & Honors",
+            subtitle: "Recognition & Achievements",
+            caption: "Awards & Recognition",
+            description: "Recognition for outstanding contributions to agricultural engineering research and academic excellence.",
+            icon: "fa-trophy",
+            color: "#a8edea 0%, #fed6e3 100%",
+            image: "",
+            images: [
+                { src: "zafar-3.png", caption: "Award ceremony" },
+                { src: "zafar4.png", caption: "Recognition event" }
+            ]
+        }
+    ],
+
+    // ========================================
     // TEACHING & MENTORING
     // ========================================
     teaching: [
@@ -682,6 +773,7 @@ const websiteContent = {
             icon: "fa-chalkboard-user",
             title: "Instructed Courses",
             description: "Contributed to teaching smart agriculture, robotics, automation, and sensor-based systems, providing hands-on lab and field training.",
+            modalDescription: "Contributed to teaching smart agriculture, robotics, automation, and sensor-based systems, providing hands-on lab and field training. Engaged students through practical demonstrations and real-world applications.",
             areas: [
                 { icon: "fa-robot", text: "Applied Methods in SmartAg Systems" },
                 { icon: "fa-microchip", text: "Instrumentation in Agricultural Engineering Research" },
@@ -694,6 +786,7 @@ const websiteContent = {
             icon: "fa-book-open",
             title: "Curriculum Development",
             description: "Developed course materials for agricultural engineering programs, integrating AI and automation technologies.",
+            modalDescription: "Developed comprehensive course materials for agricultural engineering programs, integrating cutting-edge AI and automation technologies to prepare students for modern agricultural challenges.",
             topics: [
                 { icon: "fa-microchip", text: "Instrumentation in Agricultural Engineering Research" },
                 { icon: "fa-microscope", text: "Measurement and Control of Biological Systems and Agricultural Processes" }
@@ -703,6 +796,7 @@ const websiteContent = {
             icon: "fa-chalkboard-teacher",
             title: "Student Mentoring",
             description: "Mentored 14+ students in agricultural engineering and AI applications, guiding thesis research and career development.",
+            modalDescription: "Mentored 14+ students in agricultural engineering and AI applications, providing guidance on thesis research, career development, and professional growth in the field of smart agriculture.",
             stats: [
                 { number: "8+", label: "Grad Students Mentored" },
                 { number: "2+", label: "Undergrad Projects Supervised" }
@@ -719,6 +813,7 @@ const websiteContent = {
             icon: "fa-laptop-code",
             title: "Workshop Facilitation",
             description: "Conducted workshops on multibody dynamics simulation using RecurDyn.",
+            modalDescription: "Conducted comprehensive workshops on multibody dynamics simulation using RecurDyn software, focusing on practical applications in agricultural machinery design and safety analysis.",
             topics: ["Vehicle Safety", "Overturning Simulation", "Multibody Dynamics"]
         }
     ]
@@ -935,8 +1030,30 @@ function loadContent() {
             const dataMap = { 'Instructed Courses': 'instructed-courses', 'Curriculum Development': 'curriculum', 'Student Mentoring': 'mentoring', 'Workshop Facilitation': 'workshops' };
             websiteContent.teaching.forEach(teach => {
                 const dataAttr = dataMap[teach.title] || teach.title.toLowerCase().replace(/\s+/g, '-');
-                const teachHTML = `<div class="teaching-card" data-teaching="${dataAttr}"><div class="teaching-icon"><i class="fas ${teach.icon}"></i></div><h3>${teach.title}</h3><p style="color: var(--gray-600); margin: 1rem 0;">${teach.description.split('.')[0]}.</p><button class="btn btn-outline teaching-btn" style="width: 100%; margin-top: auto;">View Details</button></div>`;
+                const teachHTML = `<div class="teaching-card" data-teaching="${dataAttr}"><div class="teaching-icon"><i class="fas ${teach.icon}"></i></div><h3>${teach.title}</h3><p style="color: var(--gray-600); margin: 1rem 0;">${teach.description}</p><button class="btn btn-outline teaching-btn" style="width: 100%; margin-top: auto;">View Details</button></div>`;
                 teachingGrid.insertAdjacentHTML('beforeend', teachHTML);
+            });
+        }
+    }
+    if (websiteContent.gallery && websiteContent.gallery.length > 0) {
+        const galleryGrid = document.querySelector('.gallery-grid');
+        if (galleryGrid) {
+            galleryGrid.innerHTML = '';
+            websiteContent.gallery.forEach(item => {
+                const galleryDiv = document.createElement('div');
+                galleryDiv.className = 'gallery-item';
+                galleryDiv.setAttribute('data-category', item.category);
+                
+                let contentHTML = '';
+                if (item.image) {
+                    contentHTML = `<img src="${item.image}" alt="${item.title}" style="width: 100%; height: 300px; object-fit: cover;">`;
+                } else {
+                    const gradient = item.color.includes('0%') ? item.color : colorMap[item.color];
+                    contentHTML = `<div style="height: 300px; background: linear-gradient(135deg, ${gradient}); display: flex; align-items: center; justify-content: center; flex-direction: column; color: white;"><i class="fas ${item.icon}" style="font-size: 5rem; margin-bottom: 1rem;"></i><h3 style="margin: 0; font-size: 1.5rem;">${item.title}</h3><p style="margin-top: 0.5rem; opacity: 0.9;">${item.subtitle}</p></div>`;
+                }
+                
+                galleryDiv.innerHTML = `${contentHTML}<div class="gallery-caption">${item.caption}</div>`;
+                galleryGrid.appendChild(galleryDiv);
             });
         }
     }

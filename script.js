@@ -958,34 +958,6 @@ backToTopBtn?.addEventListener('click', () => {
 });
 
 // Gallery Modal System
-const galleryImages = {
-    field: [
-        { src: 'Zafar1.png', caption: 'Field research in soybean crops' },
-        { src: 'zafar2.png', caption: 'Data collection in agricultural fields' },
-        { src: 'zafar-3.png', caption: 'Field experiments' }
-    ],
-    lab: [
-        { src: 'Zafar1.png', caption: 'Laboratory analysis' },
-        { src: 'zafar4.png', caption: 'Equipment testing' }
-    ],
-    conference: [
-        { src: 'Zafar1.png', caption: 'Conference presentation' },
-        { src: 'zafar2.png', caption: 'Research poster session' }
-    ],
-    greenhouse: [
-        { src: 'zafar-3.png', caption: 'Greenhouse monitoring systems' },
-        { src: 'zafar4.png', caption: 'Climate control experiments' }
-    ],
-    robotics: [
-        { src: 'Zafar1.png', caption: 'Agricultural robotics development' },
-        { src: 'zafar2.png', caption: 'Automation systems' }
-    ],
-    awards: [
-        { src: 'zafar-3.png', caption: 'Award ceremony' },
-        { src: 'zafar4.png', caption: 'Recognition event' }
-    ]
-};
-
 function initializeGalleryModal() {
     const galleryItems = document.querySelectorAll('.gallery-item');
     const galleryModal = document.getElementById('galleryModal');
@@ -996,23 +968,46 @@ function initializeGalleryModal() {
     galleryItems.forEach(item => {
         item.addEventListener('click', () => {
             const category = item.getAttribute('data-category');
-            const caption = item.querySelector('.gallery-caption').textContent;
-            const images = galleryImages[category] || [];
             
-            galleryModalTitle.textContent = caption;
-            galleryModalBody.innerHTML = '';
-            
-            if (images.length === 0) {
-                galleryModalBody.innerHTML = '<div class="gallery-placeholder-text">Images coming soon...</div>';
-            } else {
-                images.forEach(img => {
-                    const imgEl = document.createElement('img');
-                    imgEl.src = img.src;
-                    imgEl.alt = img.caption;
-                    imgEl.className = 'gallery-modal-image';
-                    imgEl.title = img.caption;
-                    galleryModalBody.appendChild(imgEl);
-                });
+            // Get gallery data from websiteContent
+            if (typeof websiteContent !== 'undefined' && websiteContent.gallery) {
+                const galleryData = websiteContent.gallery.find(g => g.category === category);
+                
+                if (galleryData) {
+                    galleryModalTitle.textContent = galleryData.caption;
+                    galleryModalBody.innerHTML = '';
+                    
+                    // Add description if available
+                    if (galleryData.description) {
+                        const descDiv = document.createElement('div');
+                        descDiv.style.cssText = 'color: var(--gray-700); line-height: 1.6; margin-bottom: 2rem; padding: 1rem; background: var(--gray-50); border-radius: 12px;';
+                        descDiv.textContent = galleryData.description;
+                        galleryModalBody.appendChild(descDiv);
+                    }
+                    
+                    // Add images
+                    if (galleryData.images && galleryData.images.length > 0) {
+                        galleryData.images.forEach(img => {
+                            const imgContainer = document.createElement('div');
+                            imgContainer.style.cssText = 'margin-bottom: 2rem;';
+                            
+                            const imgEl = document.createElement('img');
+                            imgEl.src = img.src;
+                            imgEl.alt = img.caption;
+                            imgEl.className = 'gallery-modal-image';
+                            imgContainer.appendChild(imgEl);
+                            
+                            const captionEl = document.createElement('p');
+                            captionEl.textContent = img.caption;
+                            captionEl.style.cssText = 'text-align: center; color: var(--gray-600); margin-top: 0.5rem; font-size: 0.9rem; font-style: italic;';
+                            imgContainer.appendChild(captionEl);
+                            
+                            galleryModalBody.appendChild(imgContainer);
+                        });
+                    } else {
+                        galleryModalBody.innerHTML += '<div class="gallery-placeholder-text">Images coming soon...</div>';
+                    }
+                }
             }
             
             galleryModal.classList.add('active');
@@ -1330,115 +1325,9 @@ function initializeTeachingModal() {
     
     if (!modal || !modalTitle || !modalBody) return;
     
-    const teachingData = {
-        'instructed-courses': {
-            title: "Instructed Courses",
-            content: `
-                <div style="color: var(--gray-700); line-height: 1.8;">
-                    <p style="margin-bottom: 1rem;">Contributed to teaching smart agriculture, robotics, automation, and sensor-based systems, providing hands-on lab and field training.</p>
-                    <h4 style="color: var(--gray-900); margin: 1.5rem 0 1rem 0; font-size: 1.1rem;">Courses:</h4>
-                    <ul style="list-style: none; padding: 0;">
-                        <li style="padding: 0.5rem 0; display: flex; align-items: center; gap: 0.5rem;">
-                            <i class="fas fa-robot" style="color: var(--primary);"></i>
-                            <span>Applied Methods in SmartAg Systems</span>
-                        </li>
-                        <li style="padding: 0.5rem 0; display: flex; align-items: center; gap: 0.5rem;">
-                            <i class="fas fa-microchip" style="color: var(--primary);"></i>
-                            <span>Instrumentation in Agricultural Engineering Research</span>
-                        </li>
-                        <li style="padding: 0.5rem 0; display: flex; align-items: center; gap: 0.5rem;">
-                            <i class="fas fa-robot" style="color: var(--primary);"></i>
-                            <span>Applied Control for Automation and Robotics</span>
-                        </li>
-                        <li style="padding: 0.5rem 0; display: flex; align-items: center; gap: 0.5rem;">
-                            <i class="fas fa-microscope" style="color: var(--primary);"></i>
-                            <span>Measurement and Control of Biological Systems and Agricultural Processes</span>
-                        </li>
-                        <li style="padding: 0.5rem 0; display: flex; align-items: center; gap: 0.5rem;">
-                            <i class="fas fa-tint" style="color: var(--primary);"></i>
-                            <span>Reuse Water Quality Research</span>
-                        </li>
-                    </ul>
-                </div>
-            `
-        },
-        curriculum: {
-            title: "Curriculum Development",
-            content: `
-                <div style="color: var(--gray-700); line-height: 1.8;">
-                    <p style="margin-bottom: 1rem;">Developed course materials for agricultural engineering programs, integrating AI and automation technologies.</p>
-                    <h4 style="color: var(--gray-900); margin: 1.5rem 0 1rem 0; font-size: 1.1rem;">Topics:</h4>
-                    <ul style="list-style: none; padding: 0;">
-                        <li style="padding: 0.5rem 0; display: flex; align-items: center; gap: 0.5rem;">
-                            <i class="fas fa-microchip" style="color: var(--primary);"></i>
-                            <span>Instrumentation in Agricultural Engineering Research</span>
-                        </li>
-                        <li style="padding: 0.5rem 0; display: flex; align-items: center; gap: 0.5rem;">
-                            <i class="fas fa-microscope" style="color: var(--primary);"></i>
-                            <span>Measurement and Control of Biological Systems and Agricultural Processes</span>
-                        </li>
-                    </ul>
-                </div>
-            `
-        },
-        'guest-lectures': {
-            title: "Guest Lectures",
-            content: `
-                <div style="color: var(--gray-700); line-height: 1.8;">
-                    <p style="margin-bottom: 1rem;">Delivered guest lectures on precision agriculture, computer vision, and AI applications in agricultural systems.</p>
-                    <h4 style="color: var(--gray-900); margin: 1.5rem 0 1rem 0; font-size: 1.1rem;">Topics:</h4>
-                    <ul style="list-style: none; padding: 0;">
-                        <li style="padding: 0.5rem 0; display: flex; align-items: center; gap: 0.5rem;">
-                            <i class="fas fa-seedling" style="color: var(--primary);"></i>
-                            <span>Precision Agriculture</span>
-                        </li>
-                        <li style="padding: 0.5rem 0; display: flex; align-items: center; gap: 0.5rem;">
-                            <i class="fas fa-eye" style="color: var(--primary);"></i>
-                            <span>Computer Vision</span>
-                        </li>
-                        <li style="padding: 0.5rem 0; display: flex; align-items: center; gap: 0.5rem;">
-                            <i class="fas fa-microchip" style="color: var(--primary);"></i>
-                            <span>AI Applications</span>
-                        </li>
-                    </ul>
-                </div>
-            `
-        },
-        mentoring: {
-            title: "Student Mentoring",
-            content: `
-                <div style="color: var(--gray-700); line-height: 1.8;">
-                    <p style="margin-bottom: 1rem;">Mentored 14+ students in agricultural engineering and AI applications, guiding thesis research and career development.</p>
-                    <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem; margin: 2rem 0;">
-                        <div style="text-align: center; padding: 1.5rem; background: var(--gray-50); border-radius: 12px;">
-                            <div style="font-size: 2.5rem; font-weight: 700; color: var(--primary); font-family: var(--font-mono);">8+</div>
-                            <div style="font-size: 0.875rem; color: var(--gray-600); text-transform: uppercase; letter-spacing: 0.05em;">Grad Students Mentored</div>
-                        </div>
-                        <div style="text-align: center; padding: 1.5rem; background: var(--gray-50); border-radius: 12px;">
-                            <div style="font-size: 2.5rem; font-weight: 700; color: var(--primary); font-family: var(--font-mono);">2+</div>
-                            <div style="font-size: 0.875rem; color: var(--gray-600); text-transform: uppercase; letter-spacing: 0.05em;">Undergrad Projects Supervised</div>
-                        </div>
-                    </div>
-                    <h4 style="color: var(--gray-900); margin: 1.5rem 0 1rem 0; font-size: 1.1rem;">Students:</h4>
-                    <div id="studentsList"></div>
-                </div>
-            `
-        },
-        workshops: {
-            title: "Workshop Facilitation",
-            content: `
-                <div style="color: var(--gray-700); line-height: 1.8;">
-                    <p style="margin-bottom: 1rem;">Conducted workshops on multibody dynamics simulation using RecurDyn.</p>
-                    <h4 style="color: var(--gray-900); margin: 1.5rem 0 1rem 0; font-size: 1.1rem;">Topics Covered:</h4>
-                    <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
-                        <span style="background: var(--primary); color: white; padding: 6px 16px; border-radius: 20px; font-size: 0.875rem;">Vehicle Safety</span>
-                        <span style="background: var(--primary); color: white; padding: 6px 16px; border-radius: 20px; font-size: 0.875rem;">Overturning Simulation</span>
-                        <span style="background: var(--primary); color: white; padding: 6px 16px; border-radius: 20px; font-size: 0.875rem;">Multibody Dynamics</span>
-                    </div>
-                </div>
-            `
-        }
-    };
+    // Generate teaching modal content dynamically from websiteContent
+    
+    // Generate teaching modal content dynamically from websiteContent
     
     // Use event delegation for dynamically added cards
     document.addEventListener('click', (e) => {
@@ -1449,27 +1338,68 @@ function initializeTeachingModal() {
         if (!card) return;
         
         const type = card.getAttribute('data-teaching');
-        const data = teachingData[type];
         
-        if (data) {
-            modalTitle.textContent = data.title;
-            modalBody.innerHTML = data.content;
+        // Find the teaching data from websiteContent
+        if (typeof websiteContent !== 'undefined' && websiteContent.teaching) {
+            const teachData = websiteContent.teaching.find(t => {
+                const dataAttr = t.title.toLowerCase().replace(/\s+/g, '-');
+                return dataAttr === type || type === 'instructed-courses' && t.title === 'Instructed Courses' || type === 'curriculum' && t.title === 'Curriculum Development' || type === 'mentoring' && t.title === 'Student Mentoring' || type === 'workshops' && t.title === 'Workshop Facilitation';
+            });
             
-            // Add student details if mentoring section
-            if (type === 'mentoring' && typeof websiteContent !== 'undefined') {
-                const mentoringData = websiteContent.teaching.find(t => t.title === 'Student Mentoring');
-                if (mentoringData && mentoringData.students) {
-                    const studentsList = modalBody.querySelector('#studentsList');
-                    if (studentsList) {
-                        mentoringData.students.forEach((student, index) => {
-                            studentsList.innerHTML += `<div class="outreach-item"><div class="outreach-number">[${index + 1}]</div><div class="outreach-item-content"><h4 class="outreach-title">${student.name}</h4><p class="outreach-details"><strong>${student.degree}</strong> • ${student.topic}</p><p class="outreach-year">${student.year}</p></div></div>`;
+            if (teachData) {
+                modalTitle.textContent = teachData.title;
+                let content = `<div style="color: var(--gray-700); line-height: 1.8;"><p style="margin-bottom: 1rem;">${teachData.modalDescription || teachData.description}</p>`;
+                
+                // Add areas for Instructed Courses
+                if (teachData.areas) {
+                    content += `<h4 style="color: var(--gray-900); margin: 1.5rem 0 1rem 0; font-size: 1.1rem;">Courses:</h4><ul style="list-style: none; padding: 0;">`;
+                    teachData.areas.forEach(area => {
+                        content += `<li style="padding: 0.5rem 0; display: flex; align-items: center; gap: 0.5rem;"><i class="fas ${area.icon}" style="color: var(--primary);"></i><span>${area.text}</span></li>`;
+                    });
+                    content += `</ul>`;
+                }
+                
+                // Add topics for Curriculum or Workshops
+                if (teachData.topics) {
+                    if (Array.isArray(teachData.topics) && typeof teachData.topics[0] === 'object') {
+                        content += `<h4 style="color: var(--gray-900); margin: 1.5rem 0 1rem 0; font-size: 1.1rem;">Topics:</h4><ul style="list-style: none; padding: 0;">`;
+                        teachData.topics.forEach(topic => {
+                            content += `<li style="padding: 0.5rem 0; display: flex; align-items: center; gap: 0.5rem;"><i class="fas ${topic.icon}" style="color: var(--primary);"></i><span>${topic.text}</span></li>`;
                         });
+                        content += `</ul>`;
+                    } else {
+                        content += `<h4 style="color: var(--gray-900); margin: 1.5rem 0 1rem 0; font-size: 1.1rem;">Topics Covered:</h4><div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">`;
+                        teachData.topics.forEach(topic => {
+                            content += `<span style="background: var(--primary); color: white; padding: 6px 16px; border-radius: 20px; font-size: 0.875rem;">${topic}</span>`;
+                        });
+                        content += `</div>`;
                     }
                 }
+                
+                // Add stats for Student Mentoring
+                if (teachData.stats) {
+                    content += `<div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem; margin: 2rem 0;">`;
+                    teachData.stats.forEach(stat => {
+                        content += `<div style="text-align: center; padding: 1.5rem; background: var(--gray-50); border-radius: 12px;"><div style="font-size: 2.5rem; font-weight: 700; color: var(--primary); font-family: var(--font-mono);">${stat.number}</div><div style="font-size: 0.875rem; color: var(--gray-600); text-transform: uppercase; letter-spacing: 0.05em;">${stat.label}</div></div>`;
+                    });
+                    content += `</div>`;
+                }
+                
+                // Add students list
+                if (teachData.students) {
+                    content += `<h4 style="color: var(--gray-900); margin: 1.5rem 0 1rem 0; font-size: 1.1rem;">Students:</h4><div>`;
+                    teachData.students.forEach((student, index) => {
+                        content += `<div class="outreach-item"><div class="outreach-number">[${index + 1}]</div><div class="outreach-item-content"><h4 class="outreach-title">${student.name}</h4><p class="outreach-details"><strong>${student.degree}</strong> • ${student.topic}</p><p class="outreach-year">${student.year}</p></div></div>`;
+                    });
+                    content += `</div>`;
+                }
+                
+                content += `</div>`;
+                modalBody.innerHTML = content;
+                
+                modal.classList.add('active');
+                document.body.style.overflow = 'hidden';
             }
-            
-            modal.classList.add('active');
-            document.body.style.overflow = 'hidden';
         }
     });
     
