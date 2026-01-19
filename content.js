@@ -11,6 +11,17 @@ const websiteContent = {
     // PUBLICATIONS
     // ========================================
     publications: [
+         {
+            year: "2026",
+            title: "Detecting Escherichia coli on Conventional Food Processing Surfaces Using UV-C Fluorescence Imaging and Deep Learning",
+            journal: "Applied Sciences",
+            date: "January 17, 2026",
+            topics: ["E. Coli", "Food safety", "Fluorescence imaging", "Deep learning","YOLO11", "Eigen-CAM"],
+            link: "https://doi.org/10.3390/app16020968",
+            pdfLink: "#",
+            image: "Pub_2026_1.jpg"
+        },
+        
         {
             year: "2025",
             title: "Detecting Escherichia coli Contamination on Plant Leaf Surfaces Using UV-C Fluorescence Imaging and Deep Learning",
