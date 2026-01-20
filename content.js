@@ -786,21 +786,22 @@ const websiteContent = {
             description: "Taught 5 courses on smart agriculture, robotics, and automation",
             modalDescription: "Contributed to teaching smart agriculture, robotics, automation, and sensor-based systems, providing hands-on lab and field training. Engaged students through practical demonstrations and real-world applications.",
             areas: [
-                { icon: "fa-robot", text: "Applied Methods in SmartAg Systems" },
-                { icon: "fa-microchip", text: "Instrumentation in Agricultural Engineering Research" },
-                { icon: "fa-robot", text: "Applied Control for Automation and Robotics" },
-                { icon: "fa-microscope", text: "Measurement and Control of Biological Systems and Agricultural Processes" },
-                { icon: "fa-tint", text: "Reuse Water Quality Research" }
+                { icon: "fa-robot", text: "Applied Methods in SmartAg Systems (AOM5456): University of Florida" },
+                { icon: "fa-microchip", text: "Instrumentation in Agricultural Engineering Research (ABE 6031): University of Florida" },
+                { icon: "fa-robot", text: "Applied Control for Automation and Robotics (ABE 6005): University of Florida" },
+                { icon: "fa-microscope", text: "Measurement and Control of Biological Systems and Agricultural Processes (BAEN 370): Texas A&M University" },
+                { icon: "fa-tint", text: "Reuse Water Quality Research: Texas A&M University" }
             ]
         },
         {
             icon: "fa-book-open",
-            title: "Curriculum Development",
-            description: "Developed materials for 2 agri-engineering courses",
-            modalDescription: "Developed comprehensive course materials for agricultural engineering programs, integrating cutting-edge AI and automation technologies to prepare students for modern agricultural challenges.",
+            title: "Curriculum Enhancement",
+            description: "Partially developed materials for 3 agri-engineering courses",
+            modalDescription: "Contributed to the development of course materials that enhanced existing agricultural engineering courses by integrating AI and automation technologies for modern agricultural applications.",
             topics: [
-                { icon: "fa-microchip", text: "Instrumentation in Agricultural Engineering Research" },
-                { icon: "fa-microscope", text: "Measurement and Control of Biological Systems and Agricultural Processes" }
+                { icon: "fa-microchip", text: "Instrumentation in Agricultural Engineering Research (AOM5456): University of Florida" },
+                { icon: "fa-microchip", text: "Instrumentation in Agricultural Engineering Research (ABE 6031): University of Florida"},
+                { icon: "fa-microscope", text: "Measurement and Control of Biological Systems and Agricultural Processes (BAEN 370): Texas A&M University" }
             ]
         },
         {
