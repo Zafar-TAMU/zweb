@@ -366,7 +366,7 @@ const websiteContent = {
             name: "Zafar Iqbal",
             position: "Postdoctoral Associate @ University of Florida",
             time: "2 days ago",
-            content: "Our research article, \"Detecting Escherichia coli on Conventional Food Processing Surfaces Using UV-C Fluorescence Imaging and Deep Learning\" has just been published! This study introduces a second-generation imaging device combined with deep learning, building on our previous system to enable enhanced detection of E. coli on plant leaf surfaces. The upgraded technology improves sensitivity, reliability, and practicality, representing a significant step toward safer food systems and real-world food safety applications.",
+            content: "Our research article, \"Detecting Escherichia coli on Conventional Food Processing Surfaces Using UV-C Fluorescence Imaging and Deep Learning\" has just been published! This study introduces a second-generation imaging device combined with deep learning.",
             likes: 25,
             comments: 4,
             avatar: "headshot-2.png"
