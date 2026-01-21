@@ -361,32 +361,43 @@ const websiteContent = {
     // LINKEDIN POSTS
     // ========================================
     linkedinPosts: [
+
+         {
+            name: "Zafar Iqbal",
+            position: "Postdoctoral Associate @ University of Florida",
+            time: "2 days ago",
+            content: "Our research article, \"Detecting Escherichia coli on Conventional Food Processing Surfaces Using UV-C Fluorescence Imaging and Deep Learning\" has just been published! This study introduces a second-generation imaging device combined with deep learning, building on our previous system to enable enhanced detection of E. coli on plant leaf surfaces. The upgraded technology improves sensitivity, reliability, and practicality, representing a significant step toward safer food systems and real-world food safety applications.",
+            likes: 25,
+            comments: 4,
+            avatar: "headshot-2.png"
+        },
+        
         {
             name: "Zafar Iqbal",
             position: "Postdoctoral Associate @ University of Florida",
-            time: "1 month ago",
+            time: "3 months ago",
             content: "Happy to share our new work just published! In this study, \"Detecting Escherichia coli Contamination on Plant Leaf Surfaces Using UV-C Fluorescence Imaging and Deep Learning,\" we demonstrated how combining fluorescence imaging and AI enables rapid and accurate detection of E. coli on leafy produce.",
             likes: 30,
             comments: 1,
-            avatar: "Zafar1.png"
+            avatar: "headshot-2.png"
         },
         {
             name: "Zafar Iqbal",
             position: "Postdoctoral Associate @ University of Florida",
-            time: "2 months ago",
+            time: "4 months ago",
             content: "Happy to share another new publication: \"A Robust Framework Combining Hyperspectral Imaging and Machine Learning for Assessing Sudden Death Syndrome (SDS) Severity in Soybean Foliage\". We fused hyperspectral imaging with machine learning to detect SDS and classify intra-leaf pixels based on severity levels.",
             likes: 42,
             comments: 8,
-            avatar: "Zafar1.png"
+            avatar: "headshot-2.png"
         },
         {
             name: "Zafar Iqbal",
             position: "Postdoctoral Associate @ University of Florida",
-            time: "2 months ago",
+            time: "4 months ago",
             content: "Excited to share our newly published study in Computers and Electronics in Agriculture (COMPAG) on AI-driven detection of cotton module cover damage. We trained and evaluated two-stage, one-stage, and transformer-based CNN models to identify cotton modules with damaged plastic covers during handling.",
             likes: 67,
             comments: 7,
-            avatar: "Zafar1.png"
+            avatar: "headshot-2.png"
         },
         {
             name: "Zafar Iqbal",
@@ -395,7 +406,7 @@ const websiteContent = {
             content: "🌱📡 Excited to Share! I am honored to serve as a Guest Editor for a special issue of Sensors titled: \"Spectroscopy and Sensing Technologies for Smart Agriculture.\" This issue will highlight innovative sensing and spectroscopy approaches that enhance agricultural productivity, sustainability, and resilience.",
             likes: 54,
             comments: 1,
-            avatar: "Zafar1.png"
+            avatar: "headshot-2.png"
         },
         {
             name: "Zafar Iqbal",
@@ -404,16 +415,7 @@ const websiteContent = {
             content: "Absolutely thrilled to announce that I have successfully completed my PhD defense! This journey has been a significant milestone in my academic and professional career. A heartfelt thanks to my advisor Dr. Bobby Hardin, committee members, colleagues, friends, and family for their unwavering support.",
             likes: 92,
             comments: 33,
-            avatar: "Zafar1.png"
-        },
-        {
-            name: "Zafar Iqbal",
-            position: "Postdoctoral Associate @ University of Florida",
-            time: "2 years ago",
-            content: "I am grateful to the National Cotton Ginners - Peary Wilemon Scholarship Foundation for acknowledging my work for the second time. It brings me great joy to share this news.",
-            likes: 19,
-            comments: 2,
-            avatar: "Zafar1.png"
+            avatar: "headshot-2.png"
         },
     ],
 
