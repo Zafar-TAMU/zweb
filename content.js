@@ -618,14 +618,19 @@ const websiteContent = {
             description: "Advanced machine design customized for crop-specific needs to improve field efficiency and performance"
         },
         {
-            icon: "📚",
-            title: "Big Data Analytics",
-            description: "Analysis of large and diverse agricultural datasets to optimize productivity, sustainability, and resource use"
+            icon: "📸",
+            title: "HyperSpectral Imaging",
+            description: "Advanced sensing combining hyperspectral and multispectral reflectance and fluorescence for precise crop stress and disease detection"
         },
         {
             icon: "🍃",
             title: "Controlled Plant Production",
             description: "Cultivation of plants under regulated environmental conditions to optimize growth, yield, quality, and resource efficiency"
+        },
+        {
+            icon: "📚",
+            title: "Big Data Analytics",
+            description: "Analysis of large and diverse agricultural datasets to optimize productivity, sustainability, and resource use"
         },
         {
             icon: "🌾",
