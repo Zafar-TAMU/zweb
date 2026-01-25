@@ -1827,7 +1827,7 @@ section {
 }
 
 .awards-list::-webkit-scrollbar {
-    width: 12px;
+    width: 7px;
 }
 
 .awards-list::-webkit-scrollbar-track {
