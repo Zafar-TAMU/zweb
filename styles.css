@@ -4364,17 +4364,14 @@ body.loaded {
     }
     
     .stat {
-        background: rgba(255, 255, 255, 0.8);
-        padding: 1.2rem 1rem;
-        border-radius: 16px;
-        border: 2px solid rgba(0, 212, 170, 0.15);
+        background: transparent;
+        padding: 0.5rem;
+        border: none;
         transition: all 0.3s ease;
     }
     
     .stat:hover {
-        transform: translateY(-5px);
-        border-color: var(--primary);
-        box-shadow: 0 10px 25px rgba(0, 212, 170, 0.2);
+        transform: translateY(-2px);
     }
     
     .stat-number {
@@ -4557,10 +4554,9 @@ body.loaded {
     }
     
     .stat {
-        background: rgba(255, 255, 255, 0.9) !important;
-        padding: 1rem 0.75rem !important;
-        border-radius: 12px !important;
-        border: 2px solid rgba(0, 212, 170, 0.2) !important;
+        background: transparent !important;
+        padding: 0.5rem !important;
+        border: none !important;
     }
     
     .stat-number {
