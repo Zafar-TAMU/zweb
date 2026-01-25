@@ -246,7 +246,7 @@ body {
     content: '';
     position: absolute;
     inset: 0;
-    background-image: url('Background_2.png');
+    background-image: url('BAckground_2.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -370,7 +370,8 @@ body {
 }
 
 .hero-stats {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     gap: var(--space-lg);
     margin-bottom: var(--space-lg);
 }
@@ -1616,7 +1617,7 @@ section {
     box-shadow: var(--shadow-sm);
     transition: all var(--transition-base);
     overflow: hidden;
-    height: 975px;
+    height: 400px;
     display: flex;
     flex-direction: column;
     grid-column: span 2;
