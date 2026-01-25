@@ -1617,7 +1617,7 @@ section {
     box-shadow: var(--shadow-sm);
     transition: all var(--transition-base);
     overflow: hidden;
-    height: 400px;
+    height: 975px;
     display: flex;
     flex-direction: column;
     grid-column: span 2;
