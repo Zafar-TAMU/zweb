@@ -1616,7 +1616,7 @@ section {
     box-shadow: var(--shadow-sm);
     transition: all var(--transition-base);
     overflow: hidden;
-    height: 990px;
+    height: 400px;
     display: flex;
     flex-direction: column;
     grid-column: span 2;
@@ -1818,7 +1818,7 @@ section {
     display: flex;
     flex-direction: column;
     gap: var(--space-xs);
-    width: 122%;
+    width: 100%;
     flex: 1;
     overflow-y: auto;
     overflow-x: hidden;
@@ -4467,12 +4467,15 @@ body.loaded {
     .hero {
         min-height: auto !important;
         padding: 80px 0 0 0 !important;
+        width: 100% !important;
     }
     
     .hero-container {
         grid-template-columns: 1fr !important;
-        padding: 0 !important;
+        padding: 0 1rem !important;
         gap: 0 !important;
+        width: 100% !important;
+        max-width: 100% !important;
     }
     
     .hero-content {
@@ -4482,9 +4485,9 @@ body.loaded {
         gap: 1.5rem !important;
         border-right: none !important;
         border-radius: 20px !important;
-        margin: 0 1rem 0 1rem !important;
+        margin: 0 !important;
         height: auto !important;
-        width: calc(100% - 2rem) !important;
+        width: 100% !important;
         max-width: 100% !important;
     }
     
