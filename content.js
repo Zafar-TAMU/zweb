@@ -365,7 +365,7 @@ const websiteContent = {
          {
             name: "Zafar Iqbal",
             position: "Postdoctoral Associate @ University of Florida",
-            time: "2 days ago",
+            time: "5 days ago",
             content: "Our research article, \"Detecting Escherichia coli on Conventional Food Processing Surfaces Using UV-C Fluorescence Imaging and Deep Learning\" has just been published! This study introduces a second-generation imaging device combined with deep learning.",
             likes: 25,
             comments: 4,
@@ -403,7 +403,7 @@ const websiteContent = {
             name: "Zafar Iqbal",
             position: "Postdoctoral Associate @ University of Florida",
             time: "3 months ago",
-            content: "🌱📡 Excited to Share! I am honored to serve as a Guest Editor for a special issue of Sensors titled: \"Spectroscopy and Sensing Technologies for Smart Agriculture.\" This issue will highlight innovative sensing and spectroscopy approaches that enhance agricultural productivity, sustainability, and resilience.",
+            content: "Excited to Share! I am honored to serve as a Guest Editor for a special issue of Sensors titled: \"Spectroscopy and Sensing Technologies for Smart Agriculture.\" This issue will highlight innovative sensing and spectroscopy approaches that enhance agricultural productivity, sustainability, and resilience.",
             likes: 54,
             comments: 1,
             avatar: "headshot-2.png"
@@ -593,7 +593,7 @@ const websiteContent = {
     // ========================================
     researchInterests: [
         {
-            icon: "🧑‍🌾",
+            icon: "👨🏻‍🌾",
             title: "Smart Agriculture",
             description: "Data-driven farming solutions using AI and sensor technologies for optimized crop management"
         },
@@ -628,7 +628,7 @@ const websiteContent = {
             description: "Cultivation of plants under regulated environmental conditions to optimize growth, yield, quality, and resource efficiency"
         },
         {
-            icon: "🪴",
+            icon: "🌾",
             title: "Crop Modelling",
             description: "Use of mathematical and computational models to simulate crop growth, development, and yield under varying environmental, management, and genetic conditions"
         },
