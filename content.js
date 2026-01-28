@@ -649,6 +649,11 @@ const websiteContent = {
             status: "2018-Present"
         },
         {
+            logo: "ΣΞ",
+            name: "Sigma Xi",
+            status: "2026-Present"
+        },
+        {
             logo: "SPIE",
             name: "Society of Photo-Optical Instrumentation Engineers",
             status: "2024-Present"
