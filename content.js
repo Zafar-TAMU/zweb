@@ -644,14 +644,14 @@ const websiteContent = {
     // ========================================
     memberships: [
         {
-            logo: "ASABE",
-            name: "American Society of Agricultural and Biological Engineers",
-            status: "2018-Present"
-        },
-        {
             logo: "ΣΞ",
             name: "Sigma Xi",
             status: "2026-Present"
+        },
+        {
+            logo: "ASABE",
+            name: "American Society of Agricultural and Biological Engineers",
+            status: "2018-Present"
         },
         {
             logo: "SPIE",
