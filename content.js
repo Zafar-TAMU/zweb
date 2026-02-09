@@ -447,6 +447,7 @@ const websiteContent = {
             color: "purple",
             image: "Sigma-MZI.jpg"
         },
+        {
             name: "DGSA",
             fullTitle: "Distinguished Graduate Student Award",
             institution: "Texas A&M University",
