@@ -441,7 +441,7 @@ const websiteContent = {
     certificates: [
         {
             name: "DGSA",
-            fullTitle: "membership of Sigma Xi",
+            fullTitle: "Membership of Sigma Xi",
             institution: "Sigma Xi",
             year: "2026",
             color: "purple",
