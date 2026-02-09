@@ -441,6 +441,13 @@ const websiteContent = {
     certificates: [
         {
             name: "DGSA",
+            fullTitle: "membership of Sigma Xi",
+            institution: "Sigma Xi",
+            year: "2026",
+            color: "purple",
+            image: "Sigma-MZI.jpg"
+        },
+            name: "DGSA",
             fullTitle: "Distinguished Graduate Student Award",
             institution: "Texas A&M University",
             year: "2025",
