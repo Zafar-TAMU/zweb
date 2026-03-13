@@ -11,7 +11,19 @@ const websiteContent = {
     // PUBLICATIONS
     // ========================================
     publications: [
-         {
+        {
+            year: "2026",
+            title: "RFID—What's in it for me?",
+            journal: "Crop Protection Network",
+            date: "February 10, 2026",
+            topics: ["RFID", "Cotton engineering", "Cotton Moisture", "Wrap Damage"],
+            link: "https://doi.org/10.31274/cpn-20260227-0",
+            pdfLink: "#",
+            image: "rfid.jpg"
+        },
+        
+        
+        {
             year: "2026",
             title: "Detecting Escherichia coli on Conventional Food Processing Surfaces Using UV-C Fluorescence Imaging and Deep Learning",
             journal: "Applied Sciences",
