@@ -720,7 +720,24 @@ const websiteContent = {
     // ========================================
     // GALLERY
     // ========================================
-    gallery: [
+    gallery: 
+        [
+        {
+            category: "Graduation",
+            title: "Graduation Highlights",
+            subtitle: "Cotton & Soybean Studies",
+            caption: "Field Research Activities",
+            description: "Engaged in practical field experiments, collecting and analyzing data to support crop management, AI-driven insights, and sustainable agricultural practices.",
+            icon: "fa-graduation-cap",
+            color: "green",
+            image: "", // Add image path like "field1.jpg" or leave empty for icon
+            images: [
+                { src: "MS-K.jpg", caption: "MSc at Chungnam National University, South Korea" },
+                { src: "MSK-2.jpg", caption: "MSc at Chungnam National University, South Korea" },
+                { src: "zafar-3.png", caption: "PhD at Texas A&M University, USA" }
+            ]
+        
+        [
         {
             category: "field",
             title: "Field Research",
@@ -760,7 +777,7 @@ const websiteContent = {
             color: "green",
             image: "", // Add your conference image here
             images: [
-                { src: "Zafar1.png", caption: "Conference presentation" },
+                { src: "presentations.png", caption: "Beltwide cotton Conferences" },
                 { src: "zafar2.png", caption: "Research poster session" }
             ]
         },
@@ -774,8 +791,8 @@ const websiteContent = {
             color: "blue",
             image: "",
             images: [
-                { src: "zafar-3.png", caption: "Greenhouse monitoring systems" },
-                { src: "zafar4.png", caption: "Climate control experiments" }
+                { src: "GH-K.jpg", caption: "Greenhouse monitoring systems" },
+                { src: "GHG-C.jpg", caption: "Climate control experiments" }
             ]
         },
         {
@@ -783,7 +800,7 @@ const websiteContent = {
             title: "Agricultural Robotics",
             subtitle: "Automated Transplanters",
             caption: "Robotics & Automation",
-            description: "Designing and testing automated agricultural machinery including robotic transplanters and harvesting systems.",
+            description: "Designing and testing robotic transplanter.",
             icon: "fa-robot",
             color: "orange",
             image: "",
