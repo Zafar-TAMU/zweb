@@ -776,7 +776,7 @@ const websiteContent = {
             color: "green",
             image: "", // Add your conference image here
             images: [
-                { src: "presentations.png", caption: "Beltwide cotton Conferences" },
+                { src: "presentation.png", caption: "Beltwide cotton Conferences" },
                 { src: "zafar2.png", caption: "Research poster session" }
             ]
         },
