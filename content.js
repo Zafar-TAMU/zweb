@@ -735,6 +735,7 @@ const websiteContent = {
                 { src: "MSK-2.jpg", caption: "MSc at Chungnam National University, South Korea" },
                 { src: "zafar-3.png", caption: "PhD at Texas A&M University, USA" }
             ]
+        },
         
         {
             category: "field",
