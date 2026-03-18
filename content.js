@@ -720,8 +720,7 @@ const websiteContent = {
     // ========================================
     // GALLERY
     // ========================================
-    gallery: 
-        [
+    gallery: [
         {
             category: "Graduation",
             title: "Graduation Highlights",
@@ -737,7 +736,6 @@ const websiteContent = {
                 { src: "zafar-3.png", caption: "PhD at Texas A&M University, USA" }
             ]
         
-        [
         {
             category: "field",
             title: "Field Research",
