@@ -13,6 +13,17 @@ const websiteContent = {
     publications: [
         {
             year: "2026",
+            title: "Multiclass Citrus Leaf Disease Inspection with Region Classification and Hyperspectral Imagery",
+            journal: "Journal of the ASABE",
+            date: "April 14, 2026",
+            topics: ["Citrus", "Citrus greening", "CNN", "Hyperspectral imagery"],
+            link: "https://doi.org/10.13031/ja.16525",
+            pdfLink: "#",
+            image: "MC_ASABE.jpg"
+        },
+        
+        {
+            year: "2026",
             title: "RFID—What's in it for me?",
             journal: "Crop Protection Network",
             date: "February 10, 2026",
@@ -451,6 +462,14 @@ const websiteContent = {
     // CERTIFICATES
     // ========================================
     certificates: [
+        {
+            name: "PostDoctoral Associate",
+            fullTitle: "Preparing Future Faculty",
+            institution: "Texas A&M University",
+            year: "2026",
+            color: "purple",
+            image: "PFF_UF.jpg"
+        },
         {
             name: "DGSA",
             fullTitle: "Membership of Sigma Xi",
