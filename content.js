@@ -1109,7 +1109,7 @@ function loadContent() {
             const dataMap = { 'Instructed Courses': 'instructed-courses', 'Curriculum Development': 'curriculum', 'Student Mentoring': 'mentoring', 'Workshop Facilitation': 'workshops' };
             websiteContent.teaching.forEach(teach => {
                 const dataAttr = dataMap[teach.title] || teach.title.toLowerCase().replace(/\s+/g, '-');
-                const teachHTML = `<div class="teaching-card" data-teaching="${dataAttr}"><div class="teaching-icon"><i class="fas ${teach.icon}"></i></div><h3>${teach.title}</h3><p style="color: var(--gray-600); margin: 1rem 0;">${teach.description}</p><button class="btn btn-outline teaching-btn" style="width: 100%; margin-top: auto;">View Details</button></div>`;
+                const teachHTML = `<div class="teaching-card" data-teaching="${dataAttr}"><div class="teaching-icon"><i class="fas ${teach.icon}"></i></div><h3>${teach.title}</h3><p style="color: var(--gray-600); margin: 1rem 0;">${teach.description}</p><button class="btn btn-outline teaching-btn" style="width: 100%; margin-top: auto; border: 2px solid var(--primary); color: var(--primary);">View Details</button></div>`;
                 teachingGrid.insertAdjacentHTML('beforeend', teachHTML);
             });
         }

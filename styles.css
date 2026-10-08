@@ -2704,6 +2704,17 @@ body.loaded {
     box-shadow: var(--shadow-xl);
 }
 
+.service-card .btn-outline {
+    background: transparent;
+    border: 2px solid var(--primary);
+    color: var(--primary);
+}
+
+.service-card .btn-outline:hover {
+    background: var(--primary);
+    color: var(--white);
+}
+
 .service-icon {
     width: 80px;
     height: 80px;
@@ -3372,6 +3383,17 @@ body.loaded {
 .teaching-card:hover {
     transform: translateY(-8px);
     box-shadow: var(--shadow-xl);
+}
+
+.teaching-card .btn-outline {
+    background: transparent;
+    border: 2px solid var(--primary);
+    color: var(--primary);
+}
+
+.teaching-card .btn-outline:hover {
+    background: var(--primary);
+    color: var(--white);
 }
 
 .teaching-icon {
