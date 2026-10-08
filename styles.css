@@ -2712,7 +2712,7 @@ body.loaded {
 
 .service-card .btn-outline:hover {
     background: var(--primary);
-    color: var(--white);
+    color: var(--gray-900);
 }
 
 .service-icon {
@@ -3393,7 +3393,7 @@ body.loaded {
 
 .teaching-card .btn-outline:hover {
     background: var(--primary);
-    color: var(--white);
+    color: var(--gray-900);
 }
 
 .teaching-icon {
