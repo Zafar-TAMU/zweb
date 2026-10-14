@@ -1601,7 +1601,7 @@ section {
 
 .about-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: clamp(1rem, 2vw, 1.5rem);
 }
 
@@ -1625,11 +1625,12 @@ section {
     background: var(--white);
     border: 1px solid var(--gray-200);
     border-radius: var(--radius-2xl);
-    padding: var(--space-md);
+    padding: var(--space-xl);
     box-shadow: var(--shadow-sm);
     transition: all var(--transition-base);
     overflow: hidden;
-    height: 975px;
+    min-height: 400px;
+    height: auto;
     display: flex;
     flex-direction: column;
     grid-column: 1 / -1;
@@ -1828,14 +1829,11 @@ section {
 
 /* Awards List */
 .awards-list {
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-xs);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-sm);
     width: 100%;
-    flex: 1;
-    overflow-y: auto;
     overflow-x: hidden;
-    min-height: 0;
 }
 
 .awards-list::-webkit-scrollbar {
