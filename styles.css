@@ -246,7 +246,7 @@ body {
     content: '';
     position: absolute;
     inset: 0;
-    background-image: url('BAckground_2.png');
+    background-image: url('assets/images/background/BAckground_2.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -439,6 +439,18 @@ body {
 .btn-outline:hover {
     background: var(--white);
     border-color: var(--white);
+    color: var(--gray-900);
+}
+
+.btn-card-outline {
+    background: transparent;
+    border: 2px solid var(--primary);
+    color: var(--primary);
+}
+
+.btn-card-outline:hover {
+    background: var(--primary);
+    border-color: var(--primary);
     color: var(--gray-900);
 }
 

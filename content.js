@@ -19,7 +19,7 @@ const websiteContent = {
             topics: ["Citrus", "Citrus greening", "CNN", "Hyperspectral imagery"],
             link: "https://doi.org/10.13031/ja.16525",
             pdfLink: "#",
-            image: "MC_ASABE.jpg"
+            image: "assets/images/gallery/MC_ASABE.jpg"
         },
         
         {
@@ -30,7 +30,7 @@ const websiteContent = {
             topics: ["RFID", "Cotton engineering", "Cotton Moisture", "Wrap Damage"],
             link: "https://doi.org/10.31274/cpn-20260227-0",
             pdfLink: "#",
-            image: "rfid.jpg"
+            image: "assets/images/gallery/rfid.jpg"
         },
         
         
@@ -42,7 +42,7 @@ const websiteContent = {
             topics: ["E. Coli", "Food safety", "Fluorescence imaging", "Deep learning","YOLO11", "Eigen-CAM"],
             link: "https://doi.org/10.3390/app16020968",
             pdfLink: "#",
-            image: "Pub_2026_1.jpg"
+            image: "assets/images/publications/Pub_2026_1.jpg"
         },
         
         {
@@ -53,7 +53,7 @@ const websiteContent = {
             topics: ["E. Coli", "Food safety", "Fluorescence imaging", "Deep learning","YOLO11", "Eigen-CAM"],
             link: "https://doi.org/10.3390/plants14213352",
             pdfLink: "#",
-            image: "Pub_l.jpg"
+            image: "assets/images/publications/Pub_l.jpg"
         },
         
         {
@@ -64,7 +64,7 @@ const websiteContent = {
             topics: ["Round Cotton Module", "Plastic Contamination", "YOLO", "CNN Optimization", "RT-DETR"],
             link: "https://doi.org/10.1016/j.compag.2025.111023",
             pdfLink: "#",
-            image: "Pub2.png"
+            image: "assets/images/publications/Pub2.png"
         },
         
         {
@@ -75,7 +75,7 @@ const websiteContent = {
             topics: ["Disease detection", "Hyperspectral Imaging", "SDS", "Soybean", "Supervised Classification", "Unsupervised Classification", "YOLO11"],
             link: "https://doi.org/10.1007/s42853-025-00278-9",
             pdfLink: "#",
-            image: "Pub_3.jpg"
+            image: "assets/images/publications/Pub_3.jpg"
         },
         
         {
@@ -86,7 +86,7 @@ const websiteContent = {
             topics: ["Solar Greenhouse", "Environment Management", "Microclimate", "Precision Agriculture", "Variability Analysis"],
             link: "https://doi.org/10.3390/horticulturae11040421",
             pdfLink: "#",
-            image: "Pub_4.jpg"
+            image: "assets/images/publications/Pub_4.jpg"
         },
         {
             year: "2023",
@@ -96,7 +96,7 @@ const websiteContent = {
             topics: ["Greenhouse", "Heating Module", "Smart Agriculture", "Temperature Management", "Wireless Sensor Network"],
             link: "https://doi.org/10.1016/j.atech.2023.100296",
             pdfLink: "#",
-            image: "Pub_5.jpg"
+            image: "assets/images/publications/Pub_5.jpg"
         },
         {
             year: "2023",
@@ -106,7 +106,7 @@ const websiteContent = {
             topics: ["Smart Agriculture", "Chinese Solar Greenhouse", "Environmental Conditions", "Wireless Sensor Network", "Microclimate Characteristics", "Variability"],
             link: "https://doi.org/10.3390/app13179835",
             pdfLink: "#",
-            image: "Pub_6.jpg"
+            image: "assets/images/publications/Pub_6.jpg"
         },
         {
             year: "2023",
@@ -116,7 +116,7 @@ const websiteContent = {
             topics: ["Controlled Environment Agriculture", "Dehumidification", "Humidity Variability", "Suspension-type Dehumidifier", "Wireless Sensor Network"],
             link: "https://doi.org/10.3390/su15065236",
             pdfLink: "#",
-            image: "Pub_7.jpg"
+            image: "assets/images/publications/Pub_7.jpg"
         },
         {
             year: "2022",
@@ -126,7 +126,7 @@ const websiteContent = {
             topics: ["Agricultural Machinery", "Gearbox", "Pepper Transplanter", "Power Transmission", "Spur Gear"],
             link: "https://doi.org/10.4081/jae.2022.1254",
             pdfLink: "#",
-            image: "Pub_8.jpg"
+            image: "assets/images/publications/Pub_8.jpg"
         },
         {
             year: "2022",
@@ -136,7 +136,7 @@ const websiteContent = {
             topics: ["Field machinery", "Overturning Analysis", "Pepper",  "Stability", "Transplanter"],
             link: "https://doi.org/10.1007/s42853-022-00129-x",
             pdfLink: "#",
-            image: "Pub_9.jpg"
+            image: "assets/images/publications/Pub_9.jpg"
         },
         {
             year: "2021",
@@ -146,7 +146,7 @@ const websiteContent = {
             topics: ["Growing Period", "Pepper", "Seedling Growth", "Seedling Tray"],
             link: "https://doi.org/10.7744/kjoas.20210080",
             pdfLink: "#",
-            image: "Pub_10.jpg"
+            image: "assets/images/publications/Pub_10.jpg"
         },
         {
             year: "2021",
@@ -156,7 +156,7 @@ const websiteContent = {
             topics: ["Agricultural Machinery", "Dibbling Mechanism", "Kinematic Analysis", "Pepper", "Transplanter"],
             link: "https://doi.org/10.1007/s12206-021-0531-2",
             pdfLink: "#",
-            image: "Pub_11.jpg"
+            image: "assets/images/publications/Pub_11.jpg"
         },
         {
             year: "2021",
@@ -166,7 +166,7 @@ const websiteContent = {
             topics: ["Agricultural Machinery", "Pepper Transplanting", "Seedling Picking Mechanism", "Structural Analysis",  "Gear Mechanism", "Stress and Fatigue"],
             link: "https://doi.org/10.3390/app11052241",
             pdfLink: "#",
-            image: "Pub_12.jpg"
+            image: "assets/images/publications/Pub_12.jpg"
         },
         {
             year: "2021",
@@ -176,7 +176,7 @@ const websiteContent = {
             topics: ["Field Machinery", "Transplanter", "Pepper", "Dibbling Mechanism", "Working Speed Analysis"],
             link: "https://doi.org/10.3390/machines9010006",
             pdfLink: "#",
-            image: "Pub_13.jpg"
+            image: "assets/images/publications/Pub_13.jpg"
         },
         {
             year: "2020",
@@ -186,7 +186,7 @@ const websiteContent = {
             topics: ["Agricultural Machinery", "Pepper", "Transplanter", "Picking Device", "Kinematic Analysis"],
             link: "https://doi.org/10.3390/agriculture10120627",
             pdfLink: "#",
-            image: "Pub_14.jpg"
+            image: "assets/images/publications/Pub_14.jpg"
         },
         {
             year: "2020",
@@ -196,7 +196,7 @@ const websiteContent = {
             topics: ["Radish", "Collector", "Lateral Stability", "Vibration", "User Safety"],
             link: "https://doi.org/10.3390/machines8040077",
             pdfLink: "#",
-            image: "Pub_15.jpg"
+            image: "assets/images/publications/Pub_15.jpg"
         },
         {
             year: "2020",
@@ -206,7 +206,7 @@ const websiteContent = {
             topics: ["Smart agriculture", "Greenhouse", "Dehumidifier", "Heater", "Remote management"],
             link: "https://doi.org/10.1007/s42853-020-00055-w",
             pdfLink: "#",
-            image: "Pub_16.jpg"
+            image: "assets/images/publications/Pub_16.jpg"
         },
         {
             year: "2019",
@@ -216,7 +216,7 @@ const websiteContent = {
             topics: ["Protected Crop Production", "Smart Greenhouse", "Harmful Flies", "Remote Monitoring", "Operating Status"],
             link: "https://doi.org/10.1007/s42853-019-00036-8",
             pdfLink: "#",
-            image: "Pub_17.jpg"
+            image: "assets/images/publications/Pub_17.jpg"
         },
         {
             year: "2019",
@@ -226,7 +226,7 @@ const websiteContent = {
             topics: ["Irrigation", "Subsurface Drainage", "Trenchless Piping Machine", "Depth Uniformity", "Pulling Force"],
             link: "https://doi.org/10.1007/s42853-019-00032-y",
             pdfLink: "#",
-            image: "Pub_18.jpg"
+            image: "assets/images/publications/Pub_18.jpg"
         },
     ],
 
@@ -242,7 +242,7 @@ const websiteContent = {
             category: "crop",
             icon: "fa-microscope",
             color: "purple",
-            image: "Project-1.png"
+            image: "assets/images/projects/Project-1.png"
         },
         {
             title: "Autonomous Robotic Platform for CEA",
@@ -252,7 +252,7 @@ const websiteContent = {
             category: "crop",
             icon: "fa-robot",
             color: "green",
-            image: "Project-2.png"
+            image: "assets/images/projects/Project-2.png"
         },
         {
             title: "Cotton Module Handling Logistics",
@@ -262,7 +262,7 @@ const websiteContent = {
             category: "soil",
             icon: "fa-leaf",
             color: "pink",
-            image: "Project-3.png"
+            image: "assets/images/projects/Project-3.png"
         },
         {
             title: "High-Tech Upland Farming Machinery",
@@ -272,7 +272,7 @@ const websiteContent = {
             category: "climate",
             icon: "fa-tractor",
             color: "blue",
-            image: "Project-4.png"
+            image: "assets/images/projects/Project-4.png"
         },
         {
             title: "Smart Greenhouse ICT Equipment",
@@ -282,7 +282,7 @@ const websiteContent = {
             category: "climate",
             icon: "fa-warehouse",
             color: "orange",
-            image: "Project-5.png"
+            image: "assets/images/projects/Project-5.png"
         },
         {
             title: "IoT-Based Smart Farm Monitoring",
@@ -292,7 +292,7 @@ const websiteContent = {
             category: "climate",
             icon: "fa-chart-line",
             color: "blue",
-            image: "Project-6.png"
+            image: "assets/images/projects/Project-6.png"
         },
         {
             title: "Smart Evaporative Cooling System",
@@ -302,7 +302,7 @@ const websiteContent = {
             category: "crop",
             icon: "fa-temperature-low",
             color: "purple",
-            image: "Project-7.png"
+            image: "assets/images/projects/Project-7.png"
         },
         {
             title: "Farm Safety Risk Assessment",
@@ -312,7 +312,7 @@ const websiteContent = {
             category: "soil",
             icon: "fa-exclamation-triangle",
             color: "pink",
-            image: "Project-8.png"
+            image: "assets/images/projects/Project-8.png"
         },
     ],
 
@@ -325,21 +325,21 @@ const websiteContent = {
             university: "Texas A&M University",
             years: "2020-2024",
             badge: "Ph.D.",
-            logo: "A&M.png"
+            logo: "assets/images/logos/A&M.png"
         },
         {
             degree: "M.Sc. Agricultural Machinery Engineering",
             university: "Chungnam National University",
             years: "2017-2019",
             badge: "M.Sc.",
-            logo: "CNU.png"
+            logo: "assets/images/logos/CNU.png"
         },
         {
             degree: "B.Sc. Agricultural Engineering",
             university: "Hajee Mohammad Danesh Science & Technology University",
             years: "Bangladesh",
             badge: "B.Sc.",
-            logo: "HMDSTU.png"
+            logo: "assets/images/logos/HMDSTU.png"
         },
     ],
 
@@ -352,21 +352,21 @@ const websiteContent = {
             company: "University of Florida",
             years: "2024-Present",
             badge: "Current",
-            logo: "UF.png"
+            logo: "assets/images/logos/UF.png"
         },
         {
             title: "Graduate Assistant (Research & Teaching)",
             company: "Texas A&M University",
             years: "2020-2024",
             badge: "PhD",
-            logo: "A&M.png"
+            logo: "assets/images/logos/A&M.png"
         },
         {
             title: "Graduate Research Assistant",
             company: "Chungnam National University",
             years: "2017-2019",
             badge: "MSc",
-            logo: "CNU.png"
+            logo: "assets/images/logos/CNU.png"
         },
     ],
 
@@ -392,7 +392,7 @@ const websiteContent = {
             content: "Our research article, \"Detecting Escherichia coli on Conventional Food Processing Surfaces Using UV-C Fluorescence Imaging and Deep Learning\" has just been published! This study introduces a second-generation imaging device combined with deep learning.",
             likes: 25,
             comments: 4,
-            avatar: "headshot-2.png"
+            avatar: "assets/images/profile/headshot-2.png"
         },
         
         {
@@ -402,7 +402,7 @@ const websiteContent = {
             content: "Happy to share our new work just published! In this study, \"Detecting Escherichia coli Contamination on Plant Leaf Surfaces Using UV-C Fluorescence Imaging and Deep Learning,\" we demonstrated how combining fluorescence imaging and AI enables rapid and accurate detection of E. coli on leafy produce.",
             likes: 30,
             comments: 1,
-            avatar: "headshot-2.png"
+            avatar: "assets/images/profile/headshot-2.png"
         },
         {
             name: "Zafar Iqbal",
@@ -411,7 +411,7 @@ const websiteContent = {
             content: "Happy to share another new publication: \"A Robust Framework Combining Hyperspectral Imaging and Machine Learning for Assessing Sudden Death Syndrome (SDS) Severity in Soybean Foliage\". We fused hyperspectral imaging with machine learning to detect SDS and classify intra-leaf pixels based on severity levels.",
             likes: 42,
             comments: 8,
-            avatar: "headshot-2.png"
+            avatar: "assets/images/profile/headshot-2.png"
         },
         {
             name: "Zafar Iqbal",
@@ -420,7 +420,7 @@ const websiteContent = {
             content: "Excited to share our newly published study in Computers and Electronics in Agriculture (COMPAG) on AI-driven detection of cotton module cover damage. We trained and evaluated two-stage, one-stage, and transformer-based CNN models to identify cotton modules with damaged plastic covers during handling.",
             likes: 67,
             comments: 7,
-            avatar: "headshot-2.png"
+            avatar: "assets/images/profile/headshot-2.png"
         },
         {
             name: "Zafar Iqbal",
@@ -429,7 +429,7 @@ const websiteContent = {
             content: "Excited to Share! I am honored to serve as a Guest Editor for a special issue of Sensors titled: \"Spectroscopy and Sensing Technologies for Smart Agriculture.\" This issue will highlight innovative sensing and spectroscopy approaches that enhance agricultural productivity, sustainability, and resilience.",
             likes: 54,
             comments: 1,
-            avatar: "headshot-2.png"
+            avatar: "assets/images/profile/headshot-2.png"
         },
         {
             name: "Zafar Iqbal",
@@ -438,7 +438,7 @@ const websiteContent = {
             content: "Absolutely thrilled to announce that I have successfully completed my PhD defense! This journey has been a significant milestone in my academic and professional career. A heartfelt thanks to my advisor Dr. Bobby Hardin, committee members, colleagues, friends, and family for their unwavering support.",
             likes: 92,
             comments: 33,
-            avatar: "headshot-2.png"
+            avatar: "assets/images/profile/headshot-2.png"
         },
     ],
 
@@ -468,7 +468,7 @@ const websiteContent = {
             institution: "Texas A&M University",
             year: "2026",
             color: "purple",
-            image: "PFF_UF.jpg"
+            image: "assets/images/gallery/PFF_UF.jpg"
         },
         {
             name: "DGSA",
@@ -476,7 +476,7 @@ const websiteContent = {
             institution: "Sigma Xi",
             year: "2026",
             color: "purple",
-            image: "Sigma-MZI.jpg"
+            image: "assets/images/gallery/Sigma-MZI.jpg"
         },
         {
             name: "DGSA",
@@ -484,7 +484,7 @@ const websiteContent = {
             institution: "Texas A&M University",
             year: "2025",
             color: "purple",
-            image: "dgsa.jpg"
+            image: "assets/images/gallery/dgsa.jpg"
         },
         
         {
@@ -493,7 +493,7 @@ const websiteContent = {
             institution: "Biological & Agricultural Engineering, Texas A&M University",
             year: "2024",
             color: "purple",
-            image: "phd.jpg"
+            image: "assets/images/gallery/phd.jpg"
         },
         {
             name: "Ph.D. Degree",
@@ -501,7 +501,7 @@ const websiteContent = {
             institution: "Texas A&M University",
             year: "2024",
             color: "purple",
-            image: "aff_tamu.jpg"
+            image: "assets/images/gallery/aff_tamu.jpg"
         },
         
         {
@@ -510,7 +510,7 @@ const websiteContent = {
             institution: "Belt Wide Cotton Conference",
             year: "2022",
             color: "purple",
-            image: "BWCC_2022F.jpg"
+            image: "assets/images/gallery/BWCC_2022F.jpg"
         },
         {
             name: "Scholarship",
@@ -518,7 +518,7 @@ const websiteContent = {
             institution: "National Cotton Ginners Association",
             year: "2022-2023",
             color: "green",
-            image: "pw1.jpg"
+            image: "assets/images/gallery/pw1.jpg"
         },
         {
             name: "Best Presentation Award",
@@ -526,7 +526,7 @@ const websiteContent = {
             institution: "Student Research Week, Texas A&M University",
             year: "2022",
             color: "pink",
-            image: "srw.jpg"
+            image: "assets/images/gallery/srw.jpg"
         },
         {
             name: "Scholarship",
@@ -534,7 +534,7 @@ const websiteContent = {
             institution: "National Cotton Ginners Association",
             year: "2020-2021",
             color: "orange",
-            image: "pw2.jpg"
+            image: "assets/images/gallery/pw2.jpg"
         },
         {
             name: "M.Sc. Degree",
@@ -542,7 +542,7 @@ const websiteContent = {
             institution: "Agricultural Machinery Engineering, Chungnam National University",
             year: "2019",
             color: "blue",
-            image: "msc.jpg"
+            image: "assets/images/gallery/msc.jpg"
         },
         {
             name: "M.Sc. Degree",
@@ -550,7 +550,7 @@ const websiteContent = {
             institution: "Shenyang Agricultural University",
             year: "2019",
             color: "blue",
-            image: "Shenyang2019.jpg"
+            image: "assets/images/gallery/Shenyang2019.jpg"
         },
         {
             name: "M.Sc. Degree",
@@ -558,7 +558,7 @@ const websiteContent = {
             institution: "University of Tsukuba",
             year: "2018",
             color: "blue",
-            image: "JCK2018.jpg"
+            image: "assets/images/gallery/JCK2018.jpg"
         },
         {
             name: "M.Sc. Degree",
@@ -566,7 +566,7 @@ const websiteContent = {
             institution: "Shenyang Agriculture University",
             year: "2018",
             color: "blue",
-            image: "CSKJC2018.jpg"
+            image: "assets/images/gallery/CSKJC2018.jpg"
         },
         
         {
@@ -575,7 +575,7 @@ const websiteContent = {
             institution: "Agricultural Engineering, Hajee Mohammad Danesh Science & Technology University",
             year: "2017",
             color: "purple",
-            image: "bsc.jpg"
+            image: "assets/images/gallery/bsc.jpg"
         },
     ],
 
@@ -750,9 +750,9 @@ const websiteContent = {
             color: "green",
             image: "", // Add image path like "field1.jpg" or leave empty for icon
             images: [
-                { src: "MS-K.jpg", caption: "MSc at Chungnam National University, South Korea" },
-                { src: "MSK-2.jpg", caption: "MSc at Chungnam National University, South Korea" },
-                { src: "zafar-3.png", caption: "PhD at Texas A&M University, USA" }
+                { src: "assets/images/gallery/MS-K.jpg", caption: "MSc at Chungnam National University, South Korea" },
+                { src: "assets/images/gallery/MSK-2.jpg", caption: "MSc at Chungnam National University, South Korea" },
+                { src: "assets/images/profile/zafar-3.png", caption: "PhD at Texas A&M University, USA" }
             ]
         },
         
@@ -766,9 +766,9 @@ const websiteContent = {
             color: "purple",
             image: "", // Add image path like "field1.jpg" or leave empty for icon
             images: [
-                { src: "Zafar1.png", caption: "Field research in soybean crops" },
-                { src: "zafar2.png", caption: "Data collection in agricultural fields" },
-                { src: "zafar-3.png", caption: "Field experiments" }
+                { src: "assets/images/profile/Zafar1.png", caption: "Field research in soybean crops" },
+                { src: "assets/images/profile/zafar2.png", caption: "Data collection in agricultural fields" },
+                { src: "assets/images/profile/zafar-3.png", caption: "Field experiments" }
             ]
         },
         {
@@ -781,8 +781,8 @@ const websiteContent = {
             color: "pink",
             image: "",
             images: [
-                { src: "Zafar1.png", caption: "Laboratory analysis" },
-                { src: "zafar4.png", caption: "Equipment testing" }
+                { src: "assets/images/profile/Zafar1.png", caption: "Laboratory analysis" },
+                { src: "assets/images/profile/zafar4.png", caption: "Equipment testing" }
             ]
         },
         {
@@ -795,8 +795,8 @@ const websiteContent = {
             color: "green",
             image: "", // Add your conference image here
             images: [
-                { src: "presentation.png", caption: "Beltwide cotton Conferences" },
-                { src: "zafar2.png", caption: "Research poster session" }
+                { src: "assets/images/gallery/presentation.png", caption: "Beltwide cotton Conferences" },
+                { src: "assets/images/profile/zafar2.png", caption: "Research poster session" }
             ]
         },
         {
@@ -809,8 +809,8 @@ const websiteContent = {
             color: "blue",
             image: "",
             images: [
-                { src: "GH-K.jpg", caption: "Greenhouse monitoring systems" },
-                { src: "GHG-C.jpg", caption: "Climate control experiments" }
+                { src: "assets/images/gallery/GH-K.jpg", caption: "Greenhouse monitoring systems" },
+                { src: "assets/images/gallery/GHG-C.jpg", caption: "Climate control experiments" }
             ]
         },
         {
@@ -823,8 +823,8 @@ const websiteContent = {
             color: "orange",
             image: "",
             images: [
-                { src: "Zafar1.png", caption: "Agricultural robotics development" },
-                { src: "zafar2.png", caption: "Automation systems" }
+                { src: "assets/images/profile/Zafar1.png", caption: "Agricultural robotics development" },
+                { src: "assets/images/profile/zafar2.png", caption: "Automation systems" }
             ]
         },
         {
@@ -837,8 +837,8 @@ const websiteContent = {
             color: "#a8edea 0%, #fed6e3 100%",
             image: "",
             images: [
-                { src: "zafar-3.png", caption: "Award ceremony" },
-                { src: "zafar4.png", caption: "Recognition event" }
+                { src: "assets/images/profile/zafar-3.png", caption: "Award ceremony" },
+                { src: "assets/images/profile/zafar4.png", caption: "Recognition event" }
             ]
         }
     ],
@@ -1109,7 +1109,7 @@ function loadContent() {
             const dataMap = { 'Instructed Courses': 'instructed-courses', 'Curriculum Development': 'curriculum', 'Student Mentoring': 'mentoring', 'Workshop Facilitation': 'workshops' };
             websiteContent.teaching.forEach(teach => {
                 const dataAttr = dataMap[teach.title] || teach.title.toLowerCase().replace(/\s+/g, '-');
-                const teachHTML = `<div class="teaching-card" data-teaching="${dataAttr}"><div class="teaching-icon"><i class="fas ${teach.icon}"></i></div><h3>${teach.title}</h3><p style="color: var(--gray-600); margin: 1rem 0;">${teach.description}</p><button class="btn btn-outline teaching-btn" style="width: 100%; margin-top: auto; border: 2px solid var(--primary); color: var(--primary);">View Details</button></div>`;
+                const teachHTML = `<div class="teaching-card" data-teaching="${dataAttr}"><div class="teaching-icon"><i class="fas ${teach.icon}"></i></div><h3>${teach.title}</h3><p style="color: var(--gray-600); margin: 1rem 0;">${teach.description}</p><button class="btn btn-card-outline teaching-btn" style="width: 100%; margin-top: auto;">View Details</button></div>`;
                 teachingGrid.insertAdjacentHTML('beforeend', teachHTML);
             });
         }
