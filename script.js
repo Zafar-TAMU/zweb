@@ -467,56 +467,6 @@ function initializeMagneticButtons() {
     });
 }
 
-// Cursor Trail Effect
-function initializeCursorTrail() {
-    const trail = [];
-    const trailLength = 10;
-    
-    for (let i = 0; i < trailLength; i++) {
-        const dot = document.createElement('div');
-        dot.className = 'cursor-trail';
-        dot.style.cssText = `
-            position: fixed;
-            width: 8px;
-            height: 8px;
-            background: linear-gradient(135deg, var(--primary), var(--secondary));
-            border-radius: 50%;
-            pointer-events: none;
-            z-index: 9999;
-            opacity: ${1 - i / trailLength};
-            transition: all 0.1s ease;
-        `;
-        document.body.appendChild(dot);
-        trail.push(dot);
-    }
-    
-    let mouseX = 0, mouseY = 0;
-    
-    document.addEventListener('mousemove', (e) => {
-        mouseX = e.clientX;
-        mouseY = e.clientY;
-    });
-    
-    function animateTrail() {
-        let x = mouseX;
-        let y = mouseY;
-        
-        trail.forEach((dot, index) => {
-            const nextDot = trail[index + 1] || trail[0];
-            
-            dot.style.left = x - 4 + 'px';
-            dot.style.top = y - 4 + 'px';
-            
-            x += (parseInt(nextDot.style.left) - x) * 0.3;
-            y += (parseInt(nextDot.style.top) - y) * 0.3;
-        });
-        
-        requestAnimationFrame(animateTrail);
-    }
-    
-    animateTrail();
-}
-
 // Card Tilt Effect
 function initializeCardTilt() {
     const cards = document.querySelectorAll('.interest-card, .membership-card, .teaching-card');
@@ -1051,7 +1001,7 @@ document.addEventListener('DOMContentLoaded', () => {
     animateHeroCounters();
     initializeParallax();
     initializeMagneticButtons();
-    initializeCursorTrail();
+
     initializeCardTilt();
     initializeHexagonModal();
     initializeGalleryModal();
