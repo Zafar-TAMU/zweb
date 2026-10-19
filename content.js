@@ -464,8 +464,17 @@ const websiteContent = {
     certificates: [
         {
             name: "PostDoctoral Associate",
+            fullTitle: "Passport to Great Teaching Certificate",
+            institution: "University of Florida",
+            year: "2026",
+            color: "purple",
+            image: "assets/images/gallery/CIRTL_MZI.jpg"
+        },
+        
+        {
+            name: "PostDoctoral Associate",
             fullTitle: "Preparing Future Faculty",
-            institution: "Texas A&M University",
+            institution: "University of Florida",
             year: "2026",
             color: "purple",
             image: "assets/images/gallery/PFF_UF.jpg"
