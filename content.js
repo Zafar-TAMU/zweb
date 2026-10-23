@@ -13,6 +13,17 @@ const websiteContent = {
     publications: [
         {
             year: "2026",
+            title: "Handheld UV-C Fluorescence Imaging with Cascaded Denoising and Deep Learning for Escherichia coli Concentration Classification on Diverse Food-Contact Surfaces",
+            journal: "Sensors",
+            date: "September 24, 2026",
+            topics: ["E.COli", "Food safety", "Fluorescence imaging", "CSI-D+", "Cascaded denoising", "XAI" ],
+            link: "https://doi.org/10.3390/s26216699",
+            pdfLink: "#",
+            image: "assets/images/publications/Pub_2026_2.jpg"
+        },
+        
+        {
+            year: "2026",
             title: "Multiclass Citrus Leaf Disease Inspection with Region Classification and Hyperspectral Imagery",
             journal: "Journal of the ASABE",
             date: "April 14, 2026",
