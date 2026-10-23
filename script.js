@@ -865,7 +865,7 @@ const cvFrame = document.getElementById('cvFrame');
 if (viewCvBtn) {
     viewCvBtn.addEventListener('click', (e) => {
         e.preventDefault();
-        cvFrame.src = 'CV_kstate_MZI.pdf#toolbar=0&navpanes=0&scrollbar=0&view=FitH';
+        cvFrame.src = 'CV_TAMU_Temple_MZI.pdf#toolbar=0&navpanes=0&scrollbar=0&view=FitH';
         cvModal.classList.add('active');
         document.body.style.overflow = 'hidden';
     });
