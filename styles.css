@@ -1601,7 +1601,7 @@ section {
 
 .about-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: clamp(1rem, 2vw, 1.5rem);
 }
 
@@ -2167,12 +2167,9 @@ section {
 
 .skills-card,
 .expertise-card,
-.trainings-card {
-    grid-column: span 1;
-}
-
+.trainings-card,
 .impact-card {
-    grid-column: 1 / -1;
+    grid-column: auto;
 }
 
 .tech-skills,
