@@ -2152,14 +2152,14 @@ section {
 
 /* Responsive Design */
 .main-card {
-    grid-column: 1 / 3;
+    grid-column: 1 / 2;
     min-height: 400px;
     max-height: 600px;
     overflow-y: auto;
 }
 
 .experience-card {
-    grid-column: 3 / 5;
+    grid-column: 2 / 4;
     min-height: 400px;
     max-height: 600px;
     overflow-y: auto;
@@ -2167,7 +2167,10 @@ section {
 
 .skills-card,
 .expertise-card,
-.trainings-card,
+.trainings-card {
+    grid-column: span 1;
+}
+
 .impact-card {
     grid-column: 1 / -1;
 }
